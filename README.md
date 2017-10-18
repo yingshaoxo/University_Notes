@@ -1,3 +1,6 @@
-# My Awesome Book
+### I've been search a good place to put my mind and knowledge in a long time. 
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+### Today I found it, that is here.   
+
+
+

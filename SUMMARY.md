@@ -1,3 +1,6 @@
 # Summary
 
-* [First Chapter](chapter1.md)
+* [Introduction](README.md)
+* [High Level Math](chapter1.md)
+* Electrical Engineering
+
