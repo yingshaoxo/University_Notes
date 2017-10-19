@@ -1,3 +1,7 @@
 {
-    "plugins": ["mathjax"]
+    "plugins": ["mathjax"],
+    "pluginsConfig": {
+        "mathjax": {
+            "config": "TeX-AMS_HTML"
+        }
 }
