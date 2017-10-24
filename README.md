@@ -1,6 +1,6 @@
 ### I've been search a good place to put my mind and knowledge in for a long time. 
 
-### Today I find it, it's here. 
+### Today I find it, that is here. 
 ___
 
 ```

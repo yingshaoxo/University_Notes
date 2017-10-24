@@ -1,6 +1,6 @@
-When we talk about math, what do you thinking about? Maybe it's so hard to you.
+When we talk about math, what do you thinking of? Maybe it's so hard to you.
 
-But I'm gonna tell you, it's not. Actually, it's a fantastic subject you can master.
+But I'm gonna say, it's not. Actually, it's a fantastic subject you can master.
 
 ** Every time you think you can't master it is just because of you can't understand it correctly. **  
 
@@ -8,4 +8,4 @@ But I'm gonna tell you, it's not. Actually, it's a fantastic subject you can mas
 
 ___
 
-1. Never give up find another solution for math problem.
+1. Never give up finding another solution for math problems.
