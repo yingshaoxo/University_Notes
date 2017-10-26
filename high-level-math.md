@@ -9,3 +9,5 @@ But I'm gonna say, it's not. Actually, it's a fantastic subject you can master.
 ___
 
 1. Never give up finding another solution for math problems.
+
+2. Put math into reality, which are physical and programming.
