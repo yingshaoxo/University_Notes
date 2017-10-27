@@ -30,3 +30,16 @@ $$
 $$
 ___
 
+![](/assets/x^2.png)
+
+Above is a graph of $$f(x) = x^2$$.
+
+If I ask you what's the limitation of $$\lim_{x \to 2}{x^2}$$
+
+The real meaning is 
+$$
+\begin{align*}
+\lim_{x \to 2}{{x^2}^-} and \lim_{x \to 2}{{x^2}^+}
+\end{align*}
+$$ 
+**exist and equal.**
