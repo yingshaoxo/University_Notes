@@ -54,7 +54,7 @@ ___
 
 ___
 
-### 我要升华
+### 升华
 Procedure of adding element voltages around a loop:
 > Step 1: Pick a starting node.
 
