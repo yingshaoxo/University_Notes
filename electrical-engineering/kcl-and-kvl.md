@@ -51,3 +51,25 @@ ___
 >从+方向数电压；方向相同(+-)，电压相加; 方向相反(-+)，电压相减；最终等于这段`电压之和`
 >> 那段`电压之和`可以当被当成`ab端口的电压`，即 $$U_{ab}$$
 >>> ~~不知为何说是 Kirchhoff's voltage law~~
+
+___
+
+### 我要升华
+Procedure of adding element voltages around a loop:
+> Step 1: Pick a starting node.
+
+> Step 2: Pick a direction to travel around the loop (clockwise or counterclockwise).
+
+> Step 3: Walk around the loop. 
+>> **Include element voltages in a growing sum according to these rules:**
+
+>> 1. When you encounter a new element, look at the voltage sign as you enter the element.
+>> 2. If the sign is +plus, then there will be a voltage drop going through the element. Subtract the element voltage.
+>> 3. If the sign is -minus, then there will be a voltage rise going through the element. Add the element voltage.
+
+> Step 4: Continue around the loop until you reach the starting point, including element voltages all the way around.
+
+
+##### State Kirchhoff's Voltage Law in another way: The sum of voltage rises equals the sum of voltage drops around a loop.
+
+俗称**电压升降平衡。**
