@@ -28,6 +28,7 @@ $$
 \lim_{x \to 1}{\sqrt[999]{x^{277}}} &= 1
 \end{align*}
 $$
+Do you understand?
 ___
 
 ![](/assets/x^2.png)
