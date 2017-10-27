@@ -28,3 +28,15 @@ $$
 \lim_{x \to 1}{\sqrt[999]{x^{277}}} &= 1
 \end{align*}
 $$
+___
+
+![](/assets/x^2.png)
+
+Above is a graph of $$f(x) = x^2$$.
+If I ask you what's the limitation of $$\lim_{x \to 2}{x^2}$$. The real meaning is $$\lim_{x \to 2}{{x^2}^-}$$ and $$\lim_{x \to 2}{{x^2}^+}$$ exist and equal.
+
+$$\lim_{x \to 2}{{x^2}^-}$$ means `x` from `less than 2` to `2`, what y will approaching to.
+$$\lim_{x \to 2}{{x^2}^+}$$ means `x` form `greater than 2` to `2`, what y will approaching to.
+
+Here comes a new definition of continuity when you think about it.
+No mater greater than 2 or less than 2, they all approaching 4, this means they are continuous in x and y.
