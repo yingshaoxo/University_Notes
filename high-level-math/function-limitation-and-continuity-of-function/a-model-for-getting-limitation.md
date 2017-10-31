@@ -1,14 +1,14 @@
 If anything goes well, it indeed has a general model for you guys getting limitation from a limit equation.
 
-if equation is fraction:
-    if fraction + or - fraction:
-        reduce fractions to one fraction by setting a common denominator
-    if equation has sqrt:
-        get rid of it
-    if put $$x_0$$ into equation getting "$$\frac{0}{0}$$":
-        get factorization, get rid of one factoring which make equation to "$$\frac{0}{0}$$"
-if equation is not fraction:
-    # combined with simple +-x/ 
-    put $$x_0$$ in equation directly
-
+```
+if equation is a fraction:
+    if fraction + or - a fraction:
+        reduce fractions into one fraction by setting a common denominator
+    if equation has radical sign:
+        get rid of it by rationalizing.
+    if put giving_x into equation getting "0/0":
+        do factorization, get rid of one factor which make equation "0/0"
+if equation is not a fraction: # combined with simple +-x/
+    put giving_x in equation directly
+```
 
