@@ -12,3 +12,11 @@ if equation is not a fraction: # combined with simple +-x/
     put giving_x in equation directly
 ```
 
+#### Example
+$$
+\begin{equation}
+\begin{left}
+\lim{x \to +\infty}{\sqrt{x^2 - 1} - x} 
+\end{left}
+\end{equation}
+$$
