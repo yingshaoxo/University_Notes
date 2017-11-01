@@ -1,3 +1,4 @@
+#### Method
 If anything goes well, it indeed has a general model for you guys getting limitation from a limit equation.
 
 ```
@@ -15,7 +16,21 @@ if equation is not a fraction: # combined with simple +-x/
 #### Example
 $$
 \begin{align*}
+& \lim_{x \to 1}{\frac{x^2 + 2x - 3}{x - 1}}
+\\ \\
+= & \lim_{x \to 1}{\frac{(x + 3)(x - 1)}{x - 1}}
+\\ \\
+= & \lim_{x \to 1}{\frac{x + 3}{1}}
+\\ \\
+= & 1 + 3
+\\ \\
+= & 4
+\end{align*}
+$$
+___
 
+$$
+\begin{align*}
 & \lim_{x \to +\infty}{\sqrt{x^2 - 1} - x}
 \\ \\
 = & \lim_{x \to +\infty}{\frac{\sqrt{x^2 - 1} - x}{1}}
