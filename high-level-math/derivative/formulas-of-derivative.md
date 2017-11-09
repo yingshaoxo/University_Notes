@@ -7,7 +7,7 @@ $$
 \begin{align*}
 \\
 
-(C)^\prime &= 0 \\ \\
+(C)^\prime &= 0    &\text{(C is a constant)} \\ \\
 
 (x^n)^\prime &= nx^{n-1} \\ \\
 
