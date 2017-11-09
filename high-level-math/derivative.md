@@ -7,15 +7,15 @@ If it really have some meaning, that must be describing the changing rate of a f
 
 ![](/assets/negative_x^2.png)
 
-The $$|y^\prime|$$ bigger on one point, the $$y$$ of the function change more quickly. It seems like the slop of the tangent line steeper.
+The $$|y^\prime|$$ bigger on one point, the $$y$$ of the function change more quickly. It seems the slop of the tangent line steeper.
 
-The $$|y^\prime|$$ smaller on one point until 0, the $$y$$ of the function change more slowly. It seems like the slop of the tangent line gentler.
+The $$|y^\prime|$$ smaller on one point until 0, the $$y$$ of the function change more slowly. It seems the slop of the tangent line gentler.
 
 If $$y^\prime$$ is positive, $$y$$ will goes up.
 
 If $$y^\prime$$ is negative, $$y$$ will goes down. 
 
-It is the same thing if you replace $$f^\prime(x)$$ with $$y^\prime$$.
+It is the same thing if you replace $$y^\prime$$ with $$f^\prime(x)$$.
 ___
 
 #### Derivative notation
