@@ -1,15 +1,11 @@
-#### What is derivative? (I don't know either)
-~~The derivative of a function of a real variable measures the sensitivity to change of the function value (output value) with respect to a change in its argument (input value). Derivatives are a fundamental tool of calculus.~~
-
-You don't have to know anyway. It's too complicated to understand.
-
-If it really have some meaning, that must be describing the changing rate of a function on one point(input x). 
+#### What is derivative? 
+If it really have some meaning, that must be describing the average change in `y` when `x` get change. 
 
 ![](/assets/negative_x^2.png)
 
-The $$|y^\prime|$$ bigger on one point, the $$y$$ of the function change more quickly. It seems the slop of the tangent line steeper.
+The $$|y^\prime|$$ bigger on one point, the $$y$$ of the function change more when $$x$$ increases. It seems the slop of the tangent line will steeper then.
 
-The $$|y^\prime|$$ smaller on one point until 0, the $$y$$ of the function change more slowly. It seems the slop of the tangent line gentler.
+The $$|y^\prime|$$ smaller on one point until 0, the $$y$$ of the function change less when $$x$$ decreases. It seems the slop of the tangent line gentler then.
 
 If $$y^\prime$$ is positive, $$y$$ will goes up.
 
