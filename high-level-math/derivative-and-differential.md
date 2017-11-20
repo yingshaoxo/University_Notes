@@ -1,7 +1,7 @@
 #### Let's do basic
 `Derivative`(衍生物或派生物) is some extracted thing from another thing. It may be a feature or characteristic, it's a abstract model for describing one thing in a highly view.
 
-`Delta`($$\Delta$$) is a duration expressing the difference between two data, time or date-time. We can seemly see this as a distance between two distance.
+`Delta`($$\Delta$$) is a duration expressing the difference between two data, time or date-time. We can seemly see this as a distance between two values.
 
 `Differential` is a descriptor for describing difference between two things. 
 
