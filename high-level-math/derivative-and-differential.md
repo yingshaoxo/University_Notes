@@ -48,7 +48,7 @@ $$
 
 If it really have some meaning, that must be describing the average change in `y` when `x` get changed by this formula: $$\lim_{\Delta x \rightarrow 0}{\frac{\Delta y}{\Delta x}}$$
 
-In that formula, when we assume that $$\Delta x$$\(`the change in x`\) is very small, near to 0, then $$\Delta y$$\(`the change in y`\) changes correspondingly. In that case, $$\frac{\Delta y}{\Delta x}$$ becomes a tending, indicated where y is about to going.
+In that formula, when we assume that $$\Delta x$$\(`the change in x`\) is very small, near to 0, then $$\Delta y$$\(`the change in y`\) changes correspondingly. In that case, when the change is very small, $$\frac{\Delta y}{\Delta x}$$ becomes a tending, indicated where y is about to going.
 
 ---
 
