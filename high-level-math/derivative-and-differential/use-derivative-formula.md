@@ -9,6 +9,8 @@ y^\prime &= e^{-x} \times (-x)^\prime
 \end{align*}
 $$
 
+Principle: get each function's derivative, then combined each other with $$\times$$.
+___
 
 ##### For implicit function or relation
 
@@ -22,5 +24,19 @@ $$
 &2x + 2yy^\prime = 0
 \\ \\
 &y^\prime = \frac{-2x}{2y}
+\end{align*}
+$$
+____
+
+##### Get differential of a function
+Normally, if we say `differential` directly, what we mean is $$dy$$.
+
+$$
+\begin{align*}
+y &= \sin{x} + x
+\\ \\
+dy &= \cos{x}dx + dx
+\\ \\
+dy &= (\cos{x} + 1)dx
 \end{align*}
 $$
