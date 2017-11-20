@@ -1,5 +1,5 @@
 #### What is derivative? 
-If it really have some meaning, that must be describing the average change in `y` when `x` get change. 
+If it really have some meaning, that must be describing the average change in `y` when `x` get changed. 
 
 ![](/assets/negative_x^2.png)
 
