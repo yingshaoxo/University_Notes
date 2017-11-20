@@ -42,7 +42,6 @@ $$
    \dot y
 $$
 
-
 ---
 
 #### What is derivative?
