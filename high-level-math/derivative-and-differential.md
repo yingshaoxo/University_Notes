@@ -13,43 +13,26 @@
 #### Derivative notation
 
 1. Original notation
-
-
 $$
    \lim_{\Delta x \rightarrow 0}{\frac{\Delta y}{\Delta x}}
 $$
 
-
 2. Lagrange's notation
-
-
 $$
    f^\prime(x)
 $$
-
-
-
 $$
    y^\prime
 $$
 
-
 3. Leibniz's notation
-
-
 $$
    \frac{df(x)}{dx}
 $$
-
-
-
 $$
    \frac{dy}{dx}
 $$
-
-
 $$d$$ means small change.
-
 **You can read it: **`differential in x`** over **`differential in y`** is **`the derivative of that function`**.**
 
 4. Newton's notation
@@ -96,16 +79,11 @@ It is the same thing if you replace $$y^\prime$$ with $$f^\prime(x)$$.
 
 #### All in all
 
-
 $$
 f^\prime(x) = y^\prime = \frac{dy}{dx} = \lim_{\Delta x \rightarrow 0}{\frac{\Delta y}{\Delta x}} = \lim_{\Delta x \rightarrow 0}{\frac{f(x + \Delta x) -f(x)}{\Delta x}}
 \\ \\
 $$
 
-
-
 $$
 f^\prime(x_0) = f^\prime(x)|_{x=x_0}
 $$
-
-
