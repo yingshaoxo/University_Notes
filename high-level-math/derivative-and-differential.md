@@ -1,57 +1,79 @@
 #### Let's do basic
-`Derivative`(衍生物或派生物) is some extracted thing from another thing. It may be a feature or characteristic, it's a abstract model for describing one thing in a highly view.
 
-`Delta`($$\Delta$$) is a duration expressing the difference between two data, time or date-time. We can seemly see this as a distance between two values.
+`Derivative`\(衍生物或派生物\) is some extracted thing from another thing. It may be a feature or characteristic, it's a abstract model for describing one thing in a highly view.
 
-`Differential` is a descriptor for describing difference between two things. 
+`Delta`\($$\Delta$$\) is a duration expressing the difference between two date, time or date-time. We can seemly see this as a distance between two values.
 
-**Sometimes we can see `Delta` and `Differential` as the same thing.**
-___
+`Differential` is a descriptor for describing difference between two things.
+
+**Sometimes we can see **`Delta`** and **`Differential`** as the same thing.**
+
+---
 
 #### Derivative notation
-0. Original notation
-$$
-\lim_{\Delta x \rightarrow 0}{\frac{\Delta y}{\Delta x}}
-$$
 
-1. Lagrange's notation
-$$
-f^\prime(x)
-$$
-$$
-y^\prime
-$$
+1. Original notation
 
-2. Leibniz's notation
-$$
-\frac{df(x)}{dx}
-$$
-$$
-\frac{dy}{dx}
-$$
 
-  $$d$$ means small change. 
-  
-  **You can read it: `differential in x` over `differential in y` is `the derivative of that function`.**
+   $$
+   \lim_{\Delta x \rightarrow 0}{\frac{\Delta y}{\Delta x}}
+   $$
 
-3. Newton's notation
-$$
-\dot y
-$$
-___
+2. Lagrange's notation
 
-#### What is derivative? 
+
+   $$
+   f^\prime(x)
+   $$
+
+
+
+   $$
+   y^\prime
+   $$
+
+3. Leibniz's notation
+
+
+   $$
+   \frac{df(x)}{dx}
+   $$
+
+
+
+   $$
+   \frac{dy}{dx}
+   $$
+
+
+   $$d$$ means small change.
+
+   **You can read it: **`differential in x`** over **`differential in y`** is **`the derivative of that function`**.**
+
+4. Newton's notation
+
+
+   $$
+   \dot y
+   $$
+
+---
+
+#### What is derivative?
+
 If it really have some meaning, that must be describing the average change in `y` when `x` get changed by this formula: $$\lim_{\Delta x \rightarrow 0}{\frac{\Delta y}{\Delta x}}$$
 
-In that formula, when we assume that $$\Delta x$$(`the change in x`) is very small, near to 0, then $$\Delta y$$(`the change in y`) changes correspondingly. In that case, $$\frac{\Delta y}{\Delta x}$$ becomes a tending, indicated where y is about to going.
-___
+In that formula, when we assume that $$\Delta x$$\(`the change in x`\) is very small, near to 0, then $$\Delta y$$\(`the change in y`\) changes correspondingly. In that case, $$\frac{\Delta y}{\Delta x}$$ becomes a tending, indicated where y is about to going.
+
+---
 
 #### Graph derivative
 
 Let me assume if we got a point A in a function curve.
 
-The derivative of that function in that point is the slope of the tangent line at that point in that curve. 
-___
+The derivative of that function in that point is the slope of the tangent line at that point in that curve.
+
+---
 
 #### What function feature derivative described?
 
@@ -63,17 +85,24 @@ The $$|y^\prime|$$ smaller on one point until 0, the $$y$$ of that function chan
 
 If $$y^\prime$$ is positive, $$y$$ will going up.
 
-If $$y^\prime$$ is negative, $$y$$ will going down. 
+If $$y^\prime$$ is negative, $$y$$ will going down.
 
 It is the same thing if you replace $$y^\prime$$ with $$f^\prime(x)$$.
-___
+
+---
 
 #### All in all
+
+
 $$
 f^\prime(x) = y^\prime = \frac{dy}{dx} = \lim_{\Delta x \rightarrow 0}{\frac{\Delta y}{\Delta x}} = \lim_{\Delta x \rightarrow 0}{\frac{f(x + \Delta x) -f(x)}{\Delta x}}
 \\ \\
 $$
 
+
+
 $$
 f^\prime(x_0) = f^\prime(x)|_{x=x_0}
 $$
+
+
