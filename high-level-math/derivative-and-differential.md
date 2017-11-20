@@ -20,7 +20,7 @@ $$
 $$
 
 
-1. Lagrange's notation
+2. Lagrange's notation
 
 
 $$
@@ -34,7 +34,7 @@ $$
 $$
 
 
-1. Leibniz's notation
+3. Leibniz's notation
 
 
 $$
@@ -52,7 +52,7 @@ $$d$$ means small change.
 
 **You can read it: **`differential in x`** over **`differential in y`** is **`the derivative of that function`**.**
 
-1. Newton's notation
+4. Newton's notation
 
 
 $$
