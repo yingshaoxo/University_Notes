@@ -1,6 +1,6 @@
 #### Let's do basic
 
-`Derivative`\(衍生物或派生物\) is some extracted thing from another thing. It may be a feature or characteristic, it's a abstract model for describing one thing in a highly view.
+`Derivative`\(衍生物或派生物\) is some extracted thing from another thing. It may be a feature or characteristic, it's a abstract model for describing one thing in a higher view.
 
 `Delta`\($$\Delta$$\) is a duration expressing the difference between two date, time or date-time. We can seemly see this as a distance between two values.
 
@@ -15,47 +15,50 @@
 1. Original notation
 
 
-   $$
+$$
    \lim_{\Delta x \rightarrow 0}{\frac{\Delta y}{\Delta x}}
-   $$
-
-2. Lagrange's notation
+$$
 
 
-   $$
+1. Lagrange's notation
+
+
+$$
    f^\prime(x)
-   $$
+$$
 
 
 
-   $$
+$$
    y^\prime
-   $$
-
-3. Leibniz's notation
+$$
 
 
-   $$
+1. Leibniz's notation
+
+
+$$
    \frac{df(x)}{dx}
-   $$
+$$
 
 
 
-   $$
+$$
    \frac{dy}{dx}
-   $$
+$$
 
 
-   $$d$$ means small change.
+$$d$$ means small change.
 
-   **You can read it: **`differential in x`** over **`differential in y`** is **`the derivative of that function`**.**
+**You can read it: **`differential in x`** over **`differential in y`** is **`the derivative of that function`**.**
 
-4. Newton's notation
+1. Newton's notation
 
 
-   $$
+$$
    \dot y
-   $$
+$$
+
 
 ---
 
