@@ -26,10 +26,12 @@ $$
 &y^\prime = \frac{-2x}{2y}
 \end{align*}
 $$
+
+Principle: get each side derivative, adding $$y^\prime$$ to every part expression when there is `y` included needs to get derivative.
 ____
 
 ##### Get differential of a function
-Normally, if we say `differential` directly, what we mean is $$dy$$.
+Normally, if we say `differential` isolately, what we mean is $$dy$$.
 
 $$
 \begin{align*}
