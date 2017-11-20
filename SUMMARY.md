@@ -9,6 +9,7 @@
     * [A model for getting limitation](high-level-math/function-limitation-and-continuity-of-function/a-model-for-getting-limitation.md)
   * [Derivative and differential](high-level-math/derivative-and-differential.md)
     * [Formulas of derivative](high-level-math/derivative-and-differential/formulas-of-derivative.md)
+    * [Use derivative formula](high-level-math/derivative-and-differential/use-derivative-formula.md)
 * [Electrical Engineering](electrical-engineering.md)
   * [The Terminologys](electrical-engineering/the-terminologys.md)
   * [所谓电路规律](electrical-engineering/suo-wei-dian-lu-gui-lv.md)
