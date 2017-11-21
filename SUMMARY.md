@@ -15,4 +15,5 @@
   * [所谓电路规律](electrical-engineering/suo-wei-dian-lu-gui-lv.md)
   * [KCL and KVL](electrical-engineering/kcl-and-kvl.md)
   * [Superposition](electrical-engineering/superposition.md)
+  * [DC and AC](electrical-engineering/dc-and-ac.md)
 
