@@ -16,4 +16,6 @@
   * [KCL and KVL](electrical-engineering/kcl-and-kvl.md)
   * [Superposition](electrical-engineering/superposition.md)
   * [DC and AC](electrical-engineering/dc-and-ac.md)
+  * DC
+  * AC
 
