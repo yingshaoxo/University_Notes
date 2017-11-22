@@ -12,10 +12,10 @@
     * [Use derivative formula](high-level-math/derivative-and-differential/use-derivative-formula.md)
 * [Electrical Engineering](electrical-engineering.md)
   * [The Terminologys](electrical-engineering/the-terminologys.md)
-  * [Superposition](electrical-engineering/superposition.md)
+  * [Superposition](electrical-engineering/dc/superposition.md)
   * [DC and AC](electrical-engineering/dc-and-ac.md)
   * [DC](electrical-engineering/dc.md)
-  * [所谓电路规律](electrical-engineering/suo-wei-dian-lu-gui-lv.md)
-  * [KCL and KVL](electrical-engineering/kcl-and-kvl.md)
+    * [The circuit rule](electrical-engineering/dc/the-circuit-rule.md)
+    * [KCL and KVL](electrical-engineering/dc/kcl-and-kvl.md)
   * [AC](electrical-engineering/ac.md)
 
