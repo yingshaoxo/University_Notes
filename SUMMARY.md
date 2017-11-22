@@ -16,5 +16,6 @@
   * [DC and AC](electrical-engineering/dc-and-ac.md)
   * [DC](electrical-engineering/dc.md)
     * [The circuit rule](electrical-engineering/dc/the-circuit-rule.md)
+    * [KCL and KVL](electrical-engineering/dc/kcl-and-kvl.md)
   * [AC](electrical-engineering/ac.md)
 
