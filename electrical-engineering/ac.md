@@ -43,3 +43,5 @@ $$
 \end{align*}
 $$ 
 
+
+When you want to draw a 复数在平面坐标系, just imagine `a` as `x`, `b` as `y`, 就能对应到以前学过的x、y坐标系知识了。
