@@ -1,0 +1,1 @@
+DC: Directly Current（直流电）
