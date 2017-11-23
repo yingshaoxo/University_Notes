@@ -18,3 +18,9 @@ ___
 > If we need to block very high frequency AC we use an inductor.
 
 > If we need to design a filter we (can) use resistors, capacitors and inductors. 
+
+___
+
+### As the previous
+
+No matter in DC or AC, those components all have `current` and `voltage`.
