@@ -13,14 +13,16 @@ ___
 
 ### What's the purpose of 3 basic components in AP circuit?
 
-> If we need to block DC we use a capacitor.
+> If we need to block DC, we use a capacitor.
 
-> If we need to block very high frequency AC we use an inductor.
+> If we need to block very high frequency AC, we use an inductor.
 
-> If we need to design a filter we (can) use resistors, capacitors and inductors. 
+> If we need to design a filter, we (can) use resistors, capacitors and inductors. 
 
 ___
 
 ### As the previous
 
 No matter in DC or AC, those components all have `current` and `voltage`.
+
+So we have to find out how to represente those things using vector formula.
