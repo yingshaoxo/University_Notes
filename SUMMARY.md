@@ -18,4 +18,5 @@
     * [Superposition](electrical-engineering/dc/superposition.md)
   * [AC](electrical-engineering/ac.md)
     * [AC circuit](electrical-engineering/ac/ac-circuit.md)
+    * [Resistor](electrical-engineering/ac/resistor.md)
 
