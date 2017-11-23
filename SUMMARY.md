@@ -19,4 +19,6 @@
   * [AC](electrical-engineering/ac.md)
     * [AC circuit](electrical-engineering/ac/ac-circuit.md)
     * [Resistor](electrical-engineering/ac/resistor.md)
+    * [Inductor](electrical-engineering/ac/inductor.md)
+    * Capacitor
 
