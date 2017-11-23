@@ -1,4 +1,4 @@
-DC: Directly Current（直流电）
+DC: Direct Current（直流电）
 
 Through we call it DC, but actually, it contains more than current, also voltage.
 

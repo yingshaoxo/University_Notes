@@ -1,6 +1,6 @@
-DC: Directly Current（直流电）
+DC: Direct Current（直流电）
 
-AC: Alternate Current（交流电）
+AC: Alternating Current（交流电）
 
 我们当然知道直流和交流的区别：直流电方向不变，不产生“交流”；交流电方向改变，有时会发生碰撞，产生（物体与物体之间的）“交流”。
 ___
