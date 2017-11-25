@@ -1,4 +1,18 @@
-The unit of capacitance is the farad (symbol: F)
+### Basic
+
+#### Unit
+
+The unit of inductance $$L$$ is the henry (symbol: $$H$$), but it is too large for normal usage. So a more common unit is `millihenrys`, abbreviated as $$mH$$ ($$1mH == 10^{-3}H$$)
+
+#### Inductor i-v equation
+
+$$ v = L\frac{di}{dt} $$
+
+#### Feature
+
+If a constant current flows in an inductor, then $$\frac{dt}{di} = 0$$ (a constant's derivative is 0), so in that case, there is zero voltage across the inductor.
+
+Zero voltage means an inductor with constant current looks like a short circuit, the same as a plain wire.
 ___
 
 $$

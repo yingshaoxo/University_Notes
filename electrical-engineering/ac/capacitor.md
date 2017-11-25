@@ -1,4 +1,8 @@
-The henry (symbolized H) is the unit of inductance.
+### Basic
+
+#### Unit
+
+The unit of capacitance $$C$$ is the farad (symbol: $$F$$), but it is too large for normal usage. So a more common unit is `microfarad`, abbreviated as $$\mu F$$ ($$1\mu F == 10^{-6}F$$)
 ___
 
 $$
