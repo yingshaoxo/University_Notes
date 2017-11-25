@@ -10,9 +10,11 @@ $$ v = L\frac{di}{dt} $$
 
 #### Feature
 
-If a constant current flows in an inductor, then $$\frac{dt}{di} = 0$$ (a constant's derivative is 0), so in that case, there is zero voltage across the inductor.
+1. If a constant current flows in an inductor, then $$\frac{dt}{di} = 0$$ (a constant's derivative is 0), so in that case, there is zero voltage across the inductor.（Zero voltage means an inductor with constant current looks like a short circuit, the same as a plain wire.）
 
-Zero voltage means an inductor with constant current looks like a short circuit, the same as a plain wire.
+2. The current in an inductor does not (will not) change instantaneously.
+
+
 ___
 
 $$
