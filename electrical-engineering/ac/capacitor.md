@@ -1,3 +1,6 @@
+The henry (symbolized H) is the unit of inductance.
+___
+
 $$
 \begin{align*}
 u &= \sqrt{2} U \sin(wt + \psi_u)

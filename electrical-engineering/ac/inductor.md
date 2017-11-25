@@ -1,3 +1,6 @@
+The unit of capacitance is the farad (symbol: F)
+___
+
 $$
 \begin{align*}
 i &= \sqrt{2} I \sin(wt + \psi_i)
