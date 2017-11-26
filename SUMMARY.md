@@ -17,8 +17,9 @@
     * [KCL and KVL](electrical-engineering/dc/kcl-and-kvl.md)
     * [Superposition](electrical-engineering/dc/superposition.md)
   * [AC](electrical-engineering/ac.md)
-    * [AC circuit](electrical-engineering/ac/ac-circuit.md)
+    * [Intuition](electrical-engineering/ac/intuition.md)
     * [Resistor](electrical-engineering/ac/resistor.md)
     * [Inductor](electrical-engineering/ac/inductor.md)
     * [Capacitor](electrical-engineering/ac/capacitor.md)
+    * [AC circuit](electrical-engineering/ac/ac-circuit.md)
 

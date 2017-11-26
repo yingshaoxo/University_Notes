@@ -1,16 +1,3 @@
-### 3 basic components in AP circuit: 
-
-#### Resistor
-> Resistors are used to reduce current flow, adjust signal levels, to divide voltages.
-
-#### Inductor
-> An inductor, is a two-terminal electrical component that stores electrical energy in **a magnetic field** when electric current flows through it.
-
-#### Capacitor.
-> A capacitor is a two-terminal electrical component that stores electrical energy in **an electric field**.
-
-___
-
 ### What's the purpose of 3 basic components in AP circuit?
 
 > If we need to block DC, we use a capacitor. 它具有充放电特性和阻止直流电流通过，允许交流电流通过的能力。
@@ -23,6 +10,52 @@ ___
 
 ### As the previous
 
-No matter in DC or AC, those components all have `current` and `voltage`.
+As far as I see, no matter in AC or DC, ohm's law is always useful:
+$$
+\dot U = \dot I \cdot R 
+$$
 
-So we have to find out how to represente those things using vector formula.
+> 1
+
+* But for different components, `R` is different.
+
+  In Resistor, `R` is $$R$$
+
+  In Inductor, `R` is $$wL$$
+
+  In Capacitor, `R` is $$\frac{1}{wC}$$
+
+* And of course, they becomes different in AC circuit with complex number(复数).
+  $$R$$ becomes $$R$$
+  $$wL$$ becomes $$jwL$$
+  $$\frac{1}{wc}$$ becomes $$-j \cdot \frac{1}{wc}$$
+  
+* Don't ask me how these things comes from, it's too complex to me to answer. Just remember it.
+
+> 2
+
+For each items, we no longer call them $$R$$, instead, we call them $$Z$$ (复阻抗)
+
+如果几个`阻抗`通过`串`或`并`合在一起， we call them `复阻抗`
+
+> 3
+
+于是，和 DC analysis 一样，串联电阻相加，并联$$\frac{(R1 \times R2)}{(R1+R2)}$$
+
+只是运算上要注意很多事，比如:
+
+$$
+\begin{align*}
+&\frac{a_1 \angle{b_1}}{a_2 \angle{b_2}} = \frac{a_1}{a_2} \cdot \angle{(b_1 - b_2)}
+\\ \\
+&a_1 \angle{b_1} \times a_2 \angle{b_2} = a_1 \cdot a_2 \angle{(b_1 + b_2)}
+\end{align*}
+$$
+
+If you want to do some addition or subtraction, convert your equations to another 复数形式 first (like $$a + jb$$)
+
+> 4 * (not important)
+
+如果得到的复阻抗，虚部为正，电感器起主导作用，整体电路呈感性
+
+如果得到的复阻抗，虚部为负，电容器起主导作用，整体电路呈容性
