@@ -25,9 +25,12 @@ $$
 
   In Capacitor, `R` is $$\frac{1}{wC}$$
 
-* And of course, they becomes different in AC circuit with complex number(复数).
+* And of course, they becomes different in AC circuit with complex number(复数)
+
   $$R$$ becomes $$R$$
+  
   $$wL$$ becomes $$jwL$$
+  
   $$\frac{1}{wc}$$ becomes $$-j \cdot \frac{1}{wc}$$
   
 * Don't ask me how these things comes from, it's too complex to me to answer. Just remember it.
@@ -40,7 +43,7 @@ For each items, we no longer call them $$R$$, instead, we call them $$Z$$ (复�
 
 > 3
 
-于是，和 DC analysis 一样，串联电阻相加，并联$$\frac{(R1 \times R2)}{(R1+R2)}$$
+于是，和 DC analysis 一样，串联电阻相加，并联电阻$$\frac{(R1 \times R2)}{(R1+R2)}$$
 
 只是运算上要注意很多事，比如:
 
