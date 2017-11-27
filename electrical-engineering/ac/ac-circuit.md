@@ -33,7 +33,7 @@ $$
   
   $$\frac{1}{wc}$$ becomes $$-j \cdot \frac{1}{wc}$$
   
-* Don't ask me how these things comes from, it's too complex to me to answer. Just remember it.
+* Don't ask me how these things come from, it's too complex for me to answer. Just remember it.
 
 > 2
 
