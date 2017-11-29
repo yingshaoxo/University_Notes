@@ -10,6 +10,7 @@
   * [Derivative and differential](high-level-math/derivative-and-differential.md)
     * [Formulas of derivative](high-level-math/derivative-and-differential/formulas-of-derivative.md)
     * [Use derivative formula](high-level-math/derivative-and-differential/use-derivative-formula.md)
+    * [Goes deeper](high-level-math/derivative-and-differential/goes-deeper.md)
 * [Electrical Engineering](electrical-engineering.md)
   * [The Terminologys](electrical-engineering/the-terminologys.md)
   * [DC](electrical-engineering/dc.md)
