@@ -25,4 +25,5 @@
     * [AC circuit](electrical-engineering/ac/ac-circuit.md)
     * 三相电
       * [三相的定义](electrical-engineering/ac/san-xiang-de-ding-yi.md)
+      * [星形联结](electrical-engineering/ac/xing-xing-lian-jie.md)
 
