@@ -23,4 +23,6 @@
     * [Inductor](electrical-engineering/ac/inductor.md)
     * [Capacitor](electrical-engineering/ac/capacitor.md)
     * [AC circuit](electrical-engineering/ac/ac-circuit.md)
+    * 三相电
+      * [三相的定义](electrical-engineering/ac/san-xiang-de-ding-yi.md)
 
