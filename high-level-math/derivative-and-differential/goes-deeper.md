@@ -22,4 +22,4 @@ Now, let me suppose that we have a function $$f(x)$$. whatever $$x$$ you got whi
 
 ![](/assets/critical_point.png)
 
-Critical means important. Those important point we need to care.
+Critical means important. Those important points we need to care.
