@@ -1,5 +1,10 @@
 > 一阶导数描述函数的单调性和极值
 
+The first derivation described whether the `y` of that function should increasing or decreasing.
+
+First decreasing, then increasing, you'll get a minimum
+
+First increasing, then decreasing, you'll get a maximum
 ___
 
 Increasing intervals
@@ -10,12 +15,13 @@ Decreasing intervals
 ___
 
 ```
-def f(x):
-    return x**2
-
 import numpy as np
 from scipy.misc import derivative
 
+# define a function
+def f(x):
+    return x**2
+    
 # define x range
 unit = 0.1
 input_x = np.arange(-2, 2 + unit, unit)
