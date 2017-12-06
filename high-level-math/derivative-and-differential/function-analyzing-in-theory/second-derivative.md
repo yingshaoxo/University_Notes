@@ -37,6 +37,8 @@ So according to first derivative theory, $$f^{\prime\prime}(x)$$ must be negativ
 For a function interval has the feature of $$f^{\prime\prime}(x) < 0$$, we call it `concave downwards`.
 ___
 
-$$f^{\prime\prime}(x)$$ first decreasing, then increasing, you'll get an inflection
+$$f^\prime(x)$$ first decreasing , then increasing, you'll get an inflection
 
-$$f^{\prime\prime}(x)$$ first increasing, then decreasing, you'll also get an inflection
+$$f^\prime(x)$$ first increasing, then decreasing, you'll also get an inflection
+
+![](/assets/sin_concavity.png)
