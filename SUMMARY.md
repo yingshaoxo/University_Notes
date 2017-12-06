@@ -11,8 +11,9 @@
     * [Formulas of derivative](high-level-math/derivative-and-differential/formulas-of-derivative.md)
     * [Use derivative formula](high-level-math/derivative-and-differential/use-derivative-formula.md)
     * [Goes deeper](high-level-math/derivative-and-differential/goes-deeper.md)
-    * Use derivative
+    * [Use derivative](high-level-math/derivative-and-differential/use-derivative.md)
       * [Relative or Absolute minima & maxima](high-level-math/derivative-and-differential/relative-or-absolute-minima-and-maxima.md)
+      * [Function analyzing in theory](high-level-math/derivative-and-differential/function-analyzing-in-theory.md)
 * [Electrical Engineering](electrical-engineering.md)
   * [The Terminologys](electrical-engineering/the-terminologys.md)
   * [DC](electrical-engineering/dc.md)
