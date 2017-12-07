@@ -6,7 +6,7 @@ ___
 ```
 import kivy
 
-print('Do some magic things.')
+print('Do something magic.')
 ```
 ___
 
