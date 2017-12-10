@@ -18,6 +18,8 @@
         * [Domain and Extreme Value](high-level-math/derivative-and-differential/function-analyzing-in-theory/domain-and-extreme-value.md)
         * [Overall change](high-level-math/derivative-and-differential/function-analyzing-in-theory/overall-change.md)
       * [Derivative use in reality](high-level-math/derivative-and-differential/derivative-use-in-reality.md)
+  * [Integration](high-level-math/integration.md)
+    * [Indefinite integral formulas ](high-level-math/integration/indefinite-integral-formulas.md)
 * [Electrical Engineering](electrical-engineering.md)
   * [The Terminologys](electrical-engineering/the-terminologys.md)
   * [DC](electrical-engineering/dc.md)
