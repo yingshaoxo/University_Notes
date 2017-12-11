@@ -9,3 +9,7 @@ Anti-derivative
 ___
 
 $$\text{Indefinite integration} = \text{Anti-derivative}$$
+
+___
+
+We call $$\sqrt{}$$ radical.
