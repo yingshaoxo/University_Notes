@@ -1,0 +1,1 @@
+![](/assets/definite_integral.png)

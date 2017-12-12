@@ -20,6 +20,7 @@
       * [Derivative use in reality](high-level-math/derivative-and-differential/derivative-use-in-reality.md)
   * [Integration](high-level-math/integration.md)
     * [Indefinite integral formulas ](high-level-math/integration/indefinite-integral-formulas.md)
+    * [Definite integral](high-level-math/integration/definite-integral.md)
 * [Electrical Engineering](electrical-engineering.md)
   * [The Terminologys](electrical-engineering/the-terminologys.md)
   * [DC](electrical-engineering/dc.md)
