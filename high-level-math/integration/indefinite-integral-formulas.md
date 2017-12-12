@@ -49,3 +49,21 @@ $$
 $$
 \int \frac{1}{x} dx = \ln{|x|} + C
 $$
+
+
+#### More Trigonometric functions
+
+$$
+\begin{align*}
+\\ \\
+& \int \sec^2(x) dx = tan(x) + C 
+\\ \\
+& \int \csc^2(x) dx = -\cot(x) + C 
+\\ \\
+& \int \sec(x) \tan(x) dx = \sec(x) + C 
+\\ \\
+& \int \csc(x) \cot(x) dx = -\csc(x) + C 
+\end{align*}
+$$
+
+

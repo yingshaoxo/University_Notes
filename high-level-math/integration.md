@@ -22,3 +22,10 @@ In general, $$\int f^\prime(x) dx = f(x) + C$$
 ___
 
 We call $$\sqrt{}$$ radical.
+___
+
+polynomial
+多项式
+
+trigonometric
+三角函数的
