@@ -8,6 +8,8 @@ ___
 Antiderivative is the reverse relation of derivative. 
 
 For example, we know that the derivative of $$x^2$$ is $$2x$$. This means that an antiderivative of $$2x$$ is $$x^2$$.
+
+Solving indefinite integral formula is kind of like do anti-derivative.
 ___
 
 The indefinite integral of $$2x$$ is expressed as $$\int 2x dx$$
