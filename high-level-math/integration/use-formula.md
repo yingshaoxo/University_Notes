@@ -39,11 +39,11 @@ $$
 \\ \\
 =& \int e^{-x^2} \cdot x dx    &\text{//composite function in front}
 \\ \\
-=& (-\frac{1}{2}) \int e^{-x^2} \cdot (-2)x dx    &\text{//find a way to make x = } (-x^2)^\prime = -2x
+=& (-\frac{1}{2}) \int e^{-x^2} \cdot (-2)x dx    &\text{//find a way to make x = } (-x^2)^\prime = -2x \text{ while keeping equation's balance}
 \\ \\
 =& (-\frac{1}{2}) \int e^{-x^2} \cdot d(-x^2)    &\text{//we knew }g^\prime(x)dx = dg(x)
 \\ \\
-=& (-\frac{1}{2}) e^{-x^2} + C    &\text{//see } -x^2 \text{ as a part, then use basic integral formula}
+=& (-\frac{1}{2}) e^{-x^2} + C    &\text{//see } -x^2 \text{ as a part, then apply basic integral formula}
 \end{align*}
 $$
 
@@ -54,7 +54,7 @@ $$
 \\ \\
 =&\int \cos(1-3x) \cdot 1dx    &\text{//don't forget 1}
 \\ \\
-=& (-\frac{1}{3})\int \cos(1-3x) \cdot (-3)1dx    &\text{//find a way to make 1 to -3 while keep equation}
+=& (-\frac{1}{3})\int \cos(1-3x) \cdot (-3)1dx    &\text{//find a way to make 1 to -3 while keeping equation's balance}
 \\ \\
 =& (-\frac{1}{3})\int \cos(1-3x) \cdot d(1-3x)    &\text{//} \frac{dy}{dx} dx = dy
 \\ \\
