@@ -21,6 +21,7 @@
   * [Integration](high-level-math/integration.md)
     * [Indefinite integral](high-level-math/integration/indefinite-integral.md)
       * [Basic formulas ](high-level-math/integration/basic-formulas.md)
+      * [Use formulas](high-level-math/integration/use-formulas.md)
     * [Definite integral](high-level-math/integration/definite-integral.md)
 * [Electrical Engineering](electrical-engineering.md)
   * [The Terminologys](electrical-engineering/the-terminologys.md)
