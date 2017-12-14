@@ -22,7 +22,7 @@ In general, $$\int f^\prime(x) dx = f(x) + C$$
 
 or
 
-$$\int \frac{dy}{x} dx = dy$$
+$$\int \frac{dy}{dx} dx = dy + C$$
 ___
 
 We call $$\sqrt{}$$ radical.
