@@ -1,3 +1,7 @@
+polynomial
+多项式
+___
+
 Basically, there are two types of indefinite integral formula.
 
 One is `polynomial`, which composed by $$+$$ and $$-$$
@@ -18,18 +22,3 @@ $$
 ___
 
 For the second one, oh my god, it's very complicated.
-
-##### method 1, (see it as a part)
-
-$$
-\begin{align*}
-&\int 1 dx &\text{//this make sense, }x^\prime = 1
-\\ \\ 
-=&
-
-\\ \\ \\ \\
-&\int (3x-1)^{2017} dx &\text{//a formula composed by} \times
-\\ \\ 
-=&
-\end{align*}
-$$

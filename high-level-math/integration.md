@@ -1,35 +1,17 @@
 Integration
 积分
-
-Indefinite integration
-不定积分
-
-Anti-derivative
-导数反向
 ___
 
-Antiderivative is the reverse relation of derivative. 
+#### The meaning of $$\int$$
 
-For example, we know that the derivative of $$x^2$$ is $$2x$$. This means that an antiderivative of $$2x$$ is $$x^2$$.
-___
 
-$$\text{Indefinite integration} = \text{Anti-derivative}$$
-___
+$$\int$$ is kind of like $$S$$ in $$sum$$.
 
-The indefinite integral of $$2x$$ is expressed as $$\int 2x dx$$
+$$\int_1^4 x$$ is different than $$\sum_{n=1}^{4} n$$. 
 
-In general, $$\int f^\prime(x) dx = f(x) + C$$
+In $$\sum_{n=1}^{4} n$$, n can only be increased by 1. So it will be $$1 + 2 + 3 + 4$$. 
 
-or
 
-$$\int \frac{dy}{dx} dx = dy + C$$
-___
+But in $$\int_1^4 x$$, $$x$$ can be any number in interval $$[1, 4]$$, $$dx$$ is another conception that not related in this $$x$$. So it will be $$1 + ... + 2 + ... + 3 + ... + 4$$
 
-We call $$\sqrt{}$$ radical.
-___
 
-polynomial
-多项式
-
-trigonometric
-三角函数的
