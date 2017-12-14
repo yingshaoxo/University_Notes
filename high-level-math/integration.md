@@ -19,6 +19,10 @@ ___
 The indefinite integral of $$2x$$ is expressed as $$\int 2x dx$$
 
 In general, $$\int f^\prime(x) dx = f(x) + C$$
+
+or
+
+$$\int \frac{dy}{x} dx = dy$$
 ___
 
 We call $$\sqrt{}$$ radical.
