@@ -4,7 +4,7 @@
 
 $$
 \begin{align*}
-U_{R2} = \frac{R_2}{R_1 + R_2} \cdot U_s
+U_{R_2} = \frac{R_2}{R_1 + R_2} \cdot U_s
 \end{align*}
 $$
 

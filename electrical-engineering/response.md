@@ -8,7 +8,8 @@ In English courses, I've learned `natural response` and `step response`, but if 
 
 ___
 
-But I can tell you what my Chinese said: 
-> See that change as two stage, before and after.
+But I can tell you what my Chinese teacher said: 
+> **See that changes as two stage, `before` and `after`**.
+> In the two stage, **inductor's current and capacitor's voltage won't change**.
 
 
