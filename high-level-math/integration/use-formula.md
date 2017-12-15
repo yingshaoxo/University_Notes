@@ -21,9 +21,9 @@ $$
 $$
 ___
 
-For the second one, oh my god, it's very complicated.
+For the second one, oh my god, it's very complicate.
 
-There's a template:
+Here's a template:
 $$
 \int f(g(x)) \cdot g^\prime(x)dx
 \\ \\

@@ -39,4 +39,5 @@
       * [星形联结](electrical-engineering/ac/xing-xing-lian-jie.md)
       * [三角形联结](electrical-engineering/ac/san-jiao-xing-lian-jie.md)
       * [实际电路](electrical-engineering/ac/shi-ji-dian-lu.md)
+  * [Response](electrical-engineering/response.md)
 
