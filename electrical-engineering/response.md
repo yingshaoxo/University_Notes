@@ -18,6 +18,16 @@ ___
 
 ![](/assets/dianlu_StateChange0.png)
 
+```
+    \draw (0, 0) to [V=$6V$](0, 4)
+    to [R=$2 \Omega$, i>^=$i_1$](3, 4) 
+    (3, 4) to [opening switch](6, 4)
+    to [R=$4 \Omega$, i>^=$i_2$](6, 0)
+    to (3, 0)
+    (3, 4) to [C, l_=$C$, v^=$u_C$, i>_=$i_C$](3, 0)
+    to (0, 0)
+```
+
 (1)
 $$t=0$$ , capacitor 变成开路，$$I_C(0_\_) = 0$$
 
