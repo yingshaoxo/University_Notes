@@ -9,7 +9,13 @@ In English courses, I've learned `natural response` and `step response`, but if 
 ___
 
 But I can tell you what my Chinese teacher said: 
-> **See that changes as two stage, `before` and `after`**.
+> **See that changes as two stage, `before`($$0_-$$) and `after`($$0_+$$)**.
 > In the two stage, **inductor's current and capacitor's voltage won't change**.
+
+___
+
+在图示电路中，试确定开关 $$S$$ 刚断开后的电压 $$u_c$$ 和 电流 $$i_c$$、$$i_1$$、$$i_2$$ 的初始值（$$s$$ 断开前电路已处于稳态）
+
+![](/assets/dianlu_StateChange0.png)
 
 
