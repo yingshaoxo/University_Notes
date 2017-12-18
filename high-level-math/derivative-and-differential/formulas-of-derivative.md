@@ -1,5 +1,18 @@
 In fact, I don't wanna write this. But I'm in china school, they don't care what you have learned, they only care about what you can do on test paper.
+___
 
+#### How to read
+$$\underline{sine} = \sin$$
+
+$$\underline{co} \underline{sine} = \cos$$
+
+$$\underline{tan} \underline{gent} = \tan$$
+
+$$\underline{co} \underline{tangent} = \cot$$
+
+$$\underline{se} \underline{cant} = \sec$$
+
+$$\underline{cose} \underline{cant} = \csc$$
 ___
 
 #### Basic Derivative Formula
@@ -29,3 +42,17 @@ $$
 
 \end{align*}
 $$
+___
+
+#### Additional
+$$
+\begin{align*}
+\csc x = \frac{1}{\sin x}
+\\ \\ 
+\sec x = \frac{1}{\cos x}
+\\ \\
+\cot x = \frac{1}{\tan x}
+\end{align*}
+$$
+
+ 
