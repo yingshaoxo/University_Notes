@@ -59,5 +59,28 @@ $$
 =& (-\frac{1}{3})\int \cos(1-3x) \cdot d(1-3x)    &\text{//} \frac{dy}{dx} dx = dy
 \\ \\
 =& (-\frac{1}{3}) \sin(1-3x) + C    &\text{//see 1-3x as a part, then use basic formula}
+\\ \\ \\
 \end{align*}
 $$
+___
+
+From these exercises, we know a criticle principle is: $$x$$ of $$dx$$ is the original function, it can be just a $$x$$, it also can be, for example, $$x^2$$.
+
+$$
+\begin{align*}
+\int (x) dx^2 = \int ((x^2)^\prime \cdot x) dx = \int (2x \cdot x) dx = \int (2x^2) dx
+\end{align*}
+$$
+
+$$
+\begin{align*}
+\\
+&\int (1 \cdot x) dx    &\text{where's 1 come from? } x^\prime = 1
+\end{align*}
+$$
+
+
+
+
+
+
