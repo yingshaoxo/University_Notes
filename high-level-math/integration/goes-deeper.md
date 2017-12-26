@@ -57,7 +57,11 @@ $$
 \\ \\
 =& \int \frac{1}{(x+a)(x-a)} dx
 \\ \\
-=& \frac{1}{2a} \int (\frac{1}{x-a} - \frac{1}{x+a}) dx    &\text{//} \frac{1}{x-a} - \frac{1}{x+a} = \frac{x+a-x+a}{(x-a)(x+a)} = \frac{2a}{(x-a)(x+a)} \text{ Because }2a \neq 1 \text{, divide 2a, that is, times} \frac{1}{2a} \text{in the beginning}
+=& \frac{1}{2a} \int (\frac{1}{x-a} - \frac{1}{x+a}) dx
+\\ \\
+\text{//}& \frac{1}{x-a} - \frac{1}{x+a} = \frac{x+a-x+a}{(x-a)(x+a)} = \frac{2a}{(x-a)(x+a)} 
+\\ \\
+\text{//}&\text{ Because }2a \neq 1 \text{, divide 2a, that is, times} \frac{1}{2a} \text{in the beginning}
 \\ \\
 =& \frac{1}{2a}(\int \frac{1}{x-a} dx - \int \frac{1}{x+a} dx)
 \\ \\
