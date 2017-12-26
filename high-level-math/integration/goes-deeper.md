@@ -97,3 +97,13 @@ $$
 =& -2\sqrt{x} - 2 \ln{|\sqrt{x}-1|} + C
 \end{align*}
 $$
+
+___
+
+#### Conclusion
+
+1. Keep equation balance
+
+2. Best way to deal with $$\sqrt{}$$ is to replace it with a symbol
+
+3. Molecular is a constant is more convenient for us to solve equation, especially when it is $$1$$
