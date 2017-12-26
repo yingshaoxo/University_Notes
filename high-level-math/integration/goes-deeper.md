@@ -48,3 +48,52 @@ We knew that $$x$$ of $$dx$$ is the original function, so do $$\frac{1}{a^2}$$. 
 As for $$\int \frac{1}{1 + (\frac{x}{a})^2}$$, it must interact with $$dx$$, then it becomes original function.
 
 You can see $$\int (...) d$$ as a whole thing. you also can extract a constant from it, we will talk about it later.
+
+
+$$
+\begin{align*}
+\\ \\ \\
+&\int \frac{1}{x^2 - a^2} dx ,(a \neq 0)
+\\ \\
+=& \int \frac{1}{(x+a)(x-a)} dx
+\\ \\
+=& \frac{1}{2a} \int (\frac{1}{x-a} - \frac{1}{x+a}) dx    &\text{//} \frac{1}{x-a} - \frac{1}{x+a} = \frac{x+a-x+a}{(x-a)(x+a)} = \frac{2a}{(x-a)(x+a)} \text{ Because }2a \neq 1 \text{, divide 2a, that is, times} \frac{1}{2a} \text{in the beginning}
+\\ \\
+=& \frac{1}{2a}(\int \frac{1}{x-a} dx - \int \frac{1}{x+a} dx)
+\\ \\
+=& \frac{1}{2a}(\int \frac{1}{x-a} d(x-a) - \int \frac{1}{x+a} d(x-a))    &\text{//don't forget the basic temple for solving integral eqution}
+\\ \\
+=& \frac{1}{2a} \ln{|\frac{x-a}{x+a}|} + C
+\\ \\ \\
+\end{align*}
+$$
+
+___
+
+#### Complex one
+
+$$
+\begin{align*}
+&\int \frac{1}{1 - \sqrt{x}} dx
+\\ \\
+& \text{make } \sqrt{x}=t \text{ , then } x=t^2
+\\ \\
+=& \int \frac{1}{1-t} d(t^2)
+\\ \\
+=& \int \frac{2t}{1-t} d(t)
+\\ \\
+=& 2 \int \frac{t}{1-t} d(t)
+\\ \\
+=& -2 \int \frac{t}{t-1} d(t)
+\\ \\
+=& -2 \int \frac{t-1+1}{t-1} d(t)
+\\ \\
+=& -2 \int \frac{t-1}{t-1} dt -2 \int \frac{1}{t-1} dt
+\\ \\
+=& -2 \int 1 dt -2 \int \frac{1}{t-1} dt
+\\ \\
+=& -2t - 2 \ln{|t-1|} + C
+\\ \\
+=& -2\sqrt{x} - 2 \ln{|\sqrt{x}-1|} + C
+\end{align*}
+$$
