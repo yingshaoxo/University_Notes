@@ -44,4 +44,5 @@
   * [Voltage and Current Rule in Circuit](electrical-engineering/voltage-and-current-rule-in-circuit.md)
   * [Response](electrical-engineering/response.md)
     * [Foundations](electrical-engineering/response/foundations.md)
+    * [零输入响应](electrical-engineering/response/ling-shu-ru-xiang-ying.md)
 
