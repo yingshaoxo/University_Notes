@@ -43,4 +43,5 @@
       * [实际电路](electrical-engineering/ac/shi-ji-dian-lu.md)
   * [Voltage and Current Rule in Circuit](electrical-engineering/voltage-and-current-rule-in-circuit.md)
   * [Response](electrical-engineering/response.md)
+    * [Foundations](electrical-engineering/response/foundations.md)
 
