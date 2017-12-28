@@ -23,6 +23,7 @@
       * [Basic formulas ](high-level-math/integration/basic-formulas.md)
       * [Use formula](high-level-math/integration/use-formula.md)
       * [Goes deeper](high-level-math/integration/goes-deeper.md)
+      * [Integration by parts](high-level-math/integration/integration-by-parts.md)
     * [Definite integral](high-level-math/integration/definite-integral.md)
       * [Properties of definite integral](high-level-math/integration/definite-integral/properties-of-definite-integral.md)
 * [Electrical Engineering](electrical-engineering.md)

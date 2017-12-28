@@ -1,6 +1,12 @@
 > 一阶导数描述函数的单调性和极值
 
-The first derivation described whether the `y` of that function should increasing or decreasing.
+The first derivation described whether the `y` of that function should increasing or decreasing:
+$$
+\text{First derivation} > 0 \text{ , increasing}
+\\
+\text{First derivation} > 0 \text{ , increasing}
+\\
+$$
 
 First decreasing, then increasing, you'll get a minimum
 
