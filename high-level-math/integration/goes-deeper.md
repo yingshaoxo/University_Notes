@@ -1,6 +1,6 @@
 #### Priciple
 
-When we goes down to those hard problems, I want to let you know a priciple we using in general math problem:
+With goes down to those hard problems, I want to let you know a priciple that we use in general math problem:
 
 > We always split hard problem to multiple easy problems or step by step simplify hard problem.
 

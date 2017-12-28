@@ -2,7 +2,7 @@ polynomial
 多项式
 ___
 
-Basically, there are two types of indefinite integral formula.
+Basically, there are two types of indefinite integral.
 
 One is `polynomial`, which composed by $$+$$ and $$-$$
 
@@ -23,7 +23,7 @@ ___
 
 For the second one, oh my god, it's very complicate.
 
-Here's a template:
+Here's a basic template:
 $$
 \int f(g(x)) \cdot g^\prime(x)dx
 \\ \\
