@@ -29,7 +29,7 @@ $$
 \\ \\
 =& \frac{1}{a} \int \frac{1}{\sqrt{1-(\frac{x}{a})^2}} dx
 \\ \\
-=& 1 \int \frac{1}{\sqrt{1-(\frac{x}{a})^2}} d(\frac{x}{a})    &\text{//divide } a \text{in x of dx while keep equation balance}
+=& 1 \int \frac{1}{\sqrt{1-(\frac{x}{a})^2}} d(\frac{x}{a})    &\text{//divide } a \text{ in x of dx while keep equation balance}
 \\ \\
 =& \arcsin(\frac{x}{a}) + C
 \\ \\ \\
@@ -110,4 +110,4 @@ ___
 
 2. Best way to deal with $$\sqrt{}$$ is to replace it with a symbol
 
-3. Molecular is a constant is more convenient for us to solve equation, especially when it is $$1$$
+3. Molecular is a constant is more convenient for us to solve equation, especially when it is $$1$$ (for example: extract a constant out, and put it in front of $$\int$$)
