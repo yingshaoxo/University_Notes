@@ -46,4 +46,5 @@
   * [Response](electrical-engineering/response.md)
     * [Foundations](electrical-engineering/response/foundations.md)
     * [零输入响应](electrical-engineering/response/ling-shu-ru-xiang-ying.md)
+    * [零状态响应](electrical-engineering/response/ling-zhuang-tai-xiang-ying.md)
 
