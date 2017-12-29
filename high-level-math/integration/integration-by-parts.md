@@ -11,7 +11,23 @@ f(x)g(x) &= \int f^\prime(x)g(x) \cdot dx + \int f(x)g^\prime(x) \cdot dx
 \\ \\
 f(x)g(x) - \int f^\prime(x)g(x) \cdot dx &= \int f(x)g^\prime(x) \cdot dx
 \\ \\
+&\Downarrow
+\\ \\
 \int f(x)g^\prime(x) \cdot dx &= f(x)g(x) - \int f^\prime(x)g(x) \cdot dx
 \end{align*} 
 $$
+___
 
+$$
+\begin{align*}
+\int f(x)g^\prime(x) \cdot dx &= f(x)g(x) - \int f^\prime(x)g(x) \cdot dx
+\\ \\
+\int x \cos{x} dx &=  x \sin{x} - \int 1 \sin{x} \cdot dx
+\\ \\
+&= x \sin{x} - (-\cos{x} + C)
+\\ \\
+&= x \sin{x} + \cos{x} - C
+\\ \\
+&= x \sin{x} + \cos{x} + C
+\end{align*}
+$$
