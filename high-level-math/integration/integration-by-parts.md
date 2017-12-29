@@ -31,3 +31,16 @@ $$
 &= x \sin{x} + \cos{x} + C
 \end{align*}
 $$
+___
+
+$$
+\begin{align*}
+& \int f(x)g^\prime(x) \cdot dx = f(x)g(x) - \int f^\prime(x)g(x) \cdot dx
+\\ \\
+\int (\ln{x}) dx = \int (\ln{x}) \cdot 1 dx &= \ln{x} \cdot x - \int \frac{1}{x} \cdot x dx
+\\ \\
+&= \ln{x} \cdot x - x + C
+\end{align*}
+$$
+___
+
