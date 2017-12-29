@@ -79,7 +79,7 @@ $$
 \\ \\
 2 \int e^x \cos{x} dx &= e^x \sin{x} + e^x \cos{x}
 \\ \\
-\int e^x \cos{x} dx &= \frac{e^x \sin{x} + e^x \cos{x}}{2}
+\int e^x \cos{x} dx &= \frac{e^x \sin{x} + e^x \cos{x}}{2} + C
 \end{align*}
 $$
 ___
