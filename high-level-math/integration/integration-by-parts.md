@@ -50,15 +50,36 @@ $$
 \\ \\ \\
 \int x^2 e^x dx &= x^2 e^x - \int 2x e^x dx
 \\ \\
-\int x^2 e^x dx &= x^2 e^x - 2\int x e^x dx
+\int x^2 e^x dx &= x^2 e^x - 2\underline{\int x e^x dx}
 \\ \\ \\
-\int x e^x dx &= x e^x - \int 1 e^x dx
+\underline{\int x e^x dx} &= x e^x - \int 1 e^x dx
 \\ \\
 &= x e^x - e^x
 \\ \\ \\
-\int x^2 e^x dx &= x^2 e^x - 2(x e^x - e^x)
+\int x^2 e^x dx &= x^2 e^x - 2(\underline{x e^x - e^x})
 \\ \\
 &= x^2 e^x - 2x e^x + 2e^x
+\end{align*}
+$$
+___
+
+$$
+\begin{align*}
+\int f(x)g^\prime(x) dx &= f(x)g(x) - \int f^\prime(x)g(x) dx
+\\ \\ \\
+\int e^x \cos{x} dx &= e^x \sin{x} - \underline{\int e^x \sin{x} dx}
+\\ \\ \\
+\underline{\int e^x \sin{x} dx} &= e^x (-\cos{x}) - \int e^x (-\cos{x}) dx
+\\ \\
+&= - e^x \cos{x} + \int e^x \cos{x} dx
+\\ \\ \\
+\int e^x \cos{x} dx &= e^x \sin{x} - (\underline{- e^x \cos{x} + \int e^x \cos{x} dx})
+\\ \\
+&= e^x \sin{x} + e^x \cos{x} - \int e^x \cos{x} dx
+\\ \\
+2 \int e^x \cos{x} dx &= e^x \sin{x} + e^x \cos{x}
+\\ \\
+\int e^x \cos{x} dx &= \frac{e^x \sin{x} + e^x \cos{x}}{2}
 \end{align*}
 $$
 ___
