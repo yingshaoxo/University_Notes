@@ -35,3 +35,19 @@ ___
 $$f(\infty)$$ 永远在开关改变后的电路得到
 ___
 
+
+![](/assets/Response_FullVersion.png)
+
+```
+    \draw (0, 0) to [V=$U_s$](0, 4)
+    to [short, i=$i$](3, 4)
+    (3, 4) to [C, l=$C_1$, v=$u_{C1}$](3, 2) 
+    to [R, l_=$R_1$](3, 0) to(0, 0)
+    
+    (3, 4) to (6, 4)
+    to [R=$R_2$](6, 2)
+    
+    (6, 2) to [opening  switch, l=$S$](3, 2)
+    (6, 2) to [C, l=$C_2$, v=$u_{C2}$](6, 0)
+    to (3, 0);
+```
