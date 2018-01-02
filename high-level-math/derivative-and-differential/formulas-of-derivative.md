@@ -47,11 +47,21 @@ ___
 #### Additional
 $$
 \begin{align*}
-\csc x = \frac{1}{\sin x}
+&\csc x = \frac{1}{\sin x}
 \\ \\ 
-\sec x = \frac{1}{\cos x}
+&\sec x = \frac{1}{\cos x}
 \\ \\
-\cot x = \frac{1}{\tan x}
+&\cot x = \frac{1}{\tan x}
+\\ \\ \\
+&\sin ^2{x} + \cos ^2{x} = 1
+\\ \\
+&1 + \tan ^2{x} = \sec ^2{x}
+\\ \\
+&1 + \cot ^2{x} = \csc ^2{x}
+\\ \\
+&\tan{x} = \frac{\sin{x}}{\cos{x}}
+\\ \\
+&\cot{x} = \frac{\cos{x}}{\sin{x}}
 \end{align*}
 $$
 
