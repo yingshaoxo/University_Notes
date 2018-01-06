@@ -10,4 +10,4 @@ ___
 
 1. Never give up finding another solution for math problems.
 
-2. Put math into reality, which are physical and programming.
+2. Put math into reality, which is physical and programming.
