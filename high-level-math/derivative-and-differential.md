@@ -1,10 +1,10 @@
 #### Let's do basic
 
-`Derivative`\(衍生物或派生物\) is some extracted thing from another thing. It may be a feature or characteristic, it's a abstract model for describing one thing in a higher view.
+`Derivative`\(衍生物或派生物\) is some extracted thing from another thing. It may be a feature or characteristic, it's an abstract model for describing one thing in a higher view.
 
-`Delta`\($$\Delta$$\) is a duration expressing the difference between two date, time or date-time. We can seemly see this as a distance between two values.
+`Delta`\($$\Delta$$\) is a duration expressing the difference between two dates, time or date-time. We can seemly see this as a distance between two values.
 
-`Differential` is a descriptor for describing difference between two things.
+`Differential` is a descriptor for describing the difference between two things.
 
 **Sometimes we can see **`Delta`** and **`Differential`** as the same thing.**
 
@@ -46,7 +46,7 @@ $$
 
 #### What is derivative?
 
-If it really have some meaning, that must be describing the average change in `y` when `x` get changed by this formula: $$\lim_{\Delta x \rightarrow 0}{\frac{\Delta y}{\Delta x}}$$
+If it really has some meaning, that must be describing the average change in `y` when `x` get changed by this formula: $$\lim_{\Delta x \rightarrow 0}{\frac{\Delta y}{\Delta x}}$$
 
 In that formula, when we assume that $$\Delta x$$\(`the change in x`\) is very small, near to 0, then $$\Delta y$$\(`the change in y`\) changes correspondingly. In that case, when the change in x and y is very small, $$\frac{\Delta y}{\Delta x}$$ becomes a tending, indicated where y is about to going.
 
@@ -56,7 +56,7 @@ In that formula, when we assume that $$\Delta x$$\(`the change in x`\) is very s
 
 Let me assume if we got a point A in a function curve.
 
-The derivative of that function in that point is the slope of the tangent line at that point in that curve.
+The derivative of that function at that point is the slope of the tangent line at that point in that curve.
 
 ---
 
