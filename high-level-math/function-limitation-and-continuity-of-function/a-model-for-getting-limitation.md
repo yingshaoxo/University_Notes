@@ -2,14 +2,14 @@
 If anything goes well, it indeed has a general model for you guys getting limitation from a limit equation.
 
 ```
-if equation is a fraction:
+if an equation is a fraction:
     if fraction + or - a fraction:
         reduce fractions into one fraction by setting a common denominator
-    if equation has radical sign:
+    if the equation has a radical sign:
         get rid of it by rationalizing.
     if put giving_x into equation getting "0/0":
-        do factorization, get rid of one factor which make equation looks like "0/0"
-if equation is not a fraction: # combined with simple +-x/
+        do factorization, get rid of one factor which makes equation looks like "0/0"
+if the equation is not a fraction: # combined with simple +-x/
     put giving_x in equation directly
 ```
 
