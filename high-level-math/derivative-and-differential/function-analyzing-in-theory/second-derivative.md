@@ -21,7 +21,7 @@ That means $$f^\prime(x)$$ keep increasing in this interval.
 
 So according to the first derivative theory, $$f^{\prime\prime}(x)$$ must be positive.
 
-For a function interval has a feature of $$f^{\prime\prime}(x) > 0$$, we call it `concave upwards`.
+For a function interval has a feature of $$f^{\prime\prime}(x) > 0$$, we call it `concave upwards` (凸).
 ___
 
 This is a part graph about $$f(x)=-x^2$$ 
@@ -34,7 +34,7 @@ That means $$f^\prime(x)$$ keep decreasing in this interval.
 
 So according to the first derivative theory, $$f^{\prime\prime}(x)$$ must be negative.
 
-For a function interval has a feature of $$f^{\prime\prime}(x) < 0$$, we call it `concave downwards`.
+For a function interval has a feature of $$f^{\prime\prime}(x) < 0$$, we call it `concave downwards` (凹).
 ___
 
 $$f^\prime(x)$$ first decreasing , then increasing, you'll get an inflection
