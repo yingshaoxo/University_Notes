@@ -4,7 +4,7 @@ The first derivation described whether the `y` of that function should increasin
 $$
 \text{First derivation} > 0 \text{ , increasing}
 \\
-\text{First derivation} > 0 \text{ , increasing}
+\text{First derivation} < 0 \text{ , decreasing}
 \\
 $$
 
