@@ -16,7 +16,7 @@ U_A &= U_{max} \sin{wt}
 \\ \\
 U_B &= U_{max} sin{(wt-{120}^\circ)}
 \\ \\
-U_B &= U_{max} sin{(wt-{120}^\circ-{120}^\circ)} = U_{max} sin{(wt+{120}^\circ)}
+U_C &= U_{max} sin{(wt-{120}^\circ-{120}^\circ)} = U_{max} sin{(wt+{120}^\circ)}
 \end{align*}
 $$
 
