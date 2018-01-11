@@ -1,4 +1,4 @@
-> Before we going any further, we need to know something foundamental first.
+> Before we go any further, we need to know something fundamental first.
 
 ___
 
@@ -18,14 +18,16 @@ ___
 Current: 
 $$
 \begin{align*}
-&1kA = 10^3A    & 1mA = 10^{-3}A    & 1\mu A = 10^{-6}
+&1kA = 10^3A    & 1mA = 10^{-3}A
+\\ \\
+&1\mu A = 10^{-6}
 \end{align*}
 $$
 
 Capacitance: 
 $$
 \begin{align*}
-&1\mu F = 10^{-6}F    & 1pA = 10^{-12}F
+&1\mu F = 10^{-6}F    & 1pF = 10^{-12}F
 \end{align*}
 $$
 
