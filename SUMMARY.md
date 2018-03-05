@@ -50,4 +50,7 @@
     * [一阶电路的全响应](electrical-engineering/response/yi-jie-dian-lu-de-quan-xiang-ying.md)
 * Analog Electronics
   * [Technical terms 1](technical-terms-1.md)
+  * [DC stable source circuit 的分析与应用](dc-stable-source-circuit-de-fen-xi-yu-ying-yong.md)
+    * [二极管的特性与应用  ](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/er-ji-guan-de-te-xing-yu-ying-yong.md)
+      * [半导体](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/er-ji-guan-de-te-xing-yu-ying-yong/ban-dao-ti.md)
 
