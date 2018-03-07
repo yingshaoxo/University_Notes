@@ -54,4 +54,5 @@
     * [二极管的特性与应用  ](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/er-ji-guan-de-te-xing-yu-ying-yong.md)
       * [半导体](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/er-ji-guan-de-te-xing-yu-ying-yong/ban-dao-ti.md)
       * [PN junction](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/er-ji-guan-de-te-xing-yu-ying-yong/pn-junction.md)
+      * [Diode](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/er-ji-guan-de-te-xing-yu-ying-yong/diode.md)
 
