@@ -57,4 +57,5 @@
       * [Diode](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/er-ji-guan-de-te-xing-yu-ying-yong/diode.md)
 * Digital Electronic Technology 
   * [Logic Gate](logic-gate.md)
+  * [Logic expressions](logic-expressions.md)
 
