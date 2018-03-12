@@ -26,6 +26,7 @@
       * [Integration by parts](high-level-math/integration/integration-by-parts.md)
     * [Definite integral](high-level-math/integration/definite-integral.md)
       * [Properties of definite integral](high-level-math/integration/definite-integral/properties-of-definite-integral.md)
+      * [Second fundamental theorem of calculus](high-level-math/integration/definite-integral/second-fundamental-theorem-of-calculus.md)
 * [Electrical Engineering](electrical-engineering.md)
   * [The Terminologys](electrical-engineering/the-terminologys.md)
   * [DC](electrical-engineering/dc.md)
