@@ -59,6 +59,7 @@
 * Digital Electronic Technology 
   * [Logic Gate](logic-gate.md)
   * [Logic expressions](logic-expressions.md)
+  * [Karnaugh map](karnaugh-map.md)
 * [Principles of Communications](principles-of-communications.md)
   * [Overviews](overviews.md)
 
