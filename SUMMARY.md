@@ -57,6 +57,8 @@
       * [PN junction](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/er-ji-guan-de-te-xing-yu-ying-yong/pn-junction.md)
       * [Diode](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/er-ji-guan-de-te-xing-yu-ying-yong/diode.md)
       * [测试二极管](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/er-ji-guan-de-te-xing-yu-ying-yong/ce-shi-er-ji-guan.md)
+    * [整流滤波电路的分析与应用](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/zheng-liu-lv-bo-dian-lu-de-fen-xi-yu-ying-yong.md)
+      * [Rectifier circuit](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/zheng-liu-lv-bo-dian-lu-de-fen-xi-yu-ying-yong/rectifier-circuit.md)
 * Digital Electronic Technology 
   * [Logic Gate](logic-gate.md)
   * [Logic expressions](logic-expressions.md)
