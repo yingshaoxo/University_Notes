@@ -56,6 +56,7 @@
       * [半导体](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/er-ji-guan-de-te-xing-yu-ying-yong/ban-dao-ti.md)
       * [PN junction](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/er-ji-guan-de-te-xing-yu-ying-yong/pn-junction.md)
       * [Diode](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/er-ji-guan-de-te-xing-yu-ying-yong/diode.md)
+      * [测试二极管](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/er-ji-guan-de-te-xing-yu-ying-yong/ce-shi-er-ji-guan.md)
 * Digital Electronic Technology 
   * [Logic Gate](logic-gate.md)
   * [Logic expressions](logic-expressions.md)
