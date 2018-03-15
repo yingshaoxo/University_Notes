@@ -15,7 +15,7 @@ When I look at this picture, all I thinking is: wow, my teacher got wrong.
 
 ___
 
-#### 桥式(全波)整流电路把交流电中的负电流也用上了
+#### 桥式(全波)整流电路把交流电中的负电流用上了
 
 ![](/assets/qiaoshi_zhengliu_dianlu.png)
 
