@@ -65,4 +65,5 @@
   * [Karnaugh map](karnaugh-map.md)
 * [Principles of Communications](principles-of-communications.md)
   * [Overviews](overviews.md)
+  * [PCM](pcm.md)
 
