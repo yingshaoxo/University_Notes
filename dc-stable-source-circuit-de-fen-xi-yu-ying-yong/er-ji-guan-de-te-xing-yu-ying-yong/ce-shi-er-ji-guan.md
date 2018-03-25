@@ -31,5 +31,5 @@ ___
 会，不过我们先讲讲什么是`量程`: 就是选择 $$\Omega$$ or $$K \Omega$$ 之类的
 
 1. 万用表电阻档的内阻随着档位的增高而加大
-2. $$R \times 1K \Omega$$ 时二极管处电流大； $$R \times 100 \Omega$$ 时二极管处电流小
+2. $$\because I=\frac{U}{R} \text{, } \therefore R \times 1K \Omega$$ 时二极管处电流小； $$R \times 100 \Omega$$ 时二极管处电流大
 3. $$\because R=\frac{U}{I} \text{, } \therefore R \times 1K \Omega \text{时二极管电阻大， } R \times 100 \Omega时二极管电阻小$$
