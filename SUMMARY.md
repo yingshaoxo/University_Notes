@@ -61,6 +61,7 @@
     * [整流滤波电路的分析与应用](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/zheng-liu-lv-bo-dian-lu-de-fen-xi-yu-ying-yong.md)
       * [Rectifier circuit](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/zheng-liu-lv-bo-dian-lu-de-fen-xi-yu-ying-yong/rectifier-circuit.md)
     * [直流稳压电路的分析](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/zhi-liu-wen-ya-dian-lu-de-fen-xi.md)
+      * [Zener diode](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/zhi-liu-wen-ya-dian-lu-de-fen-xi/zener-diode.md)
 * Digital Electronic Technology 
   * [Logic Gate](logic-gate.md)
   * [Logic expressions](logic-expressions.md)
