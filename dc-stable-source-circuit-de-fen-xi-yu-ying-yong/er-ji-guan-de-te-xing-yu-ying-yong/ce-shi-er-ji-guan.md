@@ -1,3 +1,6 @@
+> Measuring the diode's resistance, if the reading indicates infinity in one way and a small value the other way, then the diode is working.
+___
+
 > 虽然觉得万用表是垃圾，数字电表才是现在该用的，但老师要教这个，学校要考这个，我也没办法
 
 一切要从万用表说起：
