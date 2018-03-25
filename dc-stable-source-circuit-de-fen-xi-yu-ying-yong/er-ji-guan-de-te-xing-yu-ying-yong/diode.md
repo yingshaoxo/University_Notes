@@ -8,6 +8,8 @@
 
 #### 二、volt-ampere characteristic （伏安特性）
 ![](/assets/volt-ampere characteristic.png)
+![](/assets/volt-ampere characteristic2.png)
+
 1. 正向（正半轴；三角形那边输入正电）
 $$
 \begin{align*}
