@@ -50,3 +50,5 @@ If the current in the load Iout tends to fall, the voltage across the load would
 
 + Variations in Input Voltage
 If the input voltage rises this will cause more supply current $$I_s$$ to flow into the circuit. Without the zener shunt regulator, this would have the effect of making the output voltage $$U_{out}$$ rise, but any tendency for $$U_{out}$$ to rise will simply cause the diode to conduct more heavily, absorbing the extra supply current without any increase in $$U_{Z}$$ thus keeping the output voltage constant. A fall in the input voltage would likewise cause a reduction in zener current, again keeping $$U_{out}$$ steady.
+
+![](/assets/shunt voltage regulator.png)
