@@ -28,6 +28,8 @@
       * [Properties of definite integral](high-level-math/integration/definite-integral/properties-of-definite-integral.md)
       * [Second fundamental theorem of calculus](high-level-math/integration/definite-integral/second-fundamental-theorem-of-calculus.md)
       * [Multi-method for solving definite integral](high-level-math/integration/definite-integral/multi-method-for-solving-definite-integral.md)
+  * [Multivariable calculus](high-level-math/multivariable-calculus.md)
+    * [Limitation](high-level-math/multivariable-calculus/limitation.md)
 * [Electrical Engineering](electrical-engineering.md)
   * [The Terminologys](electrical-engineering/the-terminologys.md)
   * [DC](electrical-engineering/dc.md)
