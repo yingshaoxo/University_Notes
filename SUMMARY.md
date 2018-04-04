@@ -66,6 +66,7 @@
       * [Zener diode](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/zhi-liu-wen-ya-dian-lu-de-fen-xi/zener-diode.md)
       * [Shunt voltage regulators](dc-stable-source-circuit-de-fen-xi-yu-ying-yong/zhi-liu-wen-ya-dian-lu-de-fen-xi/shunt-voltage-regulators.md)
   * [Thyristor](thyristor.md)
+  * [Amplifying circuit](amplifying-circuit.md)
 * Digital Electronic Technology 
   * [Logic Gate](logic-gate.md)
   * [Logic expressions](logic-expressions.md)
