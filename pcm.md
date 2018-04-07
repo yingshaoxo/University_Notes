@@ -12,3 +12,6 @@ ___
 #### 3. Encoding: convert that value to binary value
 
 ![](/assets/PCM1.png)
+
+___
+
