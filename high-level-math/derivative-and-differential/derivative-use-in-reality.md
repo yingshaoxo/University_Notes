@@ -17,7 +17,7 @@ while True:
         i += 1
     else:
         return molecular_limitation_value / denominator_limitation_value
-    
+
     if i > 999:
         print("You can't use hospital rule in this formula.")
 ```

@@ -13,10 +13,10 @@ Here if we set $$1$$ as $$A$$, then $$0$$ is $$\overline{A}$$
 Here if we set $$1$$ as $$B$$, then $$0$$ is $$\overline{B}$$
 
 Here $$CD$$ or $$AB$$ both connected to the line besides it.
- 
+
 So you can represent $$m7$$ as $$\overline{A}BCD(01 11)$$，$$m13$$ as $$AB\overline{C}D(1101)$$
 
-Google for more information. or if you know Chinese very well, see following. 
+Google for more information. or if you know Chinese very well, see following.
 ___
 
 0. 翻出你的教材对照着看
