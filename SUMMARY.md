@@ -31,6 +31,7 @@
    * [Multivariable calculus](high-level-math/multivariable-calculus.md)
        * [Limitation](high-level-math/multivariable-calculus/limitation.md)
        * [Partial derivatives](high-level-math/multivariable-calculus/partial-derivatives.md)
+       * [Differential](high-level-math/differential.md)
 * [Electrical Engineering](electrical-engineering.md)
    * [The Terminologys](electrical-engineering/the-terminologys.md)
    * [DC](electrical-engineering/dc.md)

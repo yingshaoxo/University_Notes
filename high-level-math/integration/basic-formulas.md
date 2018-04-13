@@ -43,9 +43,9 @@ $$
 $$
 \begin{align*}
 \\ \\
-&\int (\sin{t} + \cos{t} - e^t)dx 
+&\int (\sin{t} + \cos{t} - e^t)dx
 \\ \\
-&= -\cos{t} + \sin{t} - e^t 
+&= -\cos{t} + \sin{t} - e^t
 \end{align*}
 $$
 
@@ -62,13 +62,13 @@ $$
 $$
 \begin{align*}
 
-& \int \sec^2(x) dx = tan(x) + C 
+& \int \sec^2(x) dx = tan(x) + C
 \\ \\
-& \int \sec(x) \tan(x) dx = \sec(x) + C 
+& \int \sec(x) \tan(x) dx = \sec(x) + C
 \\ \\
-& \int \csc^2(x) dx = -\cot(x) + C 
+& \int \csc^2(x) dx = -\cot(x) + C
 \\ \\
-& \int \csc(x) \cot(x) dx = -\csc(x) + C 
+& \int \csc(x) \cot(x) dx = -\csc(x) + C
 \end{align*}
 $$
 
