@@ -75,6 +75,7 @@
    * [Logic expressions](logic-expressions.md)
    * [Karnaugh map](karnaugh-map.md)
    * [Number system](number_system.md)
+   * [Multiplexer](multiplexer.md)
 * [Principles of Communications](principles-of-communications.md)
    * [Overviews](overviews.md)
    * [PCM](pcm.md)
