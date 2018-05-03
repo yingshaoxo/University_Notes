@@ -32,6 +32,7 @@
        * [Limitation](high-level-math/multivariable-calculus/limitation.md)
        * [Partial derivatives](high-level-math/multivariable-calculus/partial-derivatives.md)
        * [Differential](high-level-math/differential.md)
+       * [Multiple integral](high-level-math/multiple_integral.md)
 * [Electrical Engineering](electrical-engineering.md)
    * [The Terminologys](electrical-engineering/the-terminologys.md)
    * [DC](electrical-engineering/dc.md)
@@ -70,6 +71,8 @@
    * [Thyristor](thyristor.md)
    * [Amplifying circuit](amplifying-circuit.md)
        * [Bipolar Junction Transistor](amplifying-circuit/bipolar-junction-transistor.md)
+       * [Common Emitter Configuration](common_emitter_configuration.md)
+       * [Analysis](analysis.md)
 * Digital Electronic Technology 
    * [Logic Gate](logic-gate.md)
    * [Logic expressions](logic-expressions.md)

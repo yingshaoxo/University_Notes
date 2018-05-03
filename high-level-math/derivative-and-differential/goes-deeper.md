@@ -3,9 +3,9 @@ ___
 
 $$
 \begin{align*}
-f(x) &= x^2    
-\\ \\ 
-&\Downarrow \text{Take derivative of the previous formula} 
+f(x) &= x^2
+\\ \\
+&\Downarrow \text{Take derivative of the previous formula}
 \\ \\
 f^\prime(x) &= 2x    &(x^2)^\prime &= 2x
 \\ \\

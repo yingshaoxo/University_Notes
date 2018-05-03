@@ -48,7 +48,7 @@ ___
 $$
 \begin{align*}
 &\csc x = \frac{1}{\sin x}
-\\ \\ 
+\\ \\
 &\sec x = \frac{1}{\cos x}
 \\ \\
 &\cot x = \frac{1}{\tan x}
@@ -65,4 +65,4 @@ $$
 \end{align*}
 $$
 
- 
+

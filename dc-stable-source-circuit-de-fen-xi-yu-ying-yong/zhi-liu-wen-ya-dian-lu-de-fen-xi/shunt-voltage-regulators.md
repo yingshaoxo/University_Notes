@@ -7,23 +7,23 @@ ___
     (0, 0) to [short, i=$I_R$](1, 0)
     to [R, l=$R$, v_<=$U_R$](3, 0)
     to (4, 0)
-    
+
     (4, 0) to (6, 0)
     to [short, i_=$I_o$](6, -1)
     to [R, l_=$R_L$, v^<=$U_o$](6, -3)
-    
+
     (4, 0) to [short, i_>=$I_Z$](4, -1)
     (4, -3) to [zD-, l=$D_Z$,  v_>=$U_Z$](4, 0)
-    
+
     (6, -3) to (0, -3)
-    
+
     (0, 0) to [open, v<=$U_i$](0, -3)
 ```
 ![](/assets/shunt voltage regulator.png)
 
 Let me explain these symbols for you:
 
-$$U_i$$ = $$Voltage_{\text{ } of \text{ } input}$$ 
+$$U_i$$ = $$Voltage_{\text{ } of \text{ } input}$$
 
 $$I_R$$ = $$Current_{\text{ } of \text{ } Resistance}$$
 
@@ -63,4 +63,4 @@ $$
 \\ \\
 &\frac{U_{input_{min}} - U_{output}}{R_{max}} > I_{Z_{min}} + I_{output_{max}}
 \end{align*}
-$$ 
+$$
