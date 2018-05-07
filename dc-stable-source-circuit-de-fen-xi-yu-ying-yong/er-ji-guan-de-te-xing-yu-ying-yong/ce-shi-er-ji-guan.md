@@ -5,7 +5,7 @@ ___
 
 一切要从万用表说起：
 
-![](/assets/wanyongbiao.png)
+![](assets/wanyongbiao.png)
 
 我的意思是，它里面有一块电池和电阻，其中电池是为了有电流测电阻
 

@@ -9,7 +9,7 @@ Multiplexer or a data selector contains the following:
 
 ____
 
-![](/assets/multiplexer.png)
+![](assets/multiplexer.png)
 
 All inputs and outputs should be purely logical or binary input.
 
@@ -21,7 +21,7 @@ So for a `4 : 1` multiplexer, `the number of inputs` is `4` and `m = 2` ($$2^2 =
 
 ___
 
-![](/assets/mutiplexer_74LS151.png)
+![](assets/mutiplexer_74LS151.png)
 
 A、B、C 三个`pin(管脚)`是3个`2进制数(0 or 1)`，被用来表示$$D_{number}$$中的`10进制` `number`
 

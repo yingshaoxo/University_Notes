@@ -1,5 +1,5 @@
 #### 一. 二极管的单向导电性
-![](/assets/diode.png)
+![](assets/diode.png)
 ```
 \draw (0, 0) to [empty diode, v_<=$diode$](4, 0);
 ```
@@ -7,8 +7,8 @@
 2. 你只需要记住三角形那边是正极流入，竖线那边是负极流出，电流才会流通就行了
 
 #### 二、volt-ampere characteristic （伏安特性）
-![](/assets/volt-ampere characteristic.png)
-![](/assets/volt-ampere characteristic2.png)
+![](assets/volt-ampere characteristic.png)
+![](assets/volt-ampere characteristic2.png)
 
 1. 正向（正半轴；三角形那边输入正电）
 $$

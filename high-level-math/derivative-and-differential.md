@@ -62,7 +62,7 @@ The derivative of that function at that point is the slope of the tangent line a
 
 #### What function feature derivative described?
 
-![](/assets/negative_x^2.png)
+![](assets/negative_x^2.png)
 
 The $$|y^\prime|$$ bigger on one point, the $$y$$ of that function changes more when $$x$$ increases. It seems the slop of the tangent line will steeper then.
 

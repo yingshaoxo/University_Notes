@@ -11,7 +11,7 @@ ___
 
 This is a part graph about $$f(x)=e^x$$ 
 
-![](/assets/log_concavity.png)
+![](assets/log_concavity.png)
 
 Every red line's slop represented as a certain first derivative $$f^\prime(x)$$. 
 
@@ -26,7 +26,7 @@ ___
 
 This is a part graph about $$f(x)=-x^2$$ 
 
-![](/assets/-x^2_concavity.png)
+![](assets/-x^2_concavity.png)
 
 Every red line was becoming more and more gentle, $$f^\prime(x)$$ gets smaller and smaller.
 
@@ -41,4 +41,4 @@ $$f^\prime(x)$$ first decreasing , then increasing, you'll get an inflection
 
 $$f^\prime(x)$$ first increasing, then decreasing, you'll also get an inflection
 
-![](/assets/sin_1to2_derivative.png)
+![](assets/sin_1to2_derivative.png)

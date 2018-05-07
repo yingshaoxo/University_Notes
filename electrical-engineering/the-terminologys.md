@@ -31,7 +31,7 @@ electron
 spontaneously
 自发地
 
-The electron move towards a lower energy state all by themselves. 
+The electron move towards a lower energy state all by themselves.
 
 we can guide electrons using wires and make them flow through electronic components —circuit design— and do interesting things along the way.
 ___
@@ -48,14 +48,14 @@ ___
 Power
 功率
 
-Power is defined as the rate energy (U) is transformed or transferred over time. 
+Power is defined as the rate energy (U) is transformed or transferred over time.
 
 An electric circuit is capable of transferring power. Current is the rate of flow of charge, and voltage measures the energy transferred per unit of charge.
 
 Electrical power is the product of voltage times current. in units of watts.
 ___
 
-#### The unit of these things 
+#### The unit of these things
 
 ampere
 安培
@@ -99,20 +99,20 @@ A schematic is a drawing of a circuit. A schematic represents circuit elements w
 
 Elements – The term elements means "components and sources."
 
-Symbols – Elements are represented in schematics by symbols. 
+Symbols – Elements are represented in schematics by symbols.
 
 Lines – Connections between elements are drawn as lines, which we often think of as "wires".
 
 Dots – Connections between lines can be indicated by dots. Dots are an unambiguous indication that lines are connected. If the connection is obvious, you don't have to use a dot.
 
-Reference designator – When you place a component in a schematic you often give it a unique name, known as a reference designator. 
+Reference designator – When you place a component in a schematic you often give it a unique name, known as a reference designator.
 
-Node – A junction where 2 or more elements connect is called a node. 
+Node – A junction where 2 or more elements connect is called a node.
 
 Branch – Branches are the connections between nodes. A branch is an element (resistor, capacitor, source, etc.). The number of branches in a circuit is equal to the number of elements.
 
-Loop – A loop is any closed path going through circuit elements. To draw a loop, select any node as a starting point and draw a path through elements and nodes until the path comes back to the node where you started. There is only one rule: a loop can visit (pass through) a node only one time. It is ok if loops overlap or contain other loops. 
- Mesh – A mesh is a loop that has no other loops inside it. 
+Loop – A loop is any closed path going through circuit elements. To draw a loop, select any node as a starting point and draw a path through elements and nodes until the path comes back to the node where you started. There is only one rule: a loop can visit (pass through) a node only one time. It is ok if loops overlap or contain other loops.
+ Mesh – A mesh is a loop that has no other loops inside it.
 
 Reference Node – During circuit analysis we usually pick one of the nodes in the circuit to be the reference node. Voltages at other nodes are measured relative to the reference node. Any node can be the reference, but two common choices that simplify circuit analysis are: 1. the negative terminal of the voltage or current source powering the circuit, or 2. the node connected to the greatest number of branches.
 

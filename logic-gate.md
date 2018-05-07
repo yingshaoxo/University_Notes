@@ -1,5 +1,5 @@
-![](/assets/logic gate.png)
-![](/assets/logic_gate_2.png)
+![](assets/logic gate.png)
+![](assets/logic_gate_2.png)
 
 
 As you can see, we got difference between US and UK symbol.
@@ -10,7 +10,7 @@ ___
 
 Here I just want to tell you two symbols that I think is very challenging.
 
-![](/assets/xnor_or_xor_gate.png)
+![](assets/xnor_or_xor_gate.png)
 
 1. `异或门（XOR gate）`，不同为1，相同为0
 > $$1 \oplus 0 = 1$$

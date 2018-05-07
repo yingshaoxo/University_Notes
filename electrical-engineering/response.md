@@ -16,7 +16,7 @@ ___
 
 在图示电路中，试确定开关 $$S$$ 刚断开后的电压 $$u_c$$ 和 电流 $$i_c$$、$$i_1$$、$$i_2$$ 的初始值（$$s$$ 断开前电路已处于稳态）
 
-![](/assets/dianlu_StateChange0.png)
+![](assets/dianlu_StateChange0.png)
 
 ```
     \draw (0, 0) to [V=$6V$](0, 4)

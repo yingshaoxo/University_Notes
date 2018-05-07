@@ -1,6 +1,6 @@
 #### 串联时，电压按电阻值比例进行分压（分配电压）
 
-![](/assets/fenya, chuanlian.png)
+![](assets/fenya, chuanlian.png)
 
 $$
 \begin{align*}
@@ -17,7 +17,7 @@ $$
 
 #### 并联时，电流按电阻值比例进行奇怪的分流（分配电流）
 
-![](/assets/fenliu, binglian.png)
+![](assets/fenliu, binglian.png)
 
 $$
 \begin{align*}

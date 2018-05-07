@@ -5,13 +5,13 @@ ___
 
 #### 1. Sampling: get pots in every certain time (infinite to limited)
 
-![](/assets/PCM0.png)
+![](assets/PCM0.png)
 
 #### 2. Quantizing: put every uncertain value into certain value (standardization)
 
 #### 3. Encoding: convert that value to binary value
 
-![](/assets/PCM1.png)
+![](assets/PCM1.png)
 
 ___
 

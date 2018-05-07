@@ -18,11 +18,11 @@ ___
 
 #### 1. 认识你自己（不对，应该是认识一下三极管）
 
-![](/assets/SanJiGuan1.png)
+![](../assets/SanJiGuan1.png)
 
-![](/assets/SanJiGuan2.png)
+![](../assets/SanJiGuan2.png)
 
-![](/assets/Bipolar_junction_transistor.png)
+![](../assets/Bipolar_junction_transistor.png)
 
 `E` means `emitter`
 
@@ -34,7 +34,7 @@ ___
 
 #### 2. 了解更多
 
-![](/assets/SanJiGuan1.png)
+![](../assets/SanJiGuan1.png)
 
 箭头所指方向为电流流动的方向。
 
@@ -44,7 +44,7 @@ ____
 
 #### 3. 总结规律
 
-![](/assets/SanJiGuan1.png)
+![](../assets/SanJiGuan1.png)
 
 $$
 \begin{align*}
@@ -88,3 +88,13 @@ ___
 饱和区：`EB结(发射结)`正偏；`CB结(集电结)`正偏
 
 截止区：`EB结(发射结)`反偏；`CB结(集电结)`反偏
+
+___
+
+#### 5. 记忆秘诀
+
+带箭头的是B(射极)
+
+B的对面是C(集极)
+
+中间那个自然就是B(基极)

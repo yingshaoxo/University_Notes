@@ -1,12 +1,12 @@
 ## The diagram of a communication system
 
-![](/assets/the_diagram_of_a_communication_system.png)
+![](assets/the_diagram_of_a_communication_system.png)
 
 ___
 
 ## Frequency Bands with Designations
 
-![](/assets/frequency_bands.png)
+![](assets/frequency_bands.png)
 
 ___
 
@@ -15,10 +15,10 @@ ___
 从我的角度看，
 
 `模电` is kind of like 大自然中的信号，波形类似 `sine`， 可无限细分、采集（因为人的认识基于对比，而对比是无穷无尽的）
-![](/assets/sine_wave.png)
+![](assets/sine_wave.png)
 
 `数电` 是经过人处理过的更精确的信号表示，它通过高与低的变化传输 `方波` (高电平为 1, 低电平为 0)
-![](/assets/squre_wave.png)
+![](assets/squre_wave.png)
 
 ___
 

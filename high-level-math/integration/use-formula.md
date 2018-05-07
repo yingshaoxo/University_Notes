@@ -12,8 +12,8 @@ ___
 For the first type of integral, we use basic formula to each part of it directly:
 $$
 \begin{align*}
-&\int \frac{3x^2 - 2x + 1}{x} dx 
-\\ \\ 
+&\int \frac{3x^2 - 2x + 1}{x} dx
+\\ \\
 =& \int (3x - 2 + \frac{1}{x}) dx
 \\ \\
 =& \frac{3}{2}x^2 - 2x + \ln{|x|} + C
@@ -35,7 +35,7 @@ $$
 Let's do some exercise:
 $$
 \begin{align*}
-&\int xe^{-x^2} \cdot dx 
+&\int xe^{-x^2} \cdot dx
 \\ \\
 =& \int e^{-x^2} \cdot x dx    &\text{//composite function in front}
 \\ \\

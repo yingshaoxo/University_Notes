@@ -29,7 +29,7 @@ ___
 ### 拒绝萌逼
 根据老师讲的，我再深入分析一下：
 
-##### 电压有两种: 
+##### 电压有两种:
 + 单点电压
 > 该点到参考点（如大地）间的电压。
 >> 最底层的电压概念，如上句的“电压”，指：某种神秘的力把单位正电荷从A点移动到B点所做的功。
@@ -60,7 +60,7 @@ Procedure of adding element voltages around a loop:
 
 > Step 2: Pick a direction to travel around the loop (clockwise or counterclockwise).
 
-> Step 3: Walk around the loop. 
+> Step 3: Walk around the loop.
 >> **Include element voltages in a growing sum according to these rules:**
 
 >> 1. When you encounter a new element, look at the voltage sign as you enter the element.

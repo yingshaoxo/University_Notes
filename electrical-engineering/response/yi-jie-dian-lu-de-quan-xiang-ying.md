@@ -37,7 +37,7 @@ ___
 
 如图所示电路中，已知 $$U_s=30V$$， $$R_1=100\Omega$$， $$C_1=0.2\mu F$$， $$R_2=200\Omega$$， $$C_2=0.1\mu F$$，换路前电路处于稳态。试求 $$t \geq 0$$ 时的 $$u_{C1}(t)、u_{C2}(t)、i(t)$$
 
-![](/assets/Response_FullVersion.png)
+![](assets/Response_FullVersion.png)
 
 ```
     \draw (0, 0) to [V=$U_s$](0, 4)

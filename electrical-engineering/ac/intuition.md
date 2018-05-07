@@ -1,4 +1,4 @@
-### 3 basic components in AP circuit: 
+### 3 basic components in AP circuit:
 
 #### Resistor
 > Resistors are used to reduce current flow, adjust signal levels, to divide voltages.

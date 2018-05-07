@@ -1,4 +1,4 @@
-![](/assets/definite_integral.png)
+![](assets/definite_integral.png)
 
 ___
 
