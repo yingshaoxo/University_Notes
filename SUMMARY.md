@@ -33,6 +33,7 @@
        * [Partial derivatives](high-level-math/multivariable-calculus/partial-derivatives.md)
        * [Differential](high-level-math/differential.md)
        * [Multiple integral](high-level-math/multiple_integral.md)
+   * [Series](series.md)
 * [Electrical Engineering](electrical-engineering.md)
    * [The Terminologys](electrical-engineering/the-terminologys.md)
    * [DC](electrical-engineering/dc.md)

@@ -1,4 +1,4 @@
-`Integration by parts` is a method to find integrals of products.  
+`Integration by parts` is a method to find integrals of products.
 ___
 
 $$
@@ -14,7 +14,7 @@ f(x)g(x) - \int f^\prime(x)g(x) \cdot dx &= \int f(x)g^\prime(x) \cdot dx
 &\Downarrow
 \\ \\
 \int f(x)g^\prime(x) \cdot dx &= f(x)g(x) - \int f^\prime(x)g(x) \cdot dx
-\end{align*} 
+\end{align*}
 $$
 ___
 
@@ -85,7 +85,7 @@ $$
 ___
 
 
-`Integration by parts` is a method to find integrals of products.  
+`Integration by parts` is a method to find integrals of products.
 ___
 
 $$
@@ -101,7 +101,7 @@ f(x)g(x) - \int f^\prime(x)g(x) \cdot dx &= \int f(x)g^\prime(x) \cdot dx
 &\Downarrow
 \\ \\
 \int f(x)g^\prime(x) \cdot dx &= f(x)g(x) - \int f^\prime(x)g(x) \cdot dx
-\end{align*} 
+\end{align*}
 $$
 ___
 

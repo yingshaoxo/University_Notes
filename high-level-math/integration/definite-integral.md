@@ -1,4 +1,4 @@
-![](assets/definite_integral.png)
+![](../../assets/definite_integral.png)
 
 ___
 
@@ -9,5 +9,5 @@ $$x^2$$ = x squared
 ___
 
 $$
-Trapezoid(梯形面积公式) = \frac{base_{up} + base_{down}}{2} \times height 
+Trapezoid(梯形面积公式) = \frac{base_{up} + base_{down}}{2} \times height
 $$

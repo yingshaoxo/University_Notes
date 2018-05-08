@@ -34,7 +34,7 @@ $$
 \\
 & t | 2 \rightarrow 3
 \\ \\
-&\int_2^3 \frac{1}{t} \cdot (\frac{1}{5} (2t) dt) 
+&\int_2^3 \frac{1}{t} \cdot (\frac{1}{5} (2t) dt)
 \\ \\
 &= \int_2^3 \frac{2}{5} \cdot dt
 \\ \\
