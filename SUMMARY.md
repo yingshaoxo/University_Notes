@@ -78,6 +78,7 @@
        * [Analysis](analysis.md)
        * [Mess](mess.md)
        * [Negative-feedback amplifier](negative-feedback_amplifier.md)
+       * [Integrated Operational Amplifier](integrated_operational_amplifier.md)
 * Digital Electronic Technology 
    * [Logic Gate](logic-gate.md)
    * [Logic expressions](logic-expressions.md)

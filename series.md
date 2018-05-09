@@ -35,13 +35,23 @@ ___
 
 Let's get started!
 
-$$\sum_{n=1}^{\infty} u_n \text{ converges} \Leftrightarrow \lim_{n \to \infty}{u_n} = 0$$
+$$\sum_{n=1}^{\infty} u_n \text{ converges} \Rightarrow \lim_{n \to \infty}{u_n} = 0$$
 
 $$\sum_{n=1}^{\infty} u_n \text{ diverges} \Leftrightarrow \lim_{n \to \infty}{u_n} \not= 0$$
 
 We all know $$u_n$$ is the last item in a series, if the sum of that series want to be a constant, the last item must equal to 0, so $$\lim_{n \to \infty}{u_n}$$ has to be 0
 
 If it's not, well, as if the last item of that series not 0, the sum of that series is uncertain, so we say the series diverges
+
+___
+
+harmonic series
+
+$$\sum_{n=1}^{\infty} \frac{1}{n} = \frac{1}{1} + \frac{1}{2} + \frac{1}{3} + ...$$
+
+$$\lim_{n \to \infty}{\frac{1}{n}} = 0$$
+
+But it's a `divergent` series
 
 ___
 
@@ -83,7 +93,7 @@ $$\text{Set }  \text{ } l = \lim_{n \to \infty}{\frac{u_{n+1}}{u_n}}$$
 
 when $$l < 1$$ , $$u_{n+1} < u_n$$ , `converges`
 
-when $$l > 1$$ , $$u_{n+1} < u_n$$ , `diverges`
+when $$l > 1$$ , $$u_{n+1} > u_n$$ , `diverges`
 
 when $$l = 1$$ , $$u_{n+1} = u_n$$ , `uncertain`
 ___
@@ -105,12 +115,42 @@ The second condition just like normal series
 
 ___
 
-harmonic series
+Power series (幂级数)
 
-$$\sum_{n=1}^{\infty} \frac{1}{n} = \frac{1}{1} + \frac{1}{2} + \frac{1}{3} + ...$$
+$$\sum_{n=1}^{\infty} x^n \cdot \text{(an expression which only related n)}$$
 
-It's a `divergent` series
+The main characteristic of this series is **it has a variable x**
 
+0. If we have a series $$\sum_{n=1}^{\infty} x^n \cdot \frac{1}{n}$$
+
+1. Get `domain of convergence`
+    $$
+    \begin{align*}
+    &\rho = \lim_{n \to \infty} |\frac{\text{n expression}+1}{\text{n expression}}|  = \lim_{n \to \infty} |\frac{\frac{1}{n+1}}{\frac{1}{n}}|
+    \\ \\
+    &\text{interval of convergece } = (-\rho, \rho) = (-1, 1)
+    \\ \\
+    &\because \text{when } x = -\rho = -1 \text{ , } \sum_{n=1}^{\infty} \frac{(-1)^n}{n} \text{ converges}
+    \\ \\
+    &\text{ }\text{ }\text{ }\text{ }\text{ } \text{when } x = \rho = 1 \text{ , } \sum_{n=1}^{\infty} \frac{(1)^n}{n} \text{ diverges}
+    \\ \\
+    &\therefore \text{domain of convergence is } [-1, 1)
+    \end{align*}
+    $$
+3. Get `Sum function`
+    $$
+    \begin{align*}
+    &S(x) = \sum_{n=1}^{\infty} x^n \cdot \frac{1}{n} \text{ , } x \in [-1, 1)
+    \\ \\
+    &\text{take defivative of }S(x):
+    \\ \\
+    &S^\prime (x) = \frac{1}{n} \cdot (\sum_{n=1}^{\infty} x^n)^\prime
+    \\ \\
+    & = \frac{1}{n} \cdot \sum_{n=1}^{\infty} n \cdot x^{n - 1} =  \sum_{n=1}^{\infty} x^{n - 1} = \frac{1}{1 - x}
+    \\ \\
+    & S(x) = \int_0^x  \frac{1}{1-x} = - \ln(1-x)
+    \end{align*}
+    $$
 ___
 
 All these series, converges if and only if the associated sequence of partial sums converges.
