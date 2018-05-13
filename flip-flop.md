@@ -24,3 +24,53 @@ $$
 $$
 
 > Anyway, if you use computer, these things doesn't matter.
+
+___
+
+# Rules
+
+R: reset
+
+S: set
+___
+
+正常情况，$$R、S$$：
+
+$$
+\begin{align*}
+set = 1 \text{ , } reset = 0 \text{ , } Q^{n + 1} = 1
+\\ \\
+set = 0 \text{ , } reset = 1 \text{ , } Q^{n + 1} = 0
+\end{align*}
+$$
+
+非正常情况，$$\bar{R}、\bar{S}$$：
+
+$$
+\begin{align*}
+set = 0 \text{ , } reset = 1 \text{ , } Q^{n + 1} = 1
+\\ \\
+set = 1` \text{ , } reset = 0 \text{ , } Q^{n + 1} = 0
+\end{align*}
+$$
+___
+
+CP(clock pulse)：
+
+当其为高电平时才检测 RS、D or JK 的电平值
+___
+
+J = set
+
+K = reset
+___
+
+T = 1 ，反相
+
+T = 0 ，保持
+
+___
+
+D = 0 ， 0
+
+D = 1 ， 1
