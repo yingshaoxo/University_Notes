@@ -92,4 +92,5 @@
    * [Overviews](overviews.md)
    * [PCM](pcm.md)
    * [HDB3](hdb3.md)
+   * [Cyclic code](cyclic_code.md)
 
