@@ -126,13 +126,13 @@ The main characteristic of this series is **it has a variable x**
 1. Get `domain of convergence`
     $$
     \begin{align*}
-    &\rho = \lim_{n \to \infty} |\frac{\text{n expression}+1}{\text{n expression}}|  = \lim_{n \to \infty} |\frac{\frac{1}{n+1}}{\frac{1}{n}}|
+    &\rho = \lim_{n \to \infty} |\frac{\text{n expression}+1}{\text{n expression}}|  = \lim_{n \to \infty} |\frac{\frac{1}{n+1}}{\frac{1}{n}}| = 1
     \\ \\
-    &\text{interval of convergece } = (-\rho, \rho) = (-1, 1)
+    &\text{interval of convergece } = (-\frac{1}{\rho}, \frac{1}{\rho}) = (-1, 1)
     \\ \\
-    &\because \text{when } x = -\rho = -1 \text{ , } \sum_{n=1}^{\infty} \frac{(-1)^n}{n} \text{ converges}
+    &\because \text{when } x = -\frac{1}{\rho} = -1 \text{ , } \sum_{n=1}^{\infty} \frac{(-1)^n}{n} \text{ converges}
     \\ \\
-    &\text{ }\text{ }\text{ }\text{ }\text{ } \text{when } x = \rho = 1 \text{ , } \sum_{n=1}^{\infty} \frac{(1)^n}{n} \text{ diverges}
+    &\text{ }\text{ }\text{ }\text{ }\text{ } \text{when } x = \frac{1}{\rho} = 1 \text{ , } \sum_{n=1}^{\infty} \frac{(1)^n}{n} \text{ diverges}
     \\ \\
     &\therefore \text{domain of convergence is } [-1, 1)
     \end{align*}

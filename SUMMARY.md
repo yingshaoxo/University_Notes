@@ -34,6 +34,7 @@
        * [Differential](high-level-math/differential.md)
        * [Multiple integral](high-level-math/multiple_integral.md)
    * [Series](series.md)
+   * [Linear algebra](linear_algebra.md)
    * [GaoKao](gaokao.md)
        * [1](1.md)
 * [Electrical Engineering](electrical-engineering.md)
