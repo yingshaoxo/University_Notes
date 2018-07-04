@@ -16,6 +16,7 @@ push() {
 
 publish() {
     push
+
     mkdir ../../Python/yingshaoxo.github.io/book
     mkdir ../../Python/yingshaoxo.github.io/book/notes
     cp _book/* ../../Python/yingshaoxo.github.io/book/notes -fr

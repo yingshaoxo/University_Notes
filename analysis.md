@@ -8,7 +8,7 @@ $$V_{cc} = I_B R_b + U_{BE}$$
 
 $$V_{cc} = I_C R_c + U_{CE}$$
 
-$$I_C = \beta I_B$$
+$$I_E \approx I_C = \beta I_B$$
 
 ___
 
