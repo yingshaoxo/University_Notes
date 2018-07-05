@@ -72,3 +72,9 @@ def polyline_compress(max_voltage, target_voltage):
 # r = polyline_compress(2048, 260)
 # print(r)
 ```
+
+___
+
+编码时 3位 减一，4位 不变
+
+解码时 3位 加一，4位 不变
