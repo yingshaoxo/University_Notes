@@ -105,5 +105,6 @@
   * [Cyclic code](cyclic_code.md)
 * [Data Communications and Networking](data-communications-and-networking.md)
 * [Micro Control System 51 Series](micro-control-system-51-series.md)
-  * [delay function](micro-control-system-51-series/delay-function.md)
+  * [The Delay function](micro-control-system-51-series/delay-function.md)
+  * [The Interrupt function](micro-control-system-51-series/the-interrupt-function.md)
 
