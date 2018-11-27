@@ -53,8 +53,11 @@ ___
 
 方式3: $$x = 8$$
 
-由于工作在`方式0`，所以 TMOD = 16进制的 0 = 0x00
+由于工作在`方式0`，所以 TMOD = 16进制的 0 = 0x00 00
 
+`0x00 00`, x 后的两个0 desn't matter, the real thing is the last two 0
+
+It controls the way timer0 works.
 ___
 
 #### So
