@@ -10,6 +10,6 @@ void main() {
 }
 
 void when_it_comes() interrupt 0 {
-    // do whatever you want when pin 3^2 got changed
+    // do whatever you want when pin 3^2 get changed
 }
 ```

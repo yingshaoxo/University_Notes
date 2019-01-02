@@ -4,7 +4,7 @@
 ___
 
 ```
-import kivy
+import numpy as np
 
 print('Do something magic.')
 ```
