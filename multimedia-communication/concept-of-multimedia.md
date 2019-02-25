@@ -1,5 +1,3 @@
-# Theory
-
 ### 媒体
 
 `表示`媒体 (representation medium)
