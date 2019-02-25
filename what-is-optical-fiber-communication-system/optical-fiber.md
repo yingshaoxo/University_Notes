@@ -24,3 +24,9 @@ ___
 2. 光纤的切断和接续需要一定的工具、设备和技术。
 3. 分路、耦合不灵活。
 4. 光纤光缆的弯曲半径不能过小（>20cm）
+
+___
+
+According to what my teacher says, this course is about the 'line' between devices.
+
+![](/assets/The_big_picture_about_communication_system.jpg)
