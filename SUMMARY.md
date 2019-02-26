@@ -120,4 +120,6 @@
 * Optical fiber Communication system
   * [What is Optical fiber Communication system](what-is-optical-fiber-communication-system.md)
     * [Optical fiber](what-is-optical-fiber-communication-system/optical-fiber.md)
+* [Communication Tech English](communication-tech-english.md)
+  * [Fundamentals of Electricity](communication-tech-english/fundamentals-of-electricity.md)
 
