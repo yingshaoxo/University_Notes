@@ -122,4 +122,6 @@
     * [Optical fiber](what-is-optical-fiber-communication-system/optical-fiber.md)
 * [Communication Tech English](communication-tech-english.md)
   * [Fundamentals of Electricity](communication-tech-english/fundamentals-of-electricity.md)
+* [High-speed railway Communication Technology](high-speed-railway-communication-technology.md)
+  * [Overview](high-speed-railway-communication-technology/overview.md)
 
