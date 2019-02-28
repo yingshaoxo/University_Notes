@@ -36,7 +36,7 @@ ___
 * Sm: 用户识别，比如面部扫描器与MS、SIM卡接口
 * Um: 空中接口，用于MS与BTS之间
 * Abit: 用于BTS与BSC **(注意: 一个`Base Station Controller`管理多个`Base Transceiver Station`。`Base Transceiver Station`则直接与`Mobile Station`交互(互发信息))**
-* A接口: 用于MSC与BSS(BTS、BSC)
+* A接口: 用于`MSC(Mobile Switching Center)`与`BSS(由BTS与BSC构成)`
 * ...
 
 ___
