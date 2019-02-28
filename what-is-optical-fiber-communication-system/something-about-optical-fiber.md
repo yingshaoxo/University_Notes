@@ -28,7 +28,11 @@ ___
 
 ___
 
-$$ 数值孔徑 = NA = \sin(\theta_{max}) = \sqrt{{n_1}^2 - {n_2}^2} $$
+$$
+\begin{align*}
+数值孔徑 = NA = \sin(\theta_{max}) = \sqrt{{n_1}^2 - {n_2}^2}
+\end{align*}
+$$
 
 > 数值孔徑表示光纤接收入射光的能力。
 
