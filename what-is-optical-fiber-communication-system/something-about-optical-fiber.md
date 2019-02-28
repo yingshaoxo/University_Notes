@@ -57,7 +57,7 @@ ___
 
 ___
 
-$$归一化频率 = V = \frac{2\pi}{\lambda} \cdot a \cdot \sqrt{{n_1}^2 - {n_2}^2}$$
+$$归一化频率 = V = \frac{2\pi}{\lambda} \cdot a \cdot \sqrt{ {n_1}^2 - {n_2}^2 }$$
 
 > $$a = 纤芯半径$$，$$\lambda = 光源波长$$
 
