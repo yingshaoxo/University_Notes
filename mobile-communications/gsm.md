@@ -10,10 +10,10 @@ ___
 
 #### GSM 通信系统由哪几部分组成？
 
-* 移动台(MS)(Mobile Station)
-* 无线基站子系统(BSS)(Base Station Subsystem)
-* 交换网络子系统(SS)(Switching Subsystem)
-* 操作维护子系统(OMC)(Operation Maintenance Center)
+* **移动台(MS)(Mobile Station)**: 实际上就是你的手机
+* **无线基站子系统(BSS)(Base Station Subsystem)**
+* **交换网络子系统(SS)(Switching Subsystem)**
+* **操作维护子系统(OMC)(Operation Maintenance Center)**
 
 ![](/assets/GSM_structure.jpg)
 
