@@ -30,7 +30,7 @@ ___
 
 $$
 \begin{align*}
-数值孔徑 = NA = \sin(\theta_{max}) = \sqrt{{n_1}^2 - {n_2}^2}
+数值孔徑 = NA = \sin(\theta_{max}) = \sqrt{ {n_1}^2 - {n_2}^2 }
 \end{align*}
 $$
 
