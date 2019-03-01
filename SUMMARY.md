@@ -131,4 +131,5 @@
   * [Overview](high-speed-railway-communication-technology/overview.md)
 * [GSM for Railway](gsm-for-railway.md)
   * [Overview](gsm-for-railway/overview.md)
+  * [Wired Parts](gsm-for-railway/wired-parts.md)
 
