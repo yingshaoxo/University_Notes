@@ -116,6 +116,7 @@
   * [Radio wave Propagation and Interference](mobile-communications/radio-wave-propagation-and-interference.md)
   * [GSM](mobile-communications/gsm.md)
   * [CDMA](mobile-communications/cdma.md)
+  * [GPRS](mobile-communications/gprs.md)
 * [Multimedia Communication](multimedia-communication.md)
   * [Concept of Multimedia](multimedia-communication/concept-of-multimedia.md)
 * [Power system for Communication Devices](power-system-for-communication-devices.md)
