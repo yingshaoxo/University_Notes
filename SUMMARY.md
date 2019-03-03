@@ -119,6 +119,7 @@
   * [GPRS](mobile-communications/gprs.md)
   * [3G](mobile-communications/3g.md)
   * [4G](mobile-communications/4g.md)
+  * [Base Station Maintenance](mobile-communications/base-station-maintenance.md)
 * [Multimedia Communication](multimedia-communication.md)
   * [Concept of Multimedia](multimedia-communication/concept-of-multimedia.md)
 * [Power system for Communication Devices](power-system-for-communication-devices.md)
