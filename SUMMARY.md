@@ -122,6 +122,7 @@
   * [Base Station Maintenance](mobile-communications/base-station-maintenance.md)
 * [Multimedia Communication](multimedia-communication.md)
   * [Concept of Multimedia](multimedia-communication/concept-of-multimedia.md)
+  * [Compression](multimedia-communication/compression.md)
 * [Power system for Communication Devices](power-system-for-communication-devices.md)
   * [Overview](power-system-for-communication-devices/overview.md)
   * [AC power Distribution Panel](power-system-for-communication-devices/ac-power-distribution-panel.md)
