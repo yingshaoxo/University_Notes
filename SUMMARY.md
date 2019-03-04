@@ -126,6 +126,7 @@
 * [Power system for Communication Devices](power-system-for-communication-devices.md)
   * [Overview](power-system-for-communication-devices/overview.md)
   * [AC power Distribution Panel](power-system-for-communication-devices/ac-power-distribution-panel.md)
+  * [UPS](power-system-for-communication-devices/ups.md)
 * Optical fiber Communication system
   * [What is Optical fiber Communication system](what-is-optical-fiber-communication-system.md)
     * [Prepare](what-is-optical-fiber-communication-system/optical-fiber.md)
