@@ -11,3 +11,11 @@ print('Do something magic.')
 ___
 
 ### Python3,  $$ \frac{520} {no.matter.how} $$
+
+___
+
+The author: **yingshaoxo**
+
+E-Mail: yingshaoxo@gmail.com
+
+The original publish address: https://legacy.gitbook.com/read/book/yingshaoxo/university-notes
