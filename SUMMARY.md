@@ -108,6 +108,9 @@
 * [Micro Control System 51 Series](micro-control-system-51-series.md)
   * [The Delay function](micro-control-system-51-series/delay-function.md)
   * [The Interrupt function](micro-control-system-51-series/the-interrupt-function.md)
+* [Maintenance of Railway Optical Cable Lines](maintenance-of-railway-optical-cable-lines.md)
+  * [Questions](maintenance-of-railway-optical-cable-lines/questions.md)
+  * [Pictures](maintenance-of-railway-optical-cable-lines/pictures.md)
 * [Mobile Communications](mobile-communications.md)
   * [Concepts](mobile-communications/concepts-about-mobile-communication.md)
   * [Coding and Modulation](mobile-communications/coding-and-modulation-of-mobile-communication.md)
@@ -136,7 +139,4 @@
 * [High-speed railway Communication Technology](high-speed-railway-communication-technology.md)
   * [Overview](high-speed-railway-communication-technology/overview.md)
   * [Base Knowledge](high-speed-railway-communication-technology/base-knowledge.md)
-* [GSM for Railway](gsm-for-railway.md)
-  * [Overview](gsm-for-railway/overview.md)
-  * [Wired Parts](gsm-for-railway/wired-parts.md)
 
