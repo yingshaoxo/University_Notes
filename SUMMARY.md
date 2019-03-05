@@ -135,6 +135,7 @@
   * [Fundamentals of Electricity](communication-tech-english/fundamentals-of-electricity.md)
 * [High-speed railway Communication Technology](high-speed-railway-communication-technology.md)
   * [Overview](high-speed-railway-communication-technology/overview.md)
+  * [Base Knowledge](high-speed-railway-communication-technology/base-knowledge.md)
 * [GSM for Railway](gsm-for-railway.md)
   * [Overview](gsm-for-railway/overview.md)
   * [Wired Parts](gsm-for-railway/wired-parts.md)
