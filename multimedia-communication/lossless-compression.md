@@ -44,3 +44,9 @@ ___
 小数变二进制: **乘2取整**
 
 ![](/assets/chengerquzheng.png)
+
+___
+
+## Questions
+
+![](/assets/huffman_coding_example2.jpg)
