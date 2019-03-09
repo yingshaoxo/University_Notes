@@ -145,4 +145,5 @@
 * [GSM for Railway](gsm-for-railway.md)
   * [Overview](gsm-for-railway/overview.md)
   * [Wired Parts](gsm-for-railway/wired-parts.md)
+  * [Digital dispatch Communication System](gsm-for-railway/digital-dispatch-communication-system.md)
 
