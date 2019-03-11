@@ -57,3 +57,7 @@ ___
 ## Questions
 
 ![](/assets/huffman_coding_example2.jpg)
+
+___
+
+![](/assets/suansu_bianma.jpg)
