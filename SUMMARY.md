@@ -142,7 +142,6 @@
 * [High-speed railway Communication Technology](high-speed-railway-communication-technology.md)
   * [Overview](high-speed-railway-communication-technology/overview.md)
   * [Base Knowledge](high-speed-railway-communication-technology/base-knowledge.md)
-  * [Digital dispatch Communication System](high-speed-railway-communication-technology/digital-dispatch-communication-system.md)
 * [GSM for Railway](gsm-for-railway.md)
   * [Overview](gsm-for-railway/overview.md)
   * [Wired Parts](gsm-for-railway/wired-parts.md)
