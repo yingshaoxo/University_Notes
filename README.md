@@ -18,4 +18,4 @@ The author: **yingshaoxo**
 
 E-Mail: yingshaoxo@gmail.com
 
-The original publish address: https://legacy.gitbook.com/read/book/yingshaoxo/university-notes
+The original address: https://yingshaoxo.gitbooks.io/university-notes
