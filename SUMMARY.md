@@ -142,6 +142,8 @@
 * [High-speed railway Communication Technology](high-speed-railway-communication-technology.md)
   * [Overview](high-speed-railway-communication-technology/overview.md)
   * [Base Knowledge](high-speed-railway-communication-technology/base-knowledge.md)
+  * [FH98](high-speed-railway-communication-technology/fh98.md)
+  * [MDS3400](high-speed-railway-communication-technology/mds3400.md)
 * [GSM for Railway](gsm-for-railway.md)
   * [Overview](gsm-for-railway/overview.md)
   * [Wired Parts](gsm-for-railway/wired-parts.md)
