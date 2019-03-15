@@ -148,5 +148,6 @@
   * [Overview](gsm-for-railway/overview.md)
   * [Wired Parts](gsm-for-railway/wired-parts.md)
   * [Digital dispatch Communication System](gsm-for-railway/digital-dispatch-communication-system.md)
-  * [GSM-R](gsm-for-railway/gsm-r.md)
+  * [Basic Knowledge of GSM-R](gsm-for-railway/gsm-r.md)
+  * [Key technologies for GSM-R](gsm-for-railway/key-technologies-for-gsm-r.md)
 

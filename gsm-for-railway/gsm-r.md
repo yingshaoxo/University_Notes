@@ -4,7 +4,7 @@
 
 ___
 
-### 基本知识
+## 基本知识
 
 GSM-R = GSM + GCR(Group Call Register)(组呼寄存器)
 
