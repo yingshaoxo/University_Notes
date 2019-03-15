@@ -150,4 +150,5 @@
   * [Digital dispatch Communication System](gsm-for-railway/digital-dispatch-communication-system.md)
   * [Basic Knowledge of GSM-R](gsm-for-railway/gsm-r.md)
   * [Key technologies for GSM-R](gsm-for-railway/key-technologies-for-gsm-r.md)
+  * [Structure of GSM-R](gsm-for-railway/structure-of-gsm-r.md)
 
