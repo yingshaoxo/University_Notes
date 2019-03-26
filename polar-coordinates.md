@@ -17,3 +17,12 @@ $$\theta$$: theta
 
 ___
 
+### Converting between polar and Cartesian coordinates
+
+$$
+x = \rho \cdot \cos{\theta}
+$$
+
+$$
+x = \rho \cdot \sin{\theta}
+$$
