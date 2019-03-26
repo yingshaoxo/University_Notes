@@ -24,5 +24,9 @@ x = \rho \cdot \cos{\theta}
 $$
 
 $$
-x = \rho \cdot \sin{\theta}
+y = \rho \cdot \sin{\theta}
+$$
+
+$$
+\rho = \sqrt{x^2 + y^2}
 $$
