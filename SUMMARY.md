@@ -37,6 +37,7 @@
   * [Linear algebra](linear_algebra.md)
   * [GaoKao](gaokao.md)
     * [1](1.md)
+    * [The road for starting](the-road-for-starting.md)
 * [Electrical Engineering](electrical-engineering.md)
   * [The Terminologys](electrical-engineering/the-terminologys.md)
   * [DC](electrical-engineering/dc.md)
