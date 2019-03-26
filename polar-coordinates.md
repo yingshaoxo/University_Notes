@@ -30,3 +30,13 @@ $$
 $$
 \rho = \sqrt{x^2 + y^2}
 $$
+
+___
+
+# Question and Answers
+
+___
+
+#### In polar coordinate system, a circle equation is $$\rho = 8 \cdot \sin{\theta}$$, a line equation is $$\theta=\frac{\pi}{3}$$, what's max distance for a point at that circle to the line?
+
+> the answer is 6
