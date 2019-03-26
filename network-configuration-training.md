@@ -32,13 +32,20 @@ quit
 
 -------------------------------------
 
+cipher
+暗号
+
+vty
+Virtual teletype
+___
+
 #### 交换机使用 sftp
 
 
 ```
 telnet 192.168.0.6 6007
 
-//let's assume the vlan10 at router is 192.168.1.31
+//let's assume the vlan10 at switch is 192.168.1.31
 //start sftp at 192.168.1.32
 
 tftp 192.168.1.32 put vrpcfg.zip
@@ -54,7 +61,8 @@ tftp 192.168.1.32 get vrpcfg.zip yingshaoxo.zip
 ```
 telnet 192.168.0.6 6004
 
-//Let's assume that we already have two swiches connected by a line at Ethernet0/0/1
+//Let's assume that we already have two switches connected by a line at each Ethernet0/0/1
+
 display interface Ethernet 0/0/1
 system-view
 sysname yingshaoxo
@@ -85,6 +93,7 @@ ping 1.1.1.6
 telnet 192.168.0.6 6004
 
 // Three PC connect to one switch, Ethernet0/0/1, 2, 3
+
 system-view
 sysname yingshaoxo
 port-isolate mode l2
@@ -113,7 +122,7 @@ telnet 192.168.0.6 6004
 system-view
 sysname SwitchA
 
-//make sure to reset Ethernet 0/0/1
+//make sure to reset every Ethernet 0/0/*
 reset saved-configuration
 reboot
 
@@ -173,3 +182,11 @@ quit
 
 display eth-trunk 1
 ```
+
+___
+
+Aggregation
+聚合
+
+lacp
+Link Aggregation Control Protocol
