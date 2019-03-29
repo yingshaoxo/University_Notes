@@ -52,4 +52,4 @@ if left_derivative < 0 and right_derivative > 0:
     print('the f({x})={y} is the mininum of x**2'.format(x=int(the_x), y=f(int(the_x))))
 ```
 
-![](assets/x^2 for 0 derivative.png)
+![](../../../assets/x^2 for 0 derivative.png)
