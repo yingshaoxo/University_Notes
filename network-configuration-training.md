@@ -190,3 +190,284 @@ Aggregation
 
 lacp
 Link Aggregation Control Protocol
+
+preempt
+抢占
+
+---
+
+MSTP的配置
+
+
+```
+// for SwitchA
+system-view
+sysname SwitchA
+stp mode stp
+
+// for SwitchB
+system-view
+sysname SwitchB
+stp mode stp
+
+// for SwitchC
+system-view
+sysname SwitchC
+stp mode stp
+
+// for SwitchD
+system-view
+sysname SwitchD
+stp mode stp
+
+// A
+stp root primary
+
+// D
+stp root secondary
+
+// C
+interface ethernet 0/0/1
+stp cost 20000
+quit
+
+//B
+interface ethernet 0/0/2
+stp disable
+quit
+
+//C
+interface ethernet 0/0/2
+stp disable
+quit
+
+//A,B,C,D
+stp enable
+
+//A
+interface ethernet 0/0/1
+bpdu enable
+quit
+interface ethernet 0/0/2
+bpdu enable
+quit
+
+//B
+interface ethernet 0/0/1
+bpdu enable
+quit
+interface ethernet 0/0/3
+bpdu enable
+quit
+
+//C
+interface ethernet 0/0/1
+bpdu enable
+quit
+interface ethernet 0/0/3
+bpdu enable
+quit
+
+//D
+interface ethernet 0/0/1
+bpdu enable
+quit
+interface ethernet 0/0/2
+bpdu enable
+quit
+```
+
+-----------------------
+
+跨交换机 VLAN 的配置
+
+
+```
+telnet 192.168.0.6 6004
+system-view
+sysname SwitchA
+
+vlan 3
+quit
+interface ethernet 0/0/1
+port link-type access 
+port default vlan 3
+quit
+
+interface ethernet 0/0/2
+port link-type trunk
+port trunk allow-pass vlan 3
+
+// SwitchB do the same thing
+```
+
+-------------------------
+
+GVRP(generic VLAN Registration Protocol) 配置
+
+
+```
+telnet 192.168.0.6 6005
+system-view
+sysname Boss
+
+gvrp
+
+interface ethernet 0/0/1
+port link-type trunk
+port trunk allow vlan all
+bpdu enable
+gvrp
+quit
+
+interface ethernet 0/0/2
+port link-type trunk
+port trunk allow vlan all
+bpdu enable
+gvrp
+quit
+
+display vlan
+```
+
+-------------------------------
+
+三层独臂路由器让下面不同的VLAN互通
+
+
+```
+telnet 192.168.0.6 6003
+system-view
+sysname Boss
+
+Interface GigabitEthernet 0/0/0.1
+dot1q termination vid 100
+ip address 10.31.10.1 255.255.255.0
+arp broadcast enable
+quit
+
+Interface GigabitEthernet 0/0/0.2
+dot1q termination vid 200
+ip address 10.31.20.1 255.255.255.0
+arp broadcast enable
+quit
+
+//PC1, 10.31.10.2
+//PC2, 10.31.20.2
+```
+
+-------------------------------
+
+三层交换机的静态路由配置
+
+
+![](/assets/switch_static_routing.png)
+
+```
+//B
+system-view
+vlan 20
+quit
+interface ethernet 0/0/3
+port link-type access
+port default vlan 20
+quit
+
+vlan 40
+quit
+interface ethernet 0/0/1
+port link-type trunk
+port trunk allow-pass vlan all
+quit
+
+vlan 50
+quit
+interface ethernet 0/0/2
+port link-type trunk
+port trunk allow-pass vlan all
+quit
+
+//A
+system-view
+vlan 10
+quit
+interface ethernet 0/0/2
+port link-type access
+port default vlan 10
+quit
+
+vlan 40
+quit
+interface ethernet 0/0/1
+port link-type trunk
+port trunk allow-pass vlan all
+quit
+
+//C
+system-view
+vlan 30
+quit
+interface ethernet 0/0/2
+port link-type access
+port default vlan 30
+quit
+
+vlan 50
+quit
+interface ethernet 0/0/1
+port link-type trunk
+port trunk allow-pass vlan all
+quit
+
+//PC1: 1.1.1.2/24
+//PC2: 1.1.2.2/24
+//PC3: 1.1.3.2/24
+
+//A
+interface vlan 10
+ip address 1.1.1.1 255.255.255.0
+quit
+
+interface vlan 40
+ip address 1.1.4.1 255.255.255.0
+quit
+
+//B
+interface vlan 40
+ip address 1.1.4.2 255.255.255.0
+quit
+
+interface vlan 20
+ip address 1.1.2.1 255.255.255.0
+quit
+
+interface vlan 50
+ip address 1.1.5.2 255.255.255.0
+quit
+
+//C
+interface vlan 50
+ip address 1.1.5.1 255.255.255.0
+quit
+
+interface vlan 30
+ip address 1.1.3.1 255.255.255.0
+quit
+
+// set routing table
+// A
+ip route-static 1.1.2.0 24 1.1.4.2
+ip route-static 1.1.5.0 24 1.1.4.2
+ip route-static 1.1.3.0 24 1.1.4.2
+
+// B
+ip route-static 1.1.1.0 24 1.1.4.1
+ip route-static 1.1.3.0 24 1.1.5.1
+
+// C
+ip route-static 1.1.2.0 24 1.1.5.2
+ip route-static 1.1.4.0 24 1.1.5.2
+ip route-static 1.1.1.0 24 1.1.5.2
+
+// 3 PC has to set gateway, for example, PC1, 1.1.1.1
+```
