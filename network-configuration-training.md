@@ -78,7 +78,7 @@ port link-type access
 port default vlan 10
 
 interface vlan 10
-//Let's assume another switch have a ip address 1.1.1.6
+//Let's assume another switch have an ip address 1.1.1.6
 ip address 1.1.1.7 24
 
 ping 1.1.1.6
@@ -477,3 +477,142 @@ untagged frame 通过贴上 pvid，变成了 vlan10 tagged frame
 把`vlan10 tagged frame`变成`untagged frame`，再发送给 PC2
 
 ___
+
+DHCP(Dynamic Host Configuration Protocol) 配置
+
+
+![](/assets/DHCP configure.png)
+
+//// DHCP server
+system-view
+dhcp enable
+
+//set a ip pool, from 192.168.31.1 to 192.168.31.253
+ip pool 1
+network 192.168.31.0 mask 255.255.255.0
+dns-list 202.102.4.141
+gateway-list 192.168.31.254
+lease day 2
+quit
+
+//make sure all frames to pc is untagged, all frames to DHCP server is tagged with vlan 10
+vlan batch 10
+interface Ethernet 0/0/1
+port hybrid pvid vlan 10
+port hybrid untagged vlan 10
+quit
+
+// the DHCP Server has to have an ip_address, so other host could reach it.
+interface vlanif 10
+ip address 192.168.31.1 24
+
+// and we also have to allow/enable that dhcp protocol forwarding at the output port (here is a virtual LAN)
+dhcp select global
+
+---------------------
+
+VRRP 配置 (目的: 让各个Host通过IP互通)
+
+
+//// A, B, C
+system-view
+undo stp enable
+y
+
+// set Host gateway
+//hostA: 10.1.1.111
+//hostC: 10.1.1.112
+//hostB: 20.1.1.1
+
+//// A
+system-view
+vlan batch 100 200
+interface ethernet 0/0/1
+port hybrid pvid vlan 100
+port hybrid untagged vlan 100
+// the function of hybrid is when you send vlan100 frame, it convert it to untagged frame; when you receive untagged frame, it will convert it to vlan100 tagged frame
+quit
+
+interface vlan 100
+ip address 10.1.1.1 24
+quit
+interface vlan 200
+ip address 192.168.1.1 24
+quit
+
+//// B
+system-view
+vlan batch 100 400
+//interface ethernet 0/0/1
+//port hybrid pvid vlan 100
+//port hybrid untagged vlan 100
+
+interface vlan 100
+ip address 10.1.1.2 24
+quit
+interface vlan 400
+ip address 192.168.2.1 24
+quit
+
+//// C
+system-view
+vlan batch 200 400 300
+interface vlan 200
+ip address 192.168.1.2 24
+quit
+interface vlan 400
+ip address 192.168.2.2 24
+quit
+interface vlan 300
+ip address 20.1.1.1 24
+quit
+
+//// A
+// use ospf routing protocol to do this
+system-view
+ospf 1
+area 0
+network 10.1.1.0 0.0.0.255
+network 192.168.1.0 0.0.0.255
+quit
+quit
+
+//// B
+system-view
+ospf 1
+area 0
+network 10.1.1.0 0.0.0.255
+network 192.168.2.0 0.0.0.255
+quit
+quit
+
+//// C
+system-view
+ospf 1
+area 0
+network 192.168.1.0 0.0.0.255
+network 192.168.2.0 0.0.0.255
+network 20.1.1.0 0.0.0.255
+quit
+quit
+
+//// set VRRP
+// A
+interface vlan 100
+vrrp vrid 1 virtual-ip 10.1.1.111
+vrrp vrid 1 priority 120
+vrrp vrid 2 virtual-ip 10.1.1.112
+vrrp vrid 2 priority 100
+quit
+
+// B
+interface vlan 100
+vrrp vrid 1 virtual-ip 10.1.1.111
+vrrp vrid 1 priority 100
+vrrp vrid 2 virtual-ip 10.1.1.112
+vrrp vrid 2 priority 120
+quit
+
+---------------
+
+静态路由的配置
