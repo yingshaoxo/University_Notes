@@ -371,6 +371,9 @@ interface ethernet 0/0/3
 port link-type access
 port default vlan 20
 quit
+interface vlan 20
+ip address 1.1.2.1 255.255.255.0
+quit
 
 vlan 40
 quit
@@ -378,12 +381,18 @@ interface ethernet 0/0/1
 port link-type trunk
 port trunk allow-pass vlan all
 quit
+interface vlan 40
+ip address 1.1.4.2 255.255.255.0
+quit
 
 vlan 50
 quit
 interface ethernet 0/0/2
 port link-type trunk
 port trunk allow-pass vlan all
+quit
+interface vlan 50
+ip address 1.1.5.2 255.255.255.0
 quit
 
 //A
@@ -394,12 +403,18 @@ interface ethernet 0/0/2
 port link-type access
 port default vlan 10
 quit
+interface vlan 10
+ip address 1.1.1.1 255.255.255.0
+quit
 
 vlan 40
 quit
 interface ethernet 0/0/1
 port link-type trunk
 port trunk allow-pass vlan all
+quit
+interface vlan 40
+ip address 1.1.4.1 255.255.255.0
 quit
 
 //C
@@ -410,6 +425,9 @@ interface ethernet 0/0/2
 port link-type access
 port default vlan 30
 quit
+interface vlan 30
+ip address 1.1.3.1 255.255.255.0
+quit
 
 vlan 50
 quit
@@ -417,41 +435,13 @@ interface ethernet 0/0/1
 port link-type trunk
 port trunk allow-pass vlan all
 quit
-
-//PC1: 1.1.1.2/24
-//PC2: 1.1.2.2/24
-//PC3: 1.1.3.2/24
-
-//A
-interface vlan 10
-ip address 1.1.1.1 255.255.255.0
-quit
-
-interface vlan 40
-ip address 1.1.4.1 255.255.255.0
-quit
-
-//B
-interface vlan 40
-ip address 1.1.4.2 255.255.255.0
-quit
-
-interface vlan 20
-ip address 1.1.2.1 255.255.255.0
-quit
-
-interface vlan 50
-ip address 1.1.5.2 255.255.255.0
-quit
-
-//C
 interface vlan 50
 ip address 1.1.5.1 255.255.255.0
 quit
 
-interface vlan 30
-ip address 1.1.3.1 255.255.255.0
-quit
+//PC1: 1.1.1.2/24
+//PC2: 1.1.2.2/24
+//PC3: 1.1.3.2/24
 
 // set routing table
 // A
@@ -472,7 +462,6 @@ ip route-static 1.1.1.0 24 1.1.5.2
 ```
 
 ![](/assets/switch_static_routing.png)
-
 
 ---
 
