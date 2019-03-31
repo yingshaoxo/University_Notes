@@ -361,7 +361,6 @@ quit
 三层交换机的静态路由配置
 
 
-![](/assets/switch_static_routing.png)
 
 ```
 //B
@@ -469,5 +468,23 @@ ip route-static 1.1.2.0 24 1.1.5.2
 ip route-static 1.1.4.0 24 1.1.5.2
 ip route-static 1.1.1.0 24 1.1.5.2
 
-// 3 PC has to set gateway, for example, PC1, 1.1.1.1
+// 3 PC has to set gateway, for example, PC1, 1.1.1.1, 1.1.2.1, 1.1.3.1
 ```
+
+![](/assets/switch_static_routing.png)
+
+
+---
+
+按理来说，我们可以从这一系列的操作中学到很多东西。
+
+1. PC1 到 SwitchA，设置了一个 access port
+untagged frame 通过贴上 pvid，变成了 vlan10 tagged frame
+
+2. SwitchA 到 SwitchB，设置了两个 trunk port
+在第一个端口，`vlan10 tagged frame`与`默认的pvid 1`不同，被直接发送；在第二个端口，`vlan10 tagged frame` 属于 `allowed vlan`，所以被接收
+
+3. SwitchB 到 PC2，设置了一个 access port
+把`vlan10 tagged frame`变成`untagged frame`，再发送给 PC2
+
+___
