@@ -511,8 +511,12 @@ dhcp select global
 
 ---------------------
 
-VRRP 配置 (目的: 让各个Host通过IP互通)
+VRRP(Virtual Router Redundancy Protocol) 配置 (目的: 让各个Host通过IP互通，并且`屏蔽掉`底层`具体的硬件端口IP地址`，从而使`一个虚拟网关`对应`多个实体硬件线路`)
 
+
+![](/assets/VRRP configure.png)
+
+**我没做出来，下面的代码大概是错的**
 
 //// A, B, C
 system-view
@@ -530,7 +534,6 @@ vlan batch 100 200
 interface ethernet 0/0/1
 port hybrid pvid vlan 100
 port hybrid untagged vlan 100
-// the function of hybrid is when you send vlan100 frame, it convert it to untagged frame; when you receive untagged frame, it will convert it to vlan100 tagged frame
 quit
 
 interface vlan 100
@@ -616,3 +619,6 @@ quit
 ---------------
 
 静态路由的配置
+
+
+未完待续...
