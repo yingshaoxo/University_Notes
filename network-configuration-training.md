@@ -952,3 +952,138 @@ ip address 40.1.1.1 32
 isis enable
 quit
 ```
+
+___
+
+路由器间建立 EBGP 邻居
+
+
+```
+// AR1
+system-view
+
+interface LoopBack 0
+ip address 1.1.1.1 32
+quit
+
+interface GigabitEthernet 0/0/0
+ip address 192.168.1.1 24
+quit
+
+bgp 100
+router-id 1.1.1.1
+peer 2.2.2.2 as-number 200
+peer 2.2.2.2 connect-interface LoopBack0
+peer 2.2.2.2 ebgp-max-hop 2
+ip route-static 2.2.2.2 255.255.255.255 192.168.1.2
+
+// AR2
+system-view
+
+interface LoopBack 0
+ip address 2.2.2.2 32
+quit
+
+interface GigabitEthernet 0/0/0
+ip address 192.168.1.2 24
+quit
+
+bgp 200
+router-id 2.2.2.2
+peer 1.1.1.1 as-number 100
+peer 1.1.1.1 connect-interface LoopBack0
+peer 1.1.1.1 ebgp-max-hop 2
+ip route-static 1.1.1.1 255.255.255.255 192.168.1.1
+
+// check, should have established
+display bgp peer
+```
+
+------------------
+
+BGP 基本配置
+
+
+```
+// A
+system-view
+interface GigabitEthernet 0/0/1
+ip address 3.1.1.2 24
+quit
+
+interface LoopBack 0
+ip address 1.1.1.1 32
+quit
+
+interface LoopBack 1
+ip address 8.1.1.1 24
+quit
+
+bgp 65008
+router-id 1.1.1.1
+peer 3.1.1.1 as-number 65009
+//peer 1.1.1.1 connect-interface LoopBack0
+network 8.1.1.1 24
+quit
+
+// B
+system-view
+interface GigabitEthernet 0/0/1
+ip address 3.1.1.1 24
+quit
+
+interface LoopBack 0
+ip address 2.2.2.2 32
+quit
+
+interface GigabitEthernet 0/0/0
+ip address 9.1.1.1 24
+quit
+
+bgp 65009
+router-id 2.2.2.2
+peer 3.1.1.2 as-number 65008
+peer 3.3.3.3 as-number 65009
+peer 3.3.3.3 connect-interface LoopBack0
+import-route direct
+quit
+
+ospf 1
+area 0
+network 2.2.2.2 0.0.0.0
+network 9.1.1.1 0.0.0.255
+quit
+quit
+
+// C
+system-view
+interface GigabitEthernet 0/0/0
+ip address 9.1.1.2 24
+quit
+
+interface LoopBack 0
+ip address 3.3.3.3 32
+quit
+
+bgp 65009
+router-id 3.3.3.3
+peer 2.2.2.2 as-number 65009
+peer 2.2.2.2 connect-interface LoopBack0
+quit
+
+ospf 1
+area 0
+network 3.3.3.3 0.0.0.0
+network 9.1.1.0 0.0.0.255
+quit
+quit
+
+// B
+bgp 65009
+router-id 2.2.2.2
+peer 3.1.1.2 as-number 65008
+peer 3.3.3.3 as-number 65009
+peer 3.3.3.3 connect-interface LoopBack0
+import-route direct
+quit
+```
