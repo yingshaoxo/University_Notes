@@ -39,6 +39,7 @@
     * [1](1.md)
     * [The road for starting](the-road-for-starting.md)
     * [Polar Coordinates](polar-coordinates.md)
+    * [Tangent Line](tangent-line.md)
 * [Electrical Engineering](electrical-engineering.md)
   * [The Terminologys](electrical-engineering/the-terminologys.md)
   * [DC](electrical-engineering/dc.md)
