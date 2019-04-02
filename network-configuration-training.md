@@ -483,6 +483,7 @@ DHCP(Dynamic Host Configuration Protocol) 配置
 
 ![](/assets/DHCP configure.png)
 
+```
 //// DHCP server
 system-view
 dhcp enable
@@ -508,6 +509,7 @@ ip address 192.168.31.1 24
 
 // and we also have to allow/enable that dhcp protocol forwarding at the output port (here is a virtual LAN)
 dhcp select global
+```
 
 ---------------------
 
@@ -517,7 +519,7 @@ VRRP(Virtual Router Redundancy Protocol) 配置 (目的: 让各个Host通过IP�
 ![](/assets/VRRP configure.png)
 
 **我没做出来，下面的代码大概是错的**
-
+```
 //// A, B, C
 system-view
 undo stp enable
@@ -615,10 +617,338 @@ vrrp vrid 1 priority 100
 vrrp vrid 2 virtual-ip 10.1.1.112
 vrrp vrid 2 priority 120
 quit
+```
 
 ---------------
 
 静态路由的配置
 
 
-未完待续...
+
+```
+telnet 192.168.0.6 6005
+
+// Switch B
+vlan batch 30
+
+interface Ethernet 0/0/2
+port link-type access
+port default vlan 30
+quit
+
+interface Ethernet 0/0/1
+port hybrid pvid vlan 30
+port hybrid untagged vlan 30
+quit
+
+// Router B
+vlan batch 30
+
+interface vlan 30
+ip address 10.1.2.1 255.255.255.0
+quit
+
+interface Ethernet 0/0/0
+port link-type access
+port default vlan 30
+quit
+
+interface GigabitEthernet 0/0/0
+ip address 10.1.4.2 255.255.255.252
+quit
+
+interface GigabitEthernet0/0/1
+ip address 10.1.4.5 255.255.255.252
+quit
+
+ip route-static 10.1.1.0 255.255.255.0 10.1.4.1
+ip route-static 10.1.3.0 255.255.255.0 10.1.4.6
+
+// Switch A
+vlan batch 10
+
+interface Ethernet0/0/2
+port link-type access
+port default vlan 10
+quit
+
+interface Ethernet0/0/1
+port hybrid pvid vlan 10
+port hybrid untagged vlan 10
+quit
+
+// Router A
+interface GigabitEthernet0/0/0
+ip address 10.1.4.1 255.255.255.252 
+quit
+
+interface GigabitEthernet0/0/1
+ip address 10.1.1.1 255.255.255.0 
+quit
+
+// Switch B
+vlan batch 20
+
+interface Ethernet0/0/2
+port link-type access
+port default vlan 20
+quit
+
+interface Ethernet0/0/1
+port link-type trunk
+port trunk pvid vlan 20
+port trunk allow-pass vlan 20
+quit
+
+// Router C
+interface GigabitEthernet0/0/0
+ip address 10.1.4.6 255.255.255.252 
+quit
+
+interface GigabitEthernet0/0/1
+ip address 10.1.3.1 255.255.255.0
+quit
+
+ip route-static 0.0.0.0 0.0.0.0 10.1.4.5
+ip route-static 10.1.1.0 255.255.255.0 10.1.4.5
+```
+
+---------------
+
+OSPF 路由协议基本配置
+
+
+```
+telnet 192.168.0.6 6002
+
+system-view
+
+router id 2.2.2.2
+
+interface GigabitEthernet 0/0/1
+ip address 192.168.0.2 24
+quit
+
+vlan batch 20
+interface vlan 20
+ip address 192.168.2.1 24
+quit
+
+interface Ethernet 0/0/1
+port link-type trunk
+port trunk allow-pass vlan 20
+quit
+
+ospf 2
+area 0.0.0.0
+network 192.168.2.0 0.0.0.255
+network 192.168.0.0 0.0.0.255
+quit
+quit
+```
+
+-----------
+
+RIP 引入外部路由配置
+
+
+```
+//// A
+interface GigabitEthernet 0/0/0
+ip address 192.168.1.1 24
+quit
+
+interface LoopBack1
+ip address 192.168.0.1 24
+quit
+
+rip 100
+network 192.168.0.0
+network 192.168.1.0
+quit
+
+//// B
+interface GigabitEthernet 0/0/0
+ip address 192.168.1.2 24
+quit
+
+interface GigabitEthernet 0/0/1
+ip address 192.168.2.2 24
+quit
+
+rip 100
+network 192.168.1.0
+quit
+default-cost 3
+import-route rip 200
+
+rip 200
+network 192.168.2.0
+import-route rip 100
+quit
+
+//// C
+interface GigabitEthernet 0/0/0
+ip address 192.168.2.1 24
+quit
+
+interface LoopBack2
+ip address 192.168.3.1 24
+quit
+
+interface LoopBack3
+ip address 192.168.4.1 24
+quit
+
+rip 200
+network 192.168.2.0
+network 192.168.3.0
+network 192.168.4.0
+quit
+```
+
+-------------------
+
+OSPF 引入路由聚合功能
+
+
+```
+//// A
+system-view
+
+interface LoopBack 1
+ip address 192.168.3.1 255.255.255.0
+quit
+interface LoopBack 2
+ip address 192.168.2.1 255.255.255.0
+quit
+
+router id 1.1.1.1
+interface LoopBack 3
+ip address 1.1.1.1 255.255.255.255
+quit
+
+interface GigabitEthernet 0/0/0
+ip address 192.168.0.1 255.255.255.0
+quit
+
+ospf 2
+asbr-summary 192.168.2.0 255.255.254.0
+import-route direct
+area 0.0.0.0
+network 192.168.0.0 0.0.0.255
+quit
+quit
+
+//// B
+system-view
+
+router id 2.2.2.2
+interface LoopBack 0
+ip address 2.2.2.2 255.255.255.255
+quit
+
+interface GigabitEthernet 0/0/0
+ip address 192.168.0.2 255.255.255.0
+quit
+
+interface GigabitEthernet 0/0/1
+ip address 192.168.1.2 255.255.255.0
+quit
+
+ospf 2
+area 0.0.0.0
+network 192.168.0.0 0.0.0.255
+area 0.0.0.1
+network 192.168.1.0 0.0.0.255
+quit
+quit
+
+//// C
+system-view
+
+router id 3.3.3.3
+interface LoopBack 0
+ip address 3.3.3.3 255.255.255.255
+quit
+
+interface GigabitEthernet 0/0/1
+ip address 192.168.1.1 255.255.255.0
+quit
+
+ospf 2
+area 0.0.0.1
+network 192.168.1.0 0.0.0.255
+quit
+quit
+```
+
+----------------
+
+IS-IS 路由配置
+
+
+```
+//// A
+system-view
+
+isis
+network-entity 86.0001.0200.0100.1001.00
+is-level level-1
+quit
+
+interface LoopBack 0
+ip address 20.1.1.1 32
+isis enable
+quit
+
+interface GigabitEthernet 0/0/1
+ip address 1.1.1.1 30
+isis enable
+isis circuit-level level-1
+quit
+
+//// B
+system-view
+
+isis
+network-entity 86.0001.0300.0100.1001.00
+is-level level-1-2
+quit
+
+interface GigabitEthernet 0/0/1
+ip address 1.1.1.2 30
+isis enable
+isis circuit-level level-1
+quit
+
+interface GigabitEthernet 0/0/0
+ip address 2.2.2.1 30
+isis enable
+isis circuit-level level-2
+quit
+
+interface LoopBack 0
+ip address 30.1.1.1 32
+isis enable
+quit
+
+//// C
+system-view
+
+isis
+network-entity 86.0002.0400.0100.1001.00
+is-level level-2
+quit
+
+interface GigabitEthernet 0/0/0
+ip address 2.2.2.2 30
+isis enable
+isis circuit-level level-2
+quit
+
+interface LoopBack 0
+ip address 40.1.1.1 32
+isis enable
+quit
+```
