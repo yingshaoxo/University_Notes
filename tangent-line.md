@@ -88,6 +88,7 @@ y - a^{-\frac{1}{2}} &= \frac{1}{2}a^{-\frac{1}{2}}
 y &= \frac{1}{2}a^{-\frac{1}{2}} + a^{-\frac{1}{2}} 
 \\
 y &= \frac{3}{2}a^{-\frac{1}{2}}
+
 \\ \\
 \text{when y = 0: } &
 \\
@@ -128,5 +129,35 @@ y &= \frac{3}{2}a^{-\frac{1}{2}}
 3 \cdot a &= x
 \\
 3a &= x
+
+\\ \\
+\text{area of triangle} &= \frac{1}{2} \cdot height \cdot width
+\\
+18 &= \frac{1}{2} \cdot y \cdot x
+\\ 
+18 &= \frac{1}{2} \cdot \frac{3}{2}a^{-\frac{1}{2}} \cdot 3a
+\\
+18 &= (\frac{1}{2} \cdot \frac{3}{2} \cdot 3) \cdot a^{-\frac{1}{2}} \cdot a
+\\
+18 &= (\frac{9}{4}) \cdot a^{-\frac{1}{2}} \cdot a
+\\
+18 &= (\frac{9}{4}) \cdot a^{-\frac{1}{2} + 1}
+\\
+18 &= (\frac{9}{4}) \cdot a^{\frac{1}{2}}
+\\
+18 \cdot \frac{4}{9} &= a^{\frac{1}{2}}
+\\
+8 &= a^{\frac{1}{2}}
+\\
+8 &= \sqrt{a}
+\\
+8^2 &= (\sqrt{a})^2
+\\
+64 &= a
+\\
+a &= 64
+\\
 \end{align*}
 $$
+
+So, finally, we have got the value of a, which is `64`.
