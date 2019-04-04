@@ -719,7 +719,6 @@ ip route-static 10.1.1.0 255.255.255.0 10.1.4.5
 OSPF 路由协议基本配置
 
 
-![](/assets/OSPF 引入路由聚合功能.png)
 
 ```
 telnet 192.168.0.6 6002
@@ -817,6 +816,7 @@ quit
 OSPF 引入路由聚合功能
 
 
+![](/assets/OSPF 引入路由聚合功能.png)
 
 ```
 //// A
@@ -894,6 +894,8 @@ quit
 IS-IS 路由配置
 
 
+![](/assets/IS-IS 路由配置.png)
+
 ```
 //// A
 system-view
@@ -964,6 +966,8 @@ ___
 路由器间建立 EBGP 邻居
 
 
+![](/assets/路由器间建立 EBGP 邻居.png)
+
 ```
 // AR1
 system-view
@@ -1009,6 +1013,8 @@ display bgp peer
 
 BGP 基本配置
 
+
+![](/assets/BGP 基本配置.png)
 
 ```
 // A
@@ -1093,3 +1099,6 @@ peer 3.3.3.3 connect-interface LoopBack0
 import-route direct
 quit
 ```
+
+_____
+
