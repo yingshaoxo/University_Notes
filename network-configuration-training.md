@@ -1102,3 +1102,186 @@ quit
 
 _____
 
+ACL 基本配置
+
+
+![](/assets/ACL 基本配置.png)
+
+```
+// Router
+system-view
+
+interface GigabitEthernet 0/0/0
+ip address 172.16.104.109 24
+quit
+
+vlan batch 10 20 30
+
+interface Ethernet 0/0/0
+port link-type access
+port default vlan 10
+quit
+
+interface Ethernet 0/0/1
+port link-type access
+port default vlan 20
+quit
+
+interface Ethernet 0/0/2
+port link-type access
+port default vlan 30
+quit
+
+interface vlan 10
+ip address 172.16.105.110 24
+quit
+
+interface vlan 20
+ip address 172.16.107.110 24
+quit
+
+interface vlan 30
+ip address 10.10.10.2 24
+quit
+
+// PC A, B, C
+A: 172.16.105.111 24, gateway is 172.16.105.110
+B: 172.16.107.111 24, gateway is 172.16.107.110
+C: 10.10.10.1 24, gateway is 10.10.10.2
+
+// FTP Switch
+system-view
+
+vlan batch 40
+interface vlan 40
+ip address 172.16.104.110 24
+quit
+interface Ethernet 0/0/1
+port link-type hybrid
+port hybrid pvid vlan 40
+port hybrid untagged vlan 40
+quit
+
+ip route-static 172.16.105.0 24 172.16.104.109
+ip route-static 172.16.107.0 24 172.16.104.109
+ip route-static 10.10.10.0 24 172.16.104.109
+
+ftp server enable
+aaa
+local-user qq password simple 1234
+local-user qq ftp-directory flash
+local-user qq service-type ftp
+local-user qq privilege level 15
+quit
+```
+
+-------------
+
+NAT 配置
+
+
+![](/assets/NAT 配置.png)
+
+```
+// Router 1
+system-view
+
+interface GigabitEthernet 0/0/0
+ip address 192.168.0.1 24
+quit
+
+interface GigabitEthernet 0/0/1
+ip address 202.1.1.2 24
+quit
+
+nat address-group 1 202.1.1.3 202.1.1.6
+acl number 2000
+rule 0 permit source 192.168.0.0 0.0.0.255
+quit
+
+interface GigabitEthernet 0/0/1
+nat outbound 2000 address-group 1
+quit
+
+
+// Router 2
+system-view
+
+interface GigabitEthernet 0/0/1
+ip address 202.1.1.7 24
+quit
+
+ip route-static 192.168.0.0 24 202.1.1.2
+```
+
+----------------
+
+PPP 认证配置
+
+
+```
+telnet 192.168.0.6 6001
+
+system-view
+
+interface Serial 2/0/0
+ip address 10.1.1.2 30
+link-protocol ppp
+ppp chap user huawei
+ppp chap password cipher hello
+quit
+
+interface Serial 2/0/1
+ip address 10.2.2.2 30
+link-protocol ppp
+ppp chap user admin
+ppp chap password cipher hi
+quit
+
+interface Serial 2/0/0
+shutdown
+undo shutdown
+quit
+
+interface Serial 2/0/1
+shutdown
+undo shutdown
+quit
+```
+
+---------
+
+RIPng 路由协议的配置
+
+
+```
+// Router A
+telnet 192.168.0.6 6001
+
+system-view
+ipv6
+
+interface GigabitEthernet 0/0/1
+ipv6 enable
+ipv6 address 1::1 64
+ripng 1 enable
+quit
+
+interface GigabitEthernet 0/0/0
+ipv6 enable
+ipv6 address 2::2 64
+ripng 1 enable
+quit
+
+// PC A
+// add ipv6 protocol
+// open cmd
+ipv6 if
+
+netsh
+interface ipv6
+add address 5 1::2
+quit
+
+ipv6 rtu ::/0 5/1::1
+```
