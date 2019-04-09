@@ -67,3 +67,25 @@ APC: Automate Power Control
 * 调制复杂，损耗大
 * 无啁啾(chirp)现象
 * 用于速率 2.5 Gbit/s 以上系统
+
+___
+
+#### 三、光发送机性能指标
+
+##### 平均发送功率
+
+01等概率，即正常工作时的发送功率
+
+> 01等概率: 010 => 01 10 01
+
+$$P_T = 10 \cdot \lg(\frac{P}{1mW})$$
+
+单位是 dBm
+
+##### 消光比
+
+$$\frac{\text{发送全1时的光功率}}{\text{发送全0时的光功率}}$$
+
+$$\text{extinction ratio} = 10 \cdot (\frac{P_{11}}{P_{00}})$$ ，此时的P，单位是mw
+
+$$\text{extinction ratio} = 3 + P_T - P_{00}$$ ，此时的P，单位是dBm
