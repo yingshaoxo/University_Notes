@@ -9,7 +9,7 @@ import numpy as np
 ![](assets/matrix-multiplication.png)
 ```
 >>> a = np.array([[2,3,0], [1,2,0]])
->>> b = np.array([[1,0], [0,2],[3,0]])
+>>> b = np.array([[1,0], [0,2], [3,0]])
 >>> np.dot(a,b)
 array([[2, 6],
        [1, 4]])
@@ -18,7 +18,7 @@ array([[2, 6],
 #### Determinant of an array (数组的行列式)
 
 ```
->>> b = np.array([[1,-1,0], [4,-5,-3],[2,3,6]])
+>>> b = np.array([[1,-1,0], [4,-5,-3], [2,3,6]])
 >>> np.linalg.det(b)
 9.0000000000000018
 ```
