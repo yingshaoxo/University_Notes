@@ -1,5 +1,7 @@
 ## 光发送机测试
 
+___
+
 #### 一、光纤系统传输的码型
 
 ##### 1. 对于`电接口`
@@ -37,3 +39,31 @@
 **GE(Gigabit_Ethernet)**: 1000 Mbit/s，mBnB
 
 > mBnB take m bits of the original data and encode them into n bits
+
+___
+
+#### 二、光发送机的工作原理 (电进光出)
+
+![](/assets/light receiver.jpg)
+
+假设上面的图，左边是Ａ端，右边是Ｂ端
+
+复用时，B端的接口速率一定 > A端的接口速率
+
+> 复用: 左边 多线进， 右边 单线出
+
+APC: Automate Power Control
+
+##### 调制
+
+###### 直接调制
+
+* 调制简单、损耗小，成本低
+* 啁啾(chirp)现象: `发射激光的波长`随着`调制电流的变化`而变化
+* 用于速率 2.5 Gbit/s 以下系统
+
+###### 间接调制
+
+* 调制复杂，损耗大
+* 无啁啾(chirp)现象
+* 用于速率 2.5 Gbit/s 以上系统
