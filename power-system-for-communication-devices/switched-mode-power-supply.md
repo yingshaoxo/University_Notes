@@ -4,3 +4,6 @@ A `switched-mode power supply` is an electronic power supply that incorporates a
 
 ___
 
+![](/assets/高频开关电源系统.jpg)
+
+wait a minute, I need to do some real stuff before going on with this.
