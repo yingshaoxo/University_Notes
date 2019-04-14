@@ -158,6 +158,7 @@
   * [Basic Knowledge of GSM-R](gsm-for-railway/gsm-r.md)
   * [Key technologies for GSM-R](gsm-for-railway/key-technologies-for-gsm-r.md)
   * [Structure of GSM-R](gsm-for-railway/structure-of-gsm-r.md)
+  * [GSM-R Network Mode](gsm-for-railway/gsm-r-network-mode.md)
 * [Network Configuration Training](network-configuration-training.md)
   * [Words I have learned](network-configuration-training/words-i-have-learned.md)
 
