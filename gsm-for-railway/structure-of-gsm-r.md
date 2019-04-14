@@ -10,7 +10,7 @@
 
 ___
 
-#### BSS(Base station controler)
+#### BSS(Base subsystem)
 
 ##### BTS:
 
@@ -18,7 +18,7 @@ ___
 
 > A BTS is controlled by a parent BSC via the "base station control function" (BCF). The BCF is implemented as a discrete unit or even incorporated in a TRX in compact base stations.
 
-一个 TRX 管理一个 TDMA 帧 = 一个频点 = 8个时隙 = 8个用户
+一个 TRX 管理一个 TDMA 帧 = 1个频点 = 8个时隙 = 8个用户
 
 一个`基站小区`有一个 TRX
 
@@ -26,7 +26,7 @@ ___
 
 > 按照概念的从大到小: 服务区 ->　PLMN　-> 若干MSC区 -> 若干位置区 -> 若干基站区
 
-##### BSC:
+##### BSC(Base station controler):
 
 由 处理单元、交换机矩阵单元、中继控制单元 组成
 
@@ -38,11 +38,11 @@ ___
 
 把`13kbit/s`转为`64kbit/s`
 
-把`1线120个用户`转为`4线，毎线30个用户`
+把BSC过来的`1线120个用户`转为`4线，毎线30个用户`，送给GMSC/VLR
 
 ___
 
-#### NSS
+#### NSS(Network subsystem)
 
 ##### MSC(mobile switching center)
 
@@ -73,6 +73,16 @@ MSC上的模块，可以让`GSM-R系统`与其他网络连接
 ##### SmS-SC(短消息服务中心)
 
 在铁路上，并不被使用
+
+___
+
+#### OSS(Operate subsystem)
+
+OMC-R: 管理BSS, R is for radio
+
+OMC-S: 管理NSS, S is for switch
+
+OMC-F: 管理FAS, F is for FAS
 
 ___
 
