@@ -131,6 +131,7 @@
   * [Compression](multimedia-communication/compression.md)
   * [Lossless Compression](multimedia-communication/lossless-compression.md)
   * [Audio](multimedia-communication/audio.md)
+  * [Lossy Audio Coding](multimedia-communication/lossy-audio-coding.md)
 * [Power system for Communication Devices](power-system-for-communication-devices.md)
   * [Overview](power-system-for-communication-devices/overview.md)
   * [AC power Distribution Panel](power-system-for-communication-devices/ac-power-distribution-panel.md)
