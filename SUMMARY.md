@@ -145,6 +145,7 @@
     * [Active Optical Devices](what-is-optical-fiber-communication-system/active-optical-devices.md)
     * [Optical transmitter Test](what-is-optical-fiber-communication-system/optical-transmitter-test.md)
     * [Optical receiver Test](what-is-optical-fiber-communication-system/optical-receiver-test.md)
+    * [Compose an Optical Communication System](what-is-optical-fiber-communication-system/compose-an-optical-communication-system.md)
 * [Communication Tech English](communication-tech-english.md)
   * [Fundamentals of Electricity](communication-tech-english/fundamentals-of-electricity.md)
 * [High-speed railway Communication Technology](high-speed-railway-communication-technology.md)
