@@ -151,6 +151,7 @@
     * [Frame Structure of SDH](sdh-synchronous-digital-hierarchy/frame-structure-of-sdh.md)
 * [Communication Tech English](communication-tech-english.md)
   * [Fundamentals of Electricity](communication-tech-english/fundamentals-of-electricity.md)
+  * [Digital Communications](communication-tech-english/digital-communications.md)
 * [High-speed railway Communication Technology](high-speed-railway-communication-technology.md)
   * [Overview](high-speed-railway-communication-technology/overview.md)
   * [Base Knowledge](high-speed-railway-communication-technology/base-knowledge.md)
