@@ -1,3 +1,6 @@
+Please read the book "The ComSoc Guide to Next Generation Optical Transport SDH, SONET, OTN" before you get started the following read.
+___
+
 通信网的发展历史(The history of communication network): 
 
 1. PDH (Plesiochronous Digital Hierarchy)
@@ -8,6 +11,8 @@
 ___
 
 # SDH (Synchronous Digital Hierarchy)
+
+> STM-N: Synchronous Transport Module of level N
 
 **STM-1**： 155 Ｍb/s
 

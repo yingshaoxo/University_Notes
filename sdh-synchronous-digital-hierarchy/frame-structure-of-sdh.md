@@ -20,7 +20,7 @@ OH(overhead): 开销，overhead cost or expense.
 
 RSOH(Regeneration Section Overhead): 再生段开销
 
-AU4P(AU-4 Pointers): 管理单元指针
+AU4P(AU-4 Pointers)(Administrative Unit Group of level 4 Pointers): 管理单元指针
 
 MSOH(Multiplex Section Overhead): 复用段开销
 
@@ -36,10 +36,12 @@ ___
 
 * 定帧字节: A1 和 A2。用来判定STM-*，以及识别一帧的起始位置。如果连续5帧都搜不到A1、A2，将产生`ROOF(报警)`，持续3ms后，又会产生`LOF(loss of frame 报警)`，此时它会向`下游设备`发送全”1“信号。`下游设备`如果接收到全`1`，会产生`AIS(报警)`
 
-* 再生段追踪字节: J0
+* 再生段追踪字节: J0 
 
 * 数据通信通路(Data Communication Channel): D1~D12
 
+> A1 and A2 for frame alignment, J0 for identifi cation, B1 and B2 for performance monitoring, E1 and E2 are engineer order wires, F1 is a user channel, D1 ... D3 and D4 ... D12 provide data communication
+    
 ___
 
 Reference:
