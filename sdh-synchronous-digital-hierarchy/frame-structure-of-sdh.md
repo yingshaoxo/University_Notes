@@ -1,7 +1,8 @@
 ## SDH的帧结构
 
-![](/assets/STM-1帧结构.png)
+![](/assets/STM-N structure.png)
 
+![](/assets/STM-1帧结构.png)
 
 > 这个图你得会画
 
