@@ -27,6 +27,8 @@ AU4P(AU-4 Pointers)(Administrative Unit Group of level 4 Pointers): 管理单元
 
 MSOH(Multiplex Section Overhead): 复用段开销
 
+净负荷: payload
+
 > 你可以试着理解一下，但维基百科上都没写清楚，似乎不需要你理解
 
 #### THE SDH `MULTIPLEX SECTION`( MS n ) TRANSPORT LAYER
