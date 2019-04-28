@@ -28,7 +28,7 @@ AU4P(AU-4 Pointers)(Administrative Unit Group of level 4 Pointers): 管理单元
 
 MSOH(Multiplex Section Overhead): 复用段开销
 
-净负荷: payload
+净负荷 | 有效载荷: payload
 
 > 你可以试着理解一下，但维基百科上都没写清楚，似乎不需要你理解
 
@@ -82,14 +82,14 @@ ___
 #### 奇偶效验字节: B1、B2
 > B1 and B2 for performance monitoring
 
-B1 监测`再生段`
+B1 用于监测`再生段`
 
-B2 监测`复用段` 
+B2 用于监测`复用段` 
 
 #### 自动保护倒换(APS, Auto protection switching)字节: K1、K2
 > K1 and K2 for `protection switching control` and `remote defect indication`
 
-也称`自愈环技术`(`后路`不通，自动走`前路`)
+属于`自愈环技术`(`后路`不通，自动走`前路`)
 
 切换时间 < 50 ms
 
@@ -110,7 +110,8 @@ ___
 * 高阶通道开销(HP-POH)
 * 低阶通道开销(LP-POH)
 
-> 开销 = additional bytes    
+> 开销 = additional bytes
+
 ___
 
 Reference:
