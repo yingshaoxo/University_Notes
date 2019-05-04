@@ -2,7 +2,7 @@
 
 ___
 
-### 分类
+### 一、分类
 
 形式: 实际、抽象
 
@@ -14,7 +14,7 @@ ___
 
 ___
 
-### 人的视觉特性
+### 二、人的视觉特性
 
 #### 1. 视觉的适应性
 
@@ -32,7 +32,7 @@ $$C = \frac{Light_{max} + Light_{env}}{Light_{min} + Light_{env}} = \frac{最大
 
 ___
 
-### 颜色
+### 三、颜色
 
 #### RGB
 red, green, blue
@@ -54,9 +54,9 @@ hue, saturation, value
 
 ___
 
-### 图像数字化
+### 四、图像数字化
 
-#### 采样: 即像素化
+#### 采样: 像素化
 
 HD: High Definition
 
@@ -73,3 +73,18 @@ HD: High Definition
 如`RGB`，若一个`像素成分`为`8bit`，则每个像素为 8x3=24 bit
 
 如`黑白`，0 or 1
+
+___
+
+### 五、图像编码
+
+主要是`预测编码`
+
+* 帧内预测: 如 H.264
+* 帧间预测: 如 H.265。利用`下一frame`相对于`上一frame`产生的`移动(或偏移)信息`，来还原图像。
+
+具体的标准有:
+
+* JPEG2000
+* CIF: common intermediate format
+* H.261、262、263、264、265: block -> macro-block -> group of block -> picture. (A block is 8x8 pixels)
