@@ -149,7 +149,7 @@
     * [Compose an Optical Communication System](what-is-optical-fiber-communication-system/compose-an-optical-communication-system.md)
   * [SDH \(Synchronous Digital Hierarchy\)](sdh-synchronous-digital-hierarchy.md)
     * [Frame Structure of SDH](sdh-synchronous-digital-hierarchy/frame-structure-of-sdh.md)
-    * [Hardware of SDH System](sdh-synchronous-digital-hierarchy/hardware-of-sdh-system.md)
+    * [SDH Equipments](sdh-synchronous-digital-hierarchy/hardware-of-sdh-system.md)
 * [Communication Tech English](communication-tech-english.md)
   * [Fundamentals of Electricity](communication-tech-english/fundamentals-of-electricity.md)
   * [Digital Communications](communication-tech-english/digital-communications.md)
