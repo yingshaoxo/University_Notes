@@ -170,6 +170,7 @@
   * [GSM-R Network Mode](gsm-for-railway/gsm-r-network-mode.md)
   * [Wireless Channels for GSM-R](gsm-for-railway/wireless-channels-for-gsm-r.md)
   * [Mobility Management](gsm-for-railway/mobility-management.md)
+  * [Connection Management](gsm-for-railway/connection-management.md)
 * [Network Configuration Training](network-configuration-training.md)
   * [Words I have learned](network-configuration-training/words-i-have-learned.md)
 
