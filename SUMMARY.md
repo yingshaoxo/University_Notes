@@ -138,6 +138,7 @@
   * [AC power Distribution Panel](power-system-for-communication-devices/ac-power-distribution-panel.md)
   * [UPS](power-system-for-communication-devices/ups.md)
   * [HF Switched-mode Power Supply](power-system-for-communication-devices/switched-mode-power-supply.md)
+  * [Battery](power-system-for-communication-devices/battery.md)
 * Optical fiber Communication system
   * [What is Optical fiber Communication system](what-is-optical-fiber-communication-system.md)
     * [Prepare](what-is-optical-fiber-communication-system/optical-fiber.md)
