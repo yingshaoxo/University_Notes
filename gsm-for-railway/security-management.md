@@ -24,15 +24,11 @@ ___
 
 `AuC`通过`A3(RAND, Ki)`得到`SRES`
 
-于是有了`三参数组(RAND, SRES, Kc)`。
-
 > SRES = Series
 
 > RAND = Random Numbers
 
 > Ki = individual subscriber authentication key
-
-> Kc = ciphering key
 
 #### step 2
 
@@ -54,6 +50,8 @@ ___
 
 `AuC`通过`A8(RAND, Ki)`得到`Kc`
 
+> Kc = ciphering key
+
 `MSC`通过`A5(Kc, TDMA序列号)`得到`114 bit的序列`
 
 `MSC`将`用户数据`与`114 bit的序列`做`异或运算`，再将`运算结果`发送给手机
@@ -68,6 +66,46 @@ b = 13            # 13 = 0000 1101
  
 c = a ^ b;        # 49 = 0011 0001
 ```
+
+___
+
+## Question and Answers
+
+___
+
+##### 三参数组如何产生的？
+
+`AuC`生成`RAND`。
+
+`AuC`通过`A3(RAND, Ki)`得到`SRES`
+
+`AuC`通过`A8(RAND, Ki)`得到`Kc`
+
+于是有了`三参数组(RAND, SRES, Kc)`
+
+___
+
+##### GSM-R 如何鉴权？
+
+`MSC`发送`RAND`给`MS`。
+
+`MS`通过`A3(RAND, Ki)`得到`SRES`。
+
+`MS`将生成的`SRES`回传给`MSC`。
+
+`MSC`对比之前它自己生成的`SRES`，如果相同，那么匹配成功(鉴定完毕是那个用户)
+
+___
+
+##### GSM-R 如何对用户信息进行加密？
+
+`AuC`通过`A8(RAND, Ki)`得到`Kc`
+
+`MSC`通过`A5(Kc, TDMA序列号)`得到`114 bit的序列`
+
+`MSC`将`用户数据`与`114 bit的序列`做`异或运算`，再将`运算结果`发送给手机
+
+`MS`自己也像`MSC`那样产生`114 bit的序列`，将`接收到的数据`与`114 bit的序列`做`异或运算`，最终得到`原始数据`
 
 ___
 
