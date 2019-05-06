@@ -1,23 +1,19 @@
-Superposition
-叠加
+# Superposition
 
-Linearity
-线性
+Superposition 叠加
 
-Suppress
-镇压；使什么止住
-___
+Linearity 线性
 
-The principle of superposition is another name for the additivity property of Linearity: 
-$$ f(x_1 + x_2) = f(x_1) + f(x_2) $$
-___
+Suppress 镇压；使什么止住
+
+The principle of superposition is another name for the additivity property of Linearity: $$f(x_1 + x_2) = f(x_1) + f(x_2)$$
 
 To solve a circuit using superposition:
 
 > 1. Suppress all power sources
->> To suppress a voltage source, replace it with a short circuit. (replace it with conductive wire)
->> To suppress a current source, replace it with an open circuit. (cut wire off)
-
+>
+>    > To suppress a voltage source, replace it with a short circuit. \(replace it with conductive wire\) To suppress a current source, replace it with an open circuit. \(cut wire off\)
+>
 > 2. Analyze the resulting simpler circuits individually.
+> 3. Calculate the sum of individual results.
 
-> 3. Calculate the sum of individual results. 

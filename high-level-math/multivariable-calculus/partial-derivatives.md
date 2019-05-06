@@ -1,7 +1,8 @@
-Partial derivatives
-> a derivative of `a function of two or more variables` with respect to one variable, the other(s) being treated as constant.
+# Partial derivatives
 
-___
+Partial derivatives
+
+> a derivative of `a function of two or more variables` with respect to one variable, the other\(s\) being treated as constant.
 
 $$
 \begin{align*}
@@ -32,3 +33,4 @@ $$\frac{\partial z}{\partial x}$$, you should see $$x$$ as `variable`, $$y$$ as 
 $$\frac{\partial z}{\partial y}$$, you should see $$y$$ as `variable`, $$x$$ as `constant`
 
 And for $$\frac{\partial^2 z}{\partial x \partial y}$$, first see $$x$$ as `variable`, do calculation, then see $$y$$ as `variable`, get result
+

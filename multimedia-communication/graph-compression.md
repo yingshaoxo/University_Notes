@@ -1,8 +1,6 @@
-## 图像数据压缩技术
+# Graph Compression
 
-___
-
-### 一、分类
+## 一、分类
 
 形式: 实际、抽象
 
@@ -12,51 +10,49 @@ ___
 
 维度: 1D, 2D, ...
 
-___
+## 二、人的视觉特性
 
-### 二、人的视觉特性
-
-#### 1. 视觉的适应性
+### 1. 视觉的适应性
 
 所有的感觉都基于对比。如果你突然进入暗室，需要过一段时间，你才能看清东西。
 
-#### 2. 对比度特性
+### 2. 对比度特性
 
 $$C = \frac{Light_{max} + Light_{env}}{Light_{min} + Light_{env}} = \frac{最大亮度+环境亮度}{最小亮度+环境亮度}$$
 
-#### 3. 视觉的`残留`与`闪烁`
+### 3. 视觉的`残留`与`闪烁`
 
-残留: 人的视觉采集器的`采集速度`有限，你可以趁它没来得及反应，送上`下一幅图片`，这样`人类`就会以为他看到的是`连续的真实画面`。(比如电影就是由 frames 组成的，a frame = a picture)
+残留: 人的视觉采集器的`采集速度`有限，你可以趁它没来得及反应，送上`下一幅图片`，这样`人类`就会以为他看到的是`连续的真实画面`。\(比如电影就是由 frames 组成的，a frame = a picture\)
 
 闪烁: 频率不高的脉冲，才会让人有闪烁感。
 
-___
+## 三、颜色
 
-### 三、颜色
+### RGB
 
-#### RGB
 red, green, blue
 
-#### HSB
+### HSB
+
 hue: 色调，光的颜色，取决于光的波长
 
 saturation: 颜色深浅，即与黑色混合的程度，越高越纯、越不黑
 
 brightness: 亮度
 
-#### YUV
+### YUV
 
-#### HSL
+### HSL
+
 hue, saturation, lightness
 
-#### HSV
+### HSV
+
 hue, saturation, value
 
-___
+## 四、图像数字化
 
-### 四、图像数字化
-
-#### 采样: 像素化
+### 采样: 像素化
 
 HD: High Definition
 
@@ -66,7 +62,7 @@ HD: High Definition
 
 4K: 4096x2160
 
-#### 量化: 描述每个像素
+### 量化: 描述每个像素
 
 如`灰度`，0~255
 
@@ -74,9 +70,7 @@ HD: High Definition
 
 如`黑白`，0 or 1
 
-___
-
-### 五、图像编码
+## 五、图像编码
 
 主要是`预测编码`
 
@@ -87,4 +81,36 @@ ___
 
 * JPEG2000
 * CIF: common intermediate format
-* H.261、262、263、264、265: block -> macro-block -> group of block -> picture. (A block is 8x8 pixels)
+* H.261、262、263、264、265: block -&gt; macro-block -&gt; group of block -&gt; picture. \(A block is 8x8 pixels\)
+
+H.264的特点:
+
+* 低码流
+* 高质量图像
+* 容错能力强
+* 网络适应能力强
+
+## 六、音视频接口
+
+### RCA\(Radio corporation of American\)模拟接口
+
+接`老式模拟电视`的。
+
+V: video
+
+L: Left
+
+R: Right
+
+### VGA\(Video Graphics Array\)接口
+
+传送模拟视频信号
+
+### HDMI\(High Definition Multimedia Interface\)接口
+
+支持4k、8k分辨率，不仅可传视频，还可以传音频
+
+### USB Type-C
+
+可快速充电、可传输数据
+

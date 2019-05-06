@@ -1,33 +1,22 @@
-![](/assets/diqicedian.jpg)
+# Pictures
 
-___
+![](../.gitbook/assets/diqicedian.jpg)
 
-![](/assets/hunxiancedian.jpg)
+![](../.gitbook/assets/hunxiancedian.jpg)
 
-___
+![](../.gitbook/assets/xinxian_jueyuan_dianzu_ceshi.jpg)
 
-![](/assets/xinxian_jueyuan_dianzu_ceshi.jpg)
+![](../.gitbook/assets/xinxian_duidi_jueyuan_dianzu_ceshi.jpg)
 
-___
+![](../.gitbook/assets/jiedi_dianzu_ceshi.jpg)
 
-![](/assets/xinxian_duidi_jueyuan_dianzu_ceshi.jpg)
+![](../.gitbook/assets/duanxian_ceshi.jpg)
 
-___
+![](../.gitbook/assets/hunxian_ceshi.jpg)
 
-![](/assets/jiedi_dianzu_ceshi.jpg)
-
-___
-
-![](/assets/duanxian_ceshi.jpg)
-
-___
-
-![](/assets/hunxian_ceshi.jpg)
-
-___
-
-![](/assets/diqi_cedian.jpg)
+![](../.gitbook/assets/diqi_cedian.jpg)
 
 地气 = `线路`与`地`接在一起了
 
 > 不知道哪个人取了这么一个没有意义的名字
+

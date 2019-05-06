@@ -1,3 +1,5 @@
+# Resistor
+
 $$
 \begin{align*}
 i &= \sqrt{2} I \sin(wt + \psi_i)
@@ -9,3 +11,4 @@ u &= \sqrt{2} U \sin(wt + \psi_i)
 $$
 
 As you can see, here not much to say.
+
