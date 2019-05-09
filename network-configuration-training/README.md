@@ -1103,751 +1103,113 @@ local-user qq privilege level 15
 quit
 ```
 
+没有配置完成，因为登不上ftp
+
+NAT 配置
+
+![](../.gitbook/assets/nat-pei-zhi.png)
+
 ```text
-// Router
+// Router 1
 system-view
 
 interface GigabitEthernet 0/0/0
-ip address 172.16.104.109 24
+ip address 192.168.0.1 24
 quit
 
-vlan batch 10 20 30
-
-interface Ethernet 0/0/0
-port link-type access
-port default vlan 10
+interface GigabitEthernet 0/0/1
+ip address 202.1.1.2 24
 quit
 
-interface Ethernet 0/0/1
-port link-type access
-port default vlan 20
+nat address-group 1 202.1.1.3 202.1.1.6
+acl number 2000
+rule 0 permit source 192.168.0.0 0.0.0.255
 quit
 
-interface Ethernet 0/0/2
-port link-type access
-port default vlan 30
+interface GigabitEthernet 0/0/1
+nat outbound 2000 address-group 1
 quit
 
-interface vlan 10
-ip address 172.16.105.110 24
-quit
 
-interface vlan 20
-ip address 172.16.107.110 24
-quit
-
-interface vlan 30
-ip address 10.10.10.2 24
-quit
-
-// PC A, B, C
-A: 172.16.105.111 24, gateway is 172.16.105.110
-B: 172.16.107.111 24, gateway is 172.16.107.110
-C: 10.10.10.1 24, gateway is 10.10.10.2
-
-// FTP Switch
+// Router 2
 system-view
 
-vlan batch 40
-interface vlan 40
-ip address 172.16.104.110 24
-quit
-interface Ethernet 0/0/1
-port link-type hybrid
-port hybrid pvid vlan 40
-port hybrid untagged vlan 40
+interface GigabitEthernet 0/0/1
+ip address 202.1.1.7 24
 quit
 
-ip route-static 172.16.105.0 24 172.16.104.109
-ip route-static 172.16.107.0 24 172.16.104.109
-ip route-static 10.10.10.0 24 172.16.104.109
-
-ftp server enable
-aaa
-local-user qq password simple 1234
-local-user qq ftp-directory flash
-local-user qq service-type ftp
-local-user qq privilege level 15
-quit
+ip route-static 192.168.0.0 24 202.1.1.2
 ```
+
+PPP 认证配置
 
 ```text
-// Router
+telnet 192.168.0.6 6001
+
 system-view
 
-interface GigabitEthernet 0/0/0
-ip address 172.16.104.109 24
+interface Serial 2/0/0
+ip address 10.1.1.2 30
+link-protocol ppp
+ppp chap user huawei
+ppp chap password cipher hello
 quit
 
-vlan batch 10 20 30
-
-interface Ethernet 0/0/0
-port link-type access
-port default vlan 10
+interface Serial 2/0/1
+ip address 10.2.2.2 30
+link-protocol ppp
+ppp chap user admin
+ppp chap password cipher hi
 quit
 
-interface Ethernet 0/0/1
-port link-type access
-port default vlan 20
+interface Serial 2/0/0
+shutdown
+undo shutdown
 quit
 
-interface Ethernet 0/0/2
-port link-type access
-port default vlan 30
-quit
-
-interface vlan 10
-ip address 172.16.105.110 24
-quit
-
-interface vlan 20
-ip address 172.16.107.110 24
-quit
-
-interface vlan 30
-ip address 10.10.10.2 24
-quit
-
-// PC A, B, C
-A: 172.16.105.111 24, gateway is 172.16.105.110
-B: 172.16.107.111 24, gateway is 172.16.107.110
-C: 10.10.10.1 24, gateway is 10.10.10.2
-
-// FTP Switch
-system-view
-
-vlan batch 40
-interface vlan 40
-ip address 172.16.104.110 24
-quit
-interface Ethernet 0/0/1
-port link-type hybrid
-port hybrid pvid vlan 40
-port hybrid untagged vlan 40
-quit
-
-ip route-static 172.16.105.0 24 172.16.104.109
-ip route-static 172.16.107.0 24 172.16.104.109
-ip route-static 10.10.10.0 24 172.16.104.109
-
-ftp server enable
-aaa
-local-user qq password simple 1234
-local-user qq ftp-directory flash
-local-user qq service-type ftp
-local-user qq privilege level 15
+interface Serial 2/0/1
+shutdown
+undo shutdown
 quit
 ```
+
+RIPng 路由协议的配置
 
 ```text
-// Router
+// Router A
+telnet 192.168.0.6 6001
+
 system-view
+ipv6
+
+interface GigabitEthernet 0/0/1
+ipv6 enable
+ipv6 address 1::1 64
+ripng 1 enable
+quit
 
 interface GigabitEthernet 0/0/0
-ip address 172.16.104.109 24
+ipv6 enable
+ipv6 address 2::2 64
+ripng 1 enable
 quit
 
-vlan batch 10 20 30
+// PC A
+// add ipv6 protocol
+// open cmd
+ipv6 if
 
-interface Ethernet 0/0/0
-port link-type access
-port default vlan 10
+netsh
+interface ipv6
+add address 5 1::2
 quit
 
-interface Ethernet 0/0/1
-port link-type access
-port default vlan 20
-quit
-
-interface Ethernet 0/0/2
-port link-type access
-port default vlan 30
-quit
-
-interface vlan 10
-ip address 172.16.105.110 24
-quit
-
-interface vlan 20
-ip address 172.16.107.110 24
-quit
-
-interface vlan 30
-ip address 10.10.10.2 24
-quit
-
-// PC A, B, C
-A: 172.16.105.111 24, gateway is 172.16.105.110
-B: 172.16.107.111 24, gateway is 172.16.107.110
-C: 10.10.10.1 24, gateway is 10.10.10.2
-
-// FTP Switch
-system-view
-
-vlan batch 40
-interface vlan 40
-ip address 172.16.104.110 24
-quit
-interface Ethernet 0/0/1
-port link-type hybrid
-port hybrid pvid vlan 40
-port hybrid untagged vlan 40
-quit
-
-ip route-static 172.16.105.0 24 172.16.104.109
-ip route-static 172.16.107.0 24 172.16.104.109
-ip route-static 10.10.10.0 24 172.16.104.109
-
-ftp server enable
-aaa
-local-user qq password simple 1234
-local-user qq ftp-directory flash
-local-user qq service-type ftp
-local-user qq privilege level 15
-quit
+ipv6 rtu ::/0 5/1::1
 ```
 
-```text
-// Router
-system-view
+按理来讲，我应该把所有的英文缩写变为全称。
 
-interface GigabitEthernet 0/0/0
-ip address 172.16.104.109 24
-quit
+但我发现了一个严重的问题: 这些词汇相互脱离，并没有一个总体的框架或严密的逻辑能把它们互相串联起来。那样记了也是白记。
 
-vlan batch 10 20 30
-
-interface Ethernet 0/0/0
-port link-type access
-port default vlan 10
-quit
-
-interface Ethernet 0/0/1
-port link-type access
-port default vlan 20
-quit
-
-interface Ethernet 0/0/2
-port link-type access
-port default vlan 30
-quit
-
-interface vlan 10
-ip address 172.16.105.110 24
-quit
-
-interface vlan 20
-ip address 172.16.107.110 24
-quit
-
-interface vlan 30
-ip address 10.10.10.2 24
-quit
-
-// PC A, B, C
-A: 172.16.105.111 24, gateway is 172.16.105.110
-B: 172.16.107.111 24, gateway is 172.16.107.110
-C: 10.10.10.1 24, gateway is 10.10.10.2
-
-// FTP Switch
-system-view
-
-vlan batch 40
-interface vlan 40
-ip address 172.16.104.110 24
-quit
-interface Ethernet 0/0/1
-port link-type hybrid
-port hybrid pvid vlan 40
-port hybrid untagged vlan 40
-quit
-
-ip route-static 172.16.105.0 24 172.16.104.109
-ip route-static 172.16.107.0 24 172.16.104.109
-ip route-static 10.10.10.0 24 172.16.104.109
-
-ftp server enable
-aaa
-local-user qq password simple 1234
-local-user qq ftp-directory flash
-local-user qq service-type ftp
-local-user qq privilege level 15
-quit
-```
-
-```text
-// Router
-system-view
-
-interface GigabitEthernet 0/0/0
-ip address 172.16.104.109 24
-quit
-
-vlan batch 10 20 30
-
-interface Ethernet 0/0/0
-port link-type access
-port default vlan 10
-quit
-
-interface Ethernet 0/0/1
-port link-type access
-port default vlan 20
-quit
-
-interface Ethernet 0/0/2
-port link-type access
-port default vlan 30
-quit
-
-interface vlan 10
-ip address 172.16.105.110 24
-quit
-
-interface vlan 20
-ip address 172.16.107.110 24
-quit
-
-interface vlan 30
-ip address 10.10.10.2 24
-quit
-
-// PC A, B, C
-A: 172.16.105.111 24, gateway is 172.16.105.110
-B: 172.16.107.111 24, gateway is 172.16.107.110
-C: 10.10.10.1 24, gateway is 10.10.10.2
-
-// FTP Switch
-system-view
-
-vlan batch 40
-interface vlan 40
-ip address 172.16.104.110 24
-quit
-interface Ethernet 0/0/1
-port link-type hybrid
-port hybrid pvid vlan 40
-port hybrid untagged vlan 40
-quit
-
-ip route-static 172.16.105.0 24 172.16.104.109
-ip route-static 172.16.107.0 24 172.16.104.109
-ip route-static 10.10.10.0 24 172.16.104.109
-
-ftp server enable
-aaa
-local-user qq password simple 1234
-local-user qq ftp-directory flash
-local-user qq service-type ftp
-local-user qq privilege level 15
-quit
-```
-
-```text
-// Router
-system-view
-
-interface GigabitEthernet 0/0/0
-ip address 172.16.104.109 24
-quit
-
-vlan batch 10 20 30
-
-interface Ethernet 0/0/0
-port link-type access
-port default vlan 10
-quit
-
-interface Ethernet 0/0/1
-port link-type access
-port default vlan 20
-quit
-
-interface Ethernet 0/0/2
-port link-type access
-port default vlan 30
-quit
-
-interface vlan 10
-ip address 172.16.105.110 24
-quit
-
-interface vlan 20
-ip address 172.16.107.110 24
-quit
-
-interface vlan 30
-ip address 10.10.10.2 24
-quit
-
-// PC A, B, C
-A: 172.16.105.111 24, gateway is 172.16.105.110
-B: 172.16.107.111 24, gateway is 172.16.107.110
-C: 10.10.10.1 24, gateway is 10.10.10.2
-
-// FTP Switch
-system-view
-
-vlan batch 40
-interface vlan 40
-ip address 172.16.104.110 24
-quit
-interface Ethernet 0/0/1
-port link-type hybrid
-port hybrid pvid vlan 40
-port hybrid untagged vlan 40
-quit
-
-ip route-static 172.16.105.0 24 172.16.104.109
-ip route-static 172.16.107.0 24 172.16.104.109
-ip route-static 10.10.10.0 24 172.16.104.109
-
-ftp server enable
-aaa
-local-user qq password simple 1234
-local-user qq ftp-directory flash
-local-user qq service-type ftp
-local-user qq privilege level 15
-quit
-```
-
-```text
-// Router
-system-view
-
-interface GigabitEthernet 0/0/0
-ip address 172.16.104.109 24
-quit
-
-vlan batch 10 20 30
-
-interface Ethernet 0/0/0
-port link-type access
-port default vlan 10
-quit
-
-interface Ethernet 0/0/1
-port link-type access
-port default vlan 20
-quit
-
-interface Ethernet 0/0/2
-port link-type access
-port default vlan 30
-quit
-
-interface vlan 10
-ip address 172.16.105.110 24
-quit
-
-interface vlan 20
-ip address 172.16.107.110 24
-quit
-
-interface vlan 30
-ip address 10.10.10.2 24
-quit
-
-// PC A, B, C
-A: 172.16.105.111 24, gateway is 172.16.105.110
-B: 172.16.107.111 24, gateway is 172.16.107.110
-C: 10.10.10.1 24, gateway is 10.10.10.2
-
-// FTP Switch
-system-view
-
-vlan batch 40
-interface vlan 40
-ip address 172.16.104.110 24
-quit
-interface Ethernet 0/0/1
-port link-type hybrid
-port hybrid pvid vlan 40
-port hybrid untagged vlan 40
-quit
-
-ip route-static 172.16.105.0 24 172.16.104.109
-ip route-static 172.16.107.0 24 172.16.104.109
-ip route-static 10.10.10.0 24 172.16.104.109
-
-ftp server enable
-aaa
-local-user qq password simple 1234
-local-user qq ftp-directory flash
-local-user qq service-type ftp
-local-user qq privilege level 15
-quit
-```
-
-```text
-// Router
-system-view
-
-interface GigabitEthernet 0/0/0
-ip address 172.16.104.109 24
-quit
-
-vlan batch 10 20 30
-
-interface Ethernet 0/0/0
-port link-type access
-port default vlan 10
-quit
-
-interface Ethernet 0/0/1
-port link-type access
-port default vlan 20
-quit
-
-interface Ethernet 0/0/2
-port link-type access
-port default vlan 30
-quit
-
-interface vlan 10
-ip address 172.16.105.110 24
-quit
-
-interface vlan 20
-ip address 172.16.107.110 24
-quit
-
-interface vlan 30
-ip address 10.10.10.2 24
-quit
-
-// PC A, B, C
-A: 172.16.105.111 24, gateway is 172.16.105.110
-B: 172.16.107.111 24, gateway is 172.16.107.110
-C: 10.10.10.1 24, gateway is 10.10.10.2
-
-// FTP Switch
-system-view
-
-vlan batch 40
-interface vlan 40
-ip address 172.16.104.110 24
-quit
-interface Ethernet 0/0/1
-port link-type hybrid
-port hybrid pvid vlan 40
-port hybrid untagged vlan 40
-quit
-
-ip route-static 172.16.105.0 24 172.16.104.109
-ip route-static 172.16.107.0 24 172.16.104.109
-ip route-static 10.10.10.0 24 172.16.104.109
-
-ftp server enable
-aaa
-local-user qq password simple 1234
-local-user qq ftp-directory flash
-local-user qq service-type ftp
-local-user qq privilege level 15
-quit
-```
-
-```text
-// Router
-system-view
-
-interface GigabitEthernet 0/0/0
-ip address 172.16.104.109 24
-quit
-
-vlan batch 10 20 30
-
-interface Ethernet 0/0/0
-port link-type access
-port default vlan 10
-quit
-
-interface Ethernet 0/0/1
-port link-type access
-port default vlan 20
-quit
-
-interface Ethernet 0/0/2
-port link-type access
-port default vlan 30
-quit
-
-interface vlan 10
-ip address 172.16.105.110 24
-quit
-
-interface vlan 20
-ip address 172.16.107.110 24
-quit
-
-interface vlan 30
-ip address 10.10.10.2 24
-quit
-
-// PC A, B, C
-A: 172.16.105.111 24, gateway is 172.16.105.110
-B: 172.16.107.111 24, gateway is 172.16.107.110
-C: 10.10.10.1 24, gateway is 10.10.10.2
-
-// FTP Switch
-system-view
-
-vlan batch 40
-interface vlan 40
-ip address 172.16.104.110 24
-quit
-interface Ethernet 0/0/1
-port link-type hybrid
-port hybrid pvid vlan 40
-port hybrid untagged vlan 40
-quit
-
-ip route-static 172.16.105.0 24 172.16.104.109
-ip route-static 172.16.107.0 24 172.16.104.109
-ip route-static 10.10.10.0 24 172.16.104.109
-
-ftp server enable
-aaa
-local-user qq password simple 1234
-local-user qq ftp-directory flash
-local-user qq service-type ftp
-local-user qq privilege level 15
-quit
-```
-
-```text
-// Router
-system-view
-
-interface GigabitEthernet 0/0/0
-ip address 172.16.104.109 24
-quit
-
-vlan batch 10 20 30
-
-interface Ethernet 0/0/0
-port link-type access
-port default vlan 10
-quit
-
-interface Ethernet 0/0/1
-port link-type access
-port default vlan 20
-quit
-
-interface Ethernet 0/0/2
-port link-type access
-port default vlan 30
-quit
-
-interface vlan 10
-ip address 172.16.105.110 24
-quit
-
-interface vlan 20
-ip address 172.16.107.110 24
-quit
-
-interface vlan 30
-ip address 10.10.10.2 24
-quit
-
-// PC A, B, C
-A: 172.16.105.111 24, gateway is 172.16.105.110
-B: 172.16.107.111 24, gateway is 172.16.107.110
-C: 10.10.10.1 24, gateway is 10.10.10.2
-
-// FTP Switch
-system-view
-
-vlan batch 40
-interface vlan 40
-ip address 172.16.104.110 24
-quit
-interface Ethernet 0/0/1
-port link-type hybrid
-port hybrid pvid vlan 40
-port hybrid untagged vlan 40
-quit
-
-ip route-static 172.16.105.0 24 172.16.104.109
-ip route-static 172.16.107.0 24 172.16.104.109
-ip route-static 10.10.10.0 24 172.16.104.109
-
-ftp server enable
-aaa
-local-user qq password simple 1234
-local-user qq ftp-directory flash
-local-user qq service-type ftp
-local-user qq privilege level 15
-quit
-```
-
-```text
-// Router
-system-view
-
-interface GigabitEthernet 0/0/0
-ip address 172.16.104.109 24
-quit
-
-vlan batch 10 20 30
-
-interface Ethernet 0/0/0
-port link-type access
-port default vlan 10
-quit
-
-interface Ethernet 0/0/1
-port link-type access
-port default vlan 20
-quit
-
-interface Ethernet 0/0/2
-port link-type access
-port default vlan 30
-quit
-
-interface vlan 10
-ip address 172.16.105.110 24
-quit
-
-interface vlan 20
-ip address 172.16.107.110 24
-quit
-
-interface vlan 30
-ip address 10.10.10.2 24
-quit
-
-// PC A, B, C
-A: 172.16.105.111 24, gateway is 172.16.105.110
-B: 172.16.107.111 24, gateway is 172.16.107.110
-C: 10.10.10.1 24, gateway is 10.10.10.2
-
-// FTP Switch
-system-view
-
-vlan batch 40
-interface vlan 40
-ip address 172.16.104.110 24
-quit
-interface Ethernet 0/0/1
-port link-type hybrid
-port hybrid pvid vlan 40
-port hybrid untagged vlan 40
-quit
-
-ip route-static 172.16.105.0 24 172.16.104.109
-ip route-static 172.16.107.0 24 172.16.104.109
-ip route-static 10.10.10.0 24 172.16.104.109
-
-ftp server enable
-aaa
-local-user qq password simple 1234
-local-user qq ftp-directory flash
-local-user qq service-type ftp
-local-user qq privilege level 15
-quit
-```
+另外，我觉得这些人上课、讲课都挺SB的，直接去看说明书、Document不是能学得更好吗？
 
