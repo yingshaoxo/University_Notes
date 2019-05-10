@@ -174,7 +174,8 @@
   * [Connection Management](gsm-for-railway/connection-management.md)
   * [Security Management](gsm-for-railway/security-management.md)
   * [GPRS](gsm-for-railway/gprs.md)
-* [GSM-R/GPRS Wireless Access Platform](gsm-r-gprs-wireless-access-platform.md)
+  * [GSM-R/GPRS Wireless Access Platform](gsm-for-railway/gsm-r-gprs-wireless-access-platform.md)
+  * [GSM-R Features](gsm-for-railway/gsm-r-features.md)
 * [Network Configuration Training](network-configuration-training/README.md)
   * [Words I have learned](network-configuration-training/words-i-have-learned.md)
 
