@@ -1,6 +1,4 @@
-# Multi-method for solving definite integral
-
-## Integration by parts
+#### Integration by parts
 
 $$
 \begin{align*}
@@ -12,8 +10,9 @@ $$
 \int_a^b f(x)g^\prime(x)dx &= f(x)g(x)|_a^b - \int_a^b f^\prime(x)g(x) \cdot dx
 \end{align*}
 $$
+___
 
-## Substitution method
+#### Substitution method
 
 $$
 \begin{align*}
@@ -46,4 +45,3 @@ $$
 &= \frac{2}{5}
 \end{align*}
 $$
-

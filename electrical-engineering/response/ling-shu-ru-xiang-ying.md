@@ -1,11 +1,12 @@
-# 零输入响应
-
 零输入响应： 把输入的电压或电流降为零，看电路中的元件有什么反应（主要看电感和电容）。
 
 本质上就是电路从有电到没电后的一段时间发生了什么，这时我们求出的东西不是一个具体的值，而是一个关于时间t的函数。这个函数反映了`电感或电容`的`电压值或电流值`在断电后随时间的变化情况。
+___
 
 1. 首先我们应该明确的一点是：`电感的电流`或`电容的电压`在电路发生改变前和电路发生改变后都不会改变。
+
 2. 电感和电容都是储能元件，它们都会在断电之后起一个临时电源的作用。
+
 3. 他们存储的电会随时间而流逝，我们可以通过数学式把这个过程精确地表示出来。
 
 $$
@@ -26,16 +27,18 @@ $$
 
 这里的 $$C$$ 和 $$L$$ 是分别指的是`Capacitance value`和 `Inductance value`
 
+___
+
 图示电路原已达到稳态，在 $$t=0$$ 时开关 $$S$$ 合上。试求 $$t \geq 0$$ 时 的电容电压 $$u_C(t)$$ 及电流 $$i_C(t)$$
 
-![](https://github.com/yingshaoxo/university-notes/tree/cc7cb1e4698c6d680876321163907ff1e1b4ac91/electrical-engineering/response/assets/Response_LingDianShuRu.png)
+![](assets/Response_LingDianShuRu.png)
 
-```text
+```
     \draw (0, 0) to [I=$10mA$](0, 4)
     to (1, 4)
     (1, 4) to [closing switch, l=$S$](1, 0) to (0, 0)
     (1, 4) to [R=$6k\Omega$](3, 4)
-
+    
     (3, 4) to [R=$3k\Omega$](3, 0) to (1, 0)
     (3, 4) to [short, i=$i_C$](5, 4)
     to [C, l_=$5\mu F$, v^=$u_C$](5, 2)
@@ -69,4 +72,3 @@ $$
 & = -7.5 \cdot e^{-50t} A
 \end{align*}
 $$
-

@@ -1,2 +1,0 @@
-# Function, limitation, and continuity
-

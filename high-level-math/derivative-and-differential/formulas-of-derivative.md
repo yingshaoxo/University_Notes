@@ -1,9 +1,7 @@
-# Formulas of derivative
-
 In fact, I don't wanna write this. But I'm in china school, they don't care what you have learned, they only care about what you can do on a test paper.
+___
 
-## How to read
-
+#### How to read
 $$\underline{sine} = \sin$$
 
 $$\underline{co} \underline{sine} = \cos$$
@@ -15,9 +13,9 @@ $$\underline{co} \underline{tangent} = \cot$$
 $$\underline{se} \underline{cant} = \sec$$
 
 $$\underline{cose} \underline{cant} = \csc$$
+___
 
-## Basic Derivative Formula
-
+#### Basic Derivative Formula
 $$
 \begin{align*}
 \\
@@ -44,9 +42,9 @@ $$
 
 \end{align*}
 $$
+___
 
-## Additional
-
+#### Additional
 $$
 \begin{align*}
 &\csc x = \frac{1}{\sin x}
@@ -66,4 +64,5 @@ $$
 &\cot{x} = \frac{\cos{x}}{\sin{x}}
 \end{align*}
 $$
+
 
