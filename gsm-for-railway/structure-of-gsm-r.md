@@ -12,7 +12,7 @@ ___
 
 #### BSS(Base subsystem)
 
-##### BTS:
+##### BTS(Base transceiver station):
 
 由 天线、耦合系统(连接天线与收发信机的部分)、收发信机(TRX)、公共功能单元(BCF, base station control function) 构成
 
