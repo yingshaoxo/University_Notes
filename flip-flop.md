@@ -9,7 +9,7 @@ ___
 #### RS触发器
 
 基本RS触发器又称SR锁存器，是触发器中最简单的一种。
-![](assets/Flip-flop_RS.png)
+![](/assets/Flip-flop_RS.png)
 
 $$
 \begin{align*}

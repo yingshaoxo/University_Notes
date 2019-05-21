@@ -18,11 +18,11 @@ ___
 
 #### 1. 认识你自己（不对，应该是认识一下三极管）
 
-![](../assets/SanJiGuan1.png)
+![](/assets/SanJiGuan1.png)
 
-![](../assets/SanJiGuan2.png)
+![](/assets/SanJiGuan2.png)
 
-![](../assets/Bipolar_junction_transistor.png)
+![](/assets/Bipolar_junction_transistor.png)
 
 `E` means `emitter`
 
@@ -34,7 +34,7 @@ ___
 
 #### 2. 了解更多
 
-![](../assets/SanJiGuan1.png)
+![](/assets/SanJiGuan1.png)
 
 箭头所指方向为电流流动的方向。
 
@@ -44,7 +44,7 @@ ____
 
 #### 3. 总结规律
 
-![](../assets/SanJiGuan1.png)
+![](/assets/SanJiGuan1.png)
 
 $$
 \begin{align*}

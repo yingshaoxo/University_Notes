@@ -1,3 +1,3 @@
 ![](assets/SanXiangDianLoads.png)
 
-![](../../assets/SanXiangDianLoadsForReal.png)
+![](/assets/SanXiangDianLoadsForReal.png)

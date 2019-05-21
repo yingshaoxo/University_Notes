@@ -93,7 +93,7 @@
     * [Does a amplifying circuit normal](does_a_amplifying_circuit_normal.md)
     * [What's the feedback type](whats_the_feedback_type.md)
     * [What kind of distortion you are encounter](what_kind_of_distortion_you_are_encounter.md)
-* Digital Electronic Technology 
+* [Digital Electronic Technology ](digital-electronic-technology.md)
   * [Logic Gate](logic-gate.md)
   * [Logic expressions](logic-expressions.md)
   * [Karnaugh map](karnaugh-map.md)

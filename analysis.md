@@ -2,7 +2,7 @@
 
 ##### 1. 单管共射放大电路
 
-![](assets/single-tube_common-emitter_amplifier_circuit.png)
+![](/assets/single-tube_common-emitter_amplifier_circuit.png)
 
 $$V_{cc} = I_B R_b + U_{BE}$$
 

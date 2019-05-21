@@ -1,6 +1,6 @@
 # Does a amplifying circuit normal
 
-![](assets/Fixed_bias_circuit.png)
+![](/assets/Fixed_bias_circuit.png)
 
 ___
 

@@ -22,6 +22,6 @@ ___
 
 其中不用电容的连接方式叫做`直接耦合`
 
-![](assets/n_stages_common_emitter_amplifiers.png)
+![](/assets/n_stages_common_emitter_amplifiers.png)
 
 这里只有一点需要注意，假设从 B 传入`+电`，到 C 时`+电`会变为`-电`，也就是所谓`电极经过bc反向`

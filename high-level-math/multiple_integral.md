@@ -15,4 +15,4 @@ ___
 4. Then undefined(so many) slices come together `with x direction` to an complete object: $$\int _\text{left} ^\text{right} [\int _\text{front} ^\text{back} f(x, y) \cdot dy] \cdot dx$$
 
 
-![](../assets/mutiple_integral.png)
+![](/assets/mutiple_integral.png)

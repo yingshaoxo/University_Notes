@@ -4,11 +4,11 @@ In electronics, a common-emitter amplifier is one of three basic single-stage bi
 
 In this circuit the base terminal of the transistor serves as the input, the collector is the output, and the emitter is common to both (for example, it may be tied to ground reference or a power supply rail), hence its name.
 
-![](assets/NPN_common_emitter.png)
+![](/assets/NPN_common_emitter.png)
 
 ___
 
-![](assets/Common_emitter_configuration.png)
+![](/assets/Common_emitter_configuration.png)
 
 A change in base current $$\Delta I_B$$ produces a corresponding change in collector current, $$\Delta I_C$$, and the common emitter gain $$\beta$$ is then defined by
 

@@ -1,12 +1,12 @@
 ## The diagram of a communication system
 
-![](assets/the_diagram_of_a_communication_system.png)
+![](/assets/the_diagram_of_a_communication_system.png)
 
 ___
 
 ## Frequency Bands with Designations
 
-![](assets/frequency_bands.png)
+![](/assets/frequency_bands.png)
 
 ___
 

@@ -2,7 +2,7 @@
 
 ___
 
-![](assets/negative-feedback amplifier.png)
+![](/assets/negative-feedback amplifier.png)
 
 反馈事实上就是靠硬件特性，用输出影响输入
 

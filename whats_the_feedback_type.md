@@ -1,6 +1,6 @@
 # What's the feedback type
 
-![](assets/feedbacks.png)
+![](/assets/feedbacks.png)
 
 ##### 1. 电压 or 电流
 

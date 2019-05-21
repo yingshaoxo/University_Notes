@@ -31,7 +31,7 @@ ___
 
 图示电路原已达到稳态，在 $$t=0$$ 时开关 $$S$$ 合上。试求 $$t \geq 0$$ 时 的电容电压 $$u_C(t)$$ 及电流 $$i_C(t)$$
 
-![](assets/Response_LingDianShuRu.png)
+![](/assets/Response_LingDianShuRu.png)
 
 ```
     \draw (0, 0) to [I=$10mA$](0, 4)

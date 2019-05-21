@@ -25,7 +25,7 @@ The AC signal applied to them is superposed(叠加) on this DC bias current or v
 
 如果最后成功了，你会得到这个：
 
-![](assets/Fixed_bias_circuit.png)
+![](/assets/Fixed_bias_circuit.png)
 
 $$V_{CC} = I_B R_B + V_{BE}$$
 

@@ -4,11 +4,11 @@ In China:
 
 The $$\infty$$ 表示理想中的无限放大
 
-![](assets/Integrated_Operational_Amplifier.png)
+![](/assets/Integrated_Operational_Amplifier.png)
 
 In United States:
 
-![](assets/Integrated_Operational_Amplifier2.png)
+![](/assets/Integrated_Operational_Amplifier2.png)
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 #### Inversed_Integrated_Operational_Amplifier (反向输入比例运算电路)
 
-![](assets/Inversed_Integrated_Operational_Amplifier.png)
+![](/assets/Inversed_Integrated_Operational_Amplifier.png)
 
 $$
 \begin{align*}

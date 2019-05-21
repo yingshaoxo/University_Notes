@@ -30,7 +30,7 @@ $$
 $$
 ___
 
-![](assets/x^2.png)
+![](/assets/x^2.png)
 
 Above is a graph of $$f(x) = x^2$$.
 
