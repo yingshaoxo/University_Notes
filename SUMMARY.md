@@ -177,6 +177,7 @@
   * [GPRS](gsm-for-railway/gprs.md)
   * [GSM-R/GPRS Wireless Access Platform](gsm-for-railway/gsm-rgprs-wireless-access-platform.md)
   * [GSM-R Features](gsm-for-railway/gsm-r-features.md)
+  * [GSM-R Numbering Plan](gsm-for-railway/gsm-r-numbering-plan.md)
 * [Network Configuration Training](network-configuration-training.md)
   * [Words I have learned](network-configuration-training/words-i-have-learned.md)
 
