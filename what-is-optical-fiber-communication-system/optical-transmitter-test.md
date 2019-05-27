@@ -16,8 +16,10 @@ ___
 
 **Ｅ4**: 139 Mbit/s, CMI
 
-> E1指`一次集群`， 以此类推
+> E1指`一次集群`， 以此类推。这里的`E`和`Ethernet(以太网)`没有关系！！
 
+```
+无效知识，我自己过了两个月都不知道和上下文有什么联系了
 ###### 对于 Ethernet
 
 **Eth(Ethernet)**: 10 Mbit/s，曼彻斯特编码(Manchester Encoding)
@@ -25,6 +27,7 @@ ___
 **FE(Fast_Ethernet)**: 100 Mbit/s，曼彻斯特编码(Manchester Encoding)
 
 **GE(Gigabit_Ethernet)**: 1000 Mbit/s，曼彻斯特编码(Manchester Encoding)
+```
 
 ##### 2. 对于`光接口`
 
@@ -40,6 +43,8 @@ ___
 
 > STM: Synchronous Transport Module
 
+```
+无效知识，我自己过了两个月都不知道和上下文有什么联系了
 ###### For Ethernet
 
 **Eth(Ethernet)**: 10 Mbit/s，mBnB
@@ -49,6 +54,7 @@ ___
 **GE(Gigabit_Ethernet)**: 1000 Mbit/s，mBnB
 
 > mBnB take m bits of the original data and encode them into n bits
+```
 
 ___
 
