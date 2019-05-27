@@ -18,3 +18,10 @@ ___
 
 ___
 
+TU12: 2M 速率
+
+TU3: 34M 速率
+
+___
+
+![](/assets/Chinese SDH复用结构.png)
