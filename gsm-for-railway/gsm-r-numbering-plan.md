@@ -1,6 +1,6 @@
 ## 专用码
 
-CT + UN
+GSM网络编号的结构: CT + UN
 
 * **CT**(calling type): 呼叫类型
 
