@@ -164,6 +164,7 @@
   * [Base Knowledge](high-speed-railway-communication-technology/base-knowledge.md)
   * [FH98](high-speed-railway-communication-technology/fh98.md)
   * [MDS3400](high-speed-railway-communication-technology/mds3400.md)
+  * [Everything is for the exam](high-speed-railway-communication-technology/everything-is-for-the-exam.md)
 * [GSM for Railway](gsm-for-railway.md)
   * [Overview](gsm-for-railway/overview.md)
   * [Wired Parts](gsm-for-railway/wired-parts.md)
