@@ -218,7 +218,7 @@ ___
 * 数字用户: 256
 * 调度台: 64
 * 数字中继: 32个A口
-* 会议资源: 4x64
+* 会议资源: 4x64=256
 * DTMF资源: 64套
 * MFC资源: 64套
 * 信号音: 16种
@@ -313,15 +313,42 @@ CTT4000：
 * 分标准层
 * 模拟接口扩展层
 
-# 画图说明值班台呼叫用户工作原理。124P
+# 画图说明值班台呼叫用户工作原理。
+![](/assets/zhi-ban-tai-hu-jiao-qu-jian-dian-hua.png)
+1. `值班台`按下按钮，`前台`监测到该操作，上报给`U口板`
+2. `U口板`将此操作翻译成`请求占用消号`，发送给`车站分主控板`
+3. `车站分主控板`对此消息`进行分析`，根据数据确定`目的分机`所在的位置，将此数据发送给`共电板`
+4. `共电板`收到`占用信号`后，让`共电-话机`振铃
+5. 当`共电话板`监测到`摘机`后，将`此摘机信号`发送出去
+6. `此信号`经过`分主控、U口板`的转发之后，最终到达`值班台`
+7. 该`值班台`相应的指示灯`由闪烁变为长亮`，表示呼叫成功，双方可以进行通话了
+8. 通话结束后，若`共电话机的人`先挂机，共电板检测到挂机信号，会将它翻译成`挂机信号`，发送到`值班台`
+9. `值班台`收到`挂机信号`后，指示灯熄灭，说明对方已挂机
+
 
 # 画图说明调度台呼叫值班台工作原理。
+![](/assets/tiao-du-tai-hu-jiao-zhi-ban-tai.png)
+
+1. `调度员`按下某按钮，机器上报给`U口板`
+2. `U口板`将此操作翻译成`请求占用信号`，发送给`枢纽主控板`
+3. `枢纽主控板`对此消息进行`分析`，确定用户所在位置后，将此信号发送到`主数字板`上
+4. `主数字板`直接将`此信号`发送到`对应车站分系统`的`分数字板`上
+5. `分数字板`将信号转发给`车站分主控板`
+6. `车站分主控板`对此信号进行分析，确定`目的分机`所在地，将此信号发送给`U口板`
+7. `U口板`收到`请求占用信号`后，将其送到`值班台`，`值班台`上的`指示灯`闪烁并振铃
+8. 当`值班员`按下按钮应答时，`U口板`会检测到`应答操作`，将其翻译为`应答信号`，发送给`车站分主控板`
+9. 此信号通过`分数字板、主数字板、枢纽主控、U口板`的转发后，最终到达`调度台`
+10. `调度台指示灯`由闪烁变为长亮，表示`呼叫通道已建立`，双方现在可进行通话
+11. 若`值班员`先挂机，则`车站分系统`的`U口板`会检测到`挂机操作`，将此操作翻译为`挂机信号`，并经过`反向信道`传递给`调度台`，`调度台指示灯`熄灭，表示对方已挂机
 
 
 # 画图说明调度分机呼叫调度台工作原理。
+![](/assets/tiao-du-fen-ji-hu-jiao-tiao-du-tai.png)
 
 
 # 画图说明值班台呼叫值班台工作原理。
+![](/assets/zhi-ban-tai-hu-jiao-zhi-ban-tai.png)
+
 
 # 试分析比较 FH98系统与MDS3400系统异同点。
 * 不同： MDS3400是多媒体终端，支持触屏，支持软交换，支持IP组网，所有业务板可任意混插
@@ -360,10 +387,13 @@ CTT4000：
 * 兼容设计
 
 # 试分析比较CTT2000 L/M和CTT4000系统异同点。
+CTT4000 多了 30B+D 板，多了7号信令处理板，网络容量更大
 
 # 试分析比较CTT4000主系统与分系统有什么异同点。
+分系统的接入用户量小于主系统，板卡数量少于主系统
 
-# 了解广播、时钟系统组成、方框图。212P
+# 了解广播、时钟系统组成、方框图。
+![](/assets/广播系统组成方框图.png)
 
 # 掌握广播、时钟系统工作原理。
 * 广播基本原理: 音工作(广播)将数字语音合成器合的数字音, 以及话筒 ,CD
@@ -371,15 +401,21 @@ CTT4000：
 
 * 时钟工作原理：中心时钟向各个分设备提供统一的时钟
 
-# 静态图像传输系统的原理。258P
+# 静态图像传输系统的原理。258
+现场通过相机采集静态图像并存储在SD卡上，再由笔记本通过 FTP 方式传回应急中心。应急中心再将图片输出到大屏幕。
 
 # 动态图像传输系统的原理。259P
+应急现场通过摄像机集现场动态图像, 然后通过接入设备把视频转为数字信号，再通过铁路应急网络传送到应急中心。应急中心接收到视频后，将其投放到大屏幕。
 
 # 铁路应急通信系统主要有什么组成？254P
+铁路应急通信系统主要由 铁路应急中心通信设备、铁路应急通信传输网络、铁路应急现场通信系统组成。
 
 # 静态图像传输系统的功能。258P
+完成现场静态图像的采集、传输及接入应急指挥中心的功能, 完成静态图像存储、查询、归档 和 上传至铁路总公司的功能。静态图片大屏显示。
 
 # 动态图像传输系统的功能。259P
+完成现场动态图像的采集、压缩/编码、传输及接入应急指挥中心的功能。实时传输动态图像到应急中心，并在大屏显示。
+
 
 # 判断题
 * 音源板提供对数字模块层的驱动电路（ ）
@@ -578,78 +614,123 @@ MDS3400能用作（ ）
 A．专用调度交换机、B.FAS交换机，C.公务电话交换机、D.人工话务台交换机
 
 # 扩音机基本方框图
+![](/assets/扩音机基本组成方框图.png)
 
 # 车站值班台呼叫本站共电分机用户工作过程（找故障流程图）
+![](/assets/zhi-ban-tai-hu-jiao-qu-jian-dian-hua.png)
+
 
 # 车站值班台呼叫本站共分用户工作过程
+![](/assets/zhi-ban-tai-hu-jiao-qu-jian-dian-hua.png)
+
 
 # 车站值班台呼叫本站磁石分机用户
+![](/assets/zhi-ban-tai-hu-jiao-qu-jian-dian-hua.png)
+
 
 # 调度台呼叫本数字环内值班台工作过程
+![](/assets/tiao-du-tai-hu-jiao-zhi-ban-tai.png)
+
 
 # 调度分机呼叫本数字环内调度台工作过程(5分)
+![](/assets/tiao-du-fen-ji-hu-jiao-tiao-du-tai.png)
+
 
 # 值班台呼叫本数字环内值班台工作过程(5分)
+![](/assets/zhi-ban-tai-hu-jiao-zhi-ban-tai.png)
+
 
 # 调度台呼叫本数字环内调度分机工作过程
+![](/assets/tiao-du-fen-ji-hu-jiao-tiao-du-tai.png)
+
+反向
 
 # 调度系统星型组网
+![](/assets/星形组网.png)
 
 # 调度系统共线组网
+![](/assets/共线组网.png)
 
 # 调度系统综合组网
+![](/assets/综合组网.png)
 
 # 调度系统树型组网
+![](/assets/树形方式.png)
 
 # 车站值班台呼叫站内用户
+![](/assets/zhi-ban-tai-hu-jiao-qu-jian-dian-hua.png)
 
 # 车站值班台呼叫站内共电分机用户
+![](/assets/zhi-ban-tai-hu-jiao-qu-jian-dian-hua.png)
 
 # 车站值班台呼叫本站磁石分机用户
+![](/assets/zhi-ban-tai-hu-jiao-qu-jian-dian-hua.png)
 
 # 车站值班台呼叫本站共分用户
+![](/assets/zhi-ban-tai-hu-jiao-qu-jian-dian-hua.png)
 
 # 南京站值班台呼叫南京站共电分机用户
+![](/assets/zhi-ban-tai-hu-jiao-qu-jian-dian-hua.png)
 
 # 路局调度台呼叫苏州站值班台
+![](/assets/tiao-du-tai-hu-jiao-zhi-ban-tai.png)
 
 # 路局调度台呼叫徐州站值班台
+![](/assets/tiao-du-tai-hu-jiao-zhi-ban-tai.png)
 
 # 路局调度台呼叫南京站值班台
+![](/assets/tiao-du-tai-hu-jiao-zhi-ban-tai.png)
 
 # 路局调度台呼叫滁州站值班台
+![](/assets/tiao-du-tai-hu-jiao-zhi-ban-tai.png)
 
 # 路局调度台呼叫常州站值班台
+![](/assets/tiao-du-tai-hu-jiao-zhi-ban-tai.png)
 
 # 车站调度分机呼叫本环内调度台
+![](/assets/tiao-du-fen-ji-hu-jiao-tiao-du-tai.png)
 
 # 苏州站调度分机呼叫本数字环内调度台
+![](/assets/tiao-du-fen-ji-hu-jiao-tiao-du-tai.png)
 
 # 徐州站调度分机呼叫本共线网络内调度台
+![](/assets/tiao-du-fen-ji-hu-jiao-tiao-du-tai.png)
 
 # 南京站调度分机呼叫本链形网络内调度台
+![](/assets/tiao-du-fen-ji-hu-jiao-tiao-du-tai.png)
 
 # 滁州站调度分机呼叫本2M环内调度台
+![](/assets/tiao-du-fen-ji-hu-jiao-tiao-du-tai.png)
 
 # 同一数字环内车站值班台呼叫车站值班台
+![](/assets/zhi-ban-tai-hu-jiao-zhi-ban-tai.png)
 
 # 同一共线网络内南京车站值班台呼叫蚌埠车站值班台
+![](/assets/zhi-ban-tai-hu-jiao-zhi-ban-tai.png)
 
 # 同一E1环网内滁州车站值班台呼叫南京车站值班台
+![](/assets/zhi-ban-tai-hu-jiao-zhi-ban-tai.png)
 
 # 同一链形网络内车站值班台呼叫车站值班台
+![](/assets/zhi-ban-tai-hu-jiao-zhi-ban-tai.png)
 
 # 同一2M环网内车站值班台呼叫车站值班台
+![](/assets/zhi-ban-tai-hu-jiao-zhi-ban-tai.png)
 
 # 同一数字环内调度台呼叫无锡车站调度分机
+![](/assets/tiao-du-fen-ji-hu-jiao-tiao-du-tai.png)
 
 # 同一共线网络内调度台呼叫丹阳车站调度分机
+![](/assets/tiao-du-fen-ji-hu-jiao-tiao-du-tai.png)
 
 # 同一E1环网内调度台呼叫常州车站调度分机
+![](/assets/tiao-du-fen-ji-hu-jiao-tiao-du-tai.png)
 
 # 同一链形网络内调度台呼叫镇江车站调度分机
+![](/assets/tiao-du-fen-ji-hu-jiao-tiao-du-tai.png)
 
 # 同一2M环网内调度台呼叫南京东车站调度分机
+![](/assets/tiao-du-fen-ji-hu-jiao-tiao-du-tai.png)
 
 # 定阻式扩音机特点
 扩音机的电路中无负馈或只加少量负反馈。因而它的输出阻抗较高，当负载阻抗变化时，它的输出电压变化较大。
