@@ -133,6 +133,7 @@
   * [Audio](multimedia-communication/audio.md)
   * [Lossy Audio Coding](multimedia-communication/lossy-audio-coding.md)
   * [Graph Compression](multimedia-communication/graph-compression.md)
+  * [All for the exam](multimedia-communication/all-for-the-exam.md)
 * [Power system for Communication Devices](power-system-for-communication-devices.md)
   * [Overview](power-system-for-communication-devices/overview.md)
   * [AC power Distribution Panel](power-system-for-communication-devices/ac-power-distribution-panel.md)
