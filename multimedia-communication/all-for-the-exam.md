@@ -60,8 +60,8 @@
 * MPEG-1video标准中将图像帧分为三类：内帧、预测帧和双向预测帧。 
 * MPEG-2标准支持NTSC、PAL、SECAM和HDTV格式的视频。
 * MPEG-4是基于对象的视频编码系统。
-* 有ITU-T和ISO联合制定的视频压缩编码标准是MPEG-2。
-* H.264标准分为三个档次基本档次、主要档次和扩展档次，以适用于不同的应用。
+* 由ITU-T和ISO联合制定的视频压缩编码标准是MPEG-2。
+* H.264标准分为"基本档次、主要档次和扩展档次"，以适用于不同的应用。
 * VCD所使用的视频压缩标准是MPEG-1， DVD所使用的视频压缩标准是MPEG-2。 
 * 基于TCP/IP的多媒体通信模型中通信控制层分为三个子层：数据获取子层、媒体同步子层、和通信子层。
 * 多媒体系统提供三种不用的QoS服务：Best-Effort、Integrated和Differentiated。
@@ -78,7 +78,7 @@
 * 基于内容的检索直接对图像、视频、音频内容进行分析，从而抽取特征和语义进行检索。
 * 流媒体技术能够在网络上实现传输和播放同时进行。
 * 互联网对流媒体的影响主要体现在带宽、时延和分组丢失三个方面。
-* RTP:Real-time_Transport_Protocol、RTCP:RTP_Control_Protocol
+* RTP:Real-time_Transport_Protocol、RTCP:RT_Control_Protocol
 * RSVP:Resource_Reservation_Protocol、RTSP:Real-time_Streaming_Protocol
 
 ## 第6、7章
