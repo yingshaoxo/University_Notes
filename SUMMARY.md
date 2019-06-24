@@ -142,6 +142,7 @@
   * [Battery](power-system-for-communication-devices/battery.md)
   * [Earthing or Use Lightning Arrester](power-system-for-communication-devices/earthing-or-use-lightning-arrester.md)
   * [Power Supply Monitoring System](power-system-for-communication-devices/power-supply-monitoring-system.md)
+  * [All for the exam](power-system-for-communication-devices/all-for-the-exam.md)
 * Optical fiber Communication system
   * [What is Optical fiber Communication system](what-is-optical-fiber-communication-system.md)
     * [Prepare](what-is-optical-fiber-communication-system/optical-fiber.md)
