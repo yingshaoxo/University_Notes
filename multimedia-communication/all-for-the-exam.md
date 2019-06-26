@@ -78,7 +78,7 @@
 * 基于内容的检索直接对图像、视频、音频内容进行分析，从而抽取特征和语义进行检索。
 * 流媒体技术能够在网络上实现传输和播放同时进行。
 * 互联网对流媒体的影响主要体现在带宽、时延和分组丢失三个方面。
-* RTP:Real-time_Transport_Protocol、RTCP:RT_Control_Protocol
+* RTP:Real-time_Transport_Protocol、RTCP:Real-Time_Control_Protocol
 * RSVP:Resource_Reservation_Protocol、RTSP:Real-time_Streaming_Protocol
 
 ## 第6、7章
@@ -93,9 +93,9 @@
 * 根据参与会议的节点数划分，视频会议可分为点对点会议系统和多点会议系统。
 * 在会议电视系统中，当3个以上的终端进行通信时，就需要MCU作信号汇接处理，使多个终端能通过该设备在一个会议中互相通信。
 * 视频点播系统的英文缩写为VOD(video_on_demand)。
-* 根据不同的应用场景和功能需求，主要分为三种VOD系统：NVOD、VOD、和PUSH_VOD。
+* 根据不同的应用场景和功能需求，主要分为三种VOD系统：Near_VOD、True_VOD、和Interactive_VOD。
 * 在ADSL和HFC传输方式下，VOD系统的用户终端通常是老式设备，如电视。
-* IPTV可以提供的视频发送方式有三种：RTP、多播、VDN。
+* IPTV可以提供的视频发送方式有三种：Live_television(现场直播)、Time-shifted_media(定时直播)、Video_on_demand(视频点播)。
 * 数字版权管理类似于授权和认证技术，用户只有获得必要的权限才可以使用相关的出版物。
 
 ## 其它
