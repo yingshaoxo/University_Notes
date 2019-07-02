@@ -102,6 +102,6 @@ $$P_T = 10 \cdot \lg(\frac{P}{1mW})$$
 
 $$\frac{\text{发送全1时的光功率}}{\text{发送全0时的光功率}}$$
 
-$$\text{extinction ratio} = 10 \cdot (\frac{P_{11}}{P_{00}})$$ ，此时的P，单位是mw
+$$\text{extinction ratio} = 10 \cdot (\frac{P_{11}}{P_{00}})$$ ，此时的P，单位是mw。总单位是dBm
 
-$$\text{extinction ratio} = 3 + P_T - P_{00}$$ ，此时的P，单位是dBm
+$$\text{extinction ratio} = 3 + P_T - P_{00}$$ ，此时的P，单位是dBm。总单位是dB
