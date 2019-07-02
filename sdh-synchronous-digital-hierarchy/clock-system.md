@@ -14,8 +14,8 @@
 
 ### 时钟源类型
 
-* cesium\(-beam\)atomic clock
-* rubidium atomic clock 
+* (艳原子钟)cesium\(-beam\)atomic clock
+* (铷原子钟)rubidium atomic clock 
 * 外基准注入，比如GPS
 * Crystal oscillator \(石英晶体振荡器\)
 
