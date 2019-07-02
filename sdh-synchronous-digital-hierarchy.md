@@ -12,6 +12,8 @@ ___
 
 # SDH (Synchronous Digital Hierarchy)
 
+特点: 统一比特率、光接口，网管能力强，有充足的开销比特，采用同步复用，分插灵活。
+
 > STM-N: Synchronous Transport Module of level N
 
 **STM-1**： 155 Ｍb/s
