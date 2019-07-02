@@ -120,6 +120,7 @@ ___
 
 > 开销 = additional bytes
 
+> POH属于净负荷(payload)
 ___
 
 Reference:
