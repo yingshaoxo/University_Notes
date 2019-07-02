@@ -7,10 +7,10 @@
 
 ### SDH 时钟等级 \(精度由高到低\)
 
-* G.811: primary reference clocks \(PRC\)
-* G.812\(T\): 
-* G.812\(L\)
-* G.813: SDH equipment slave clocks \(SEC\)
+* 全国基准主时钟(PRC) | **G.811**: primary reference clocks \(PRC\), $$1 \times 10^{-11}$$
+* 转接局从时钟(SSU-T) | **G.812**: $$5 \times 10^{-9}$$
+* 端局从时钟(SSU-L) | **G.812**: $$1 \times 10^{-7}$$
+* SDH网元时钟 | **G.813**: SDH equipment slave clocks \(SEC\), $$4.6 \times 10^{-6}$$
 
 ### 时钟源类型
 
