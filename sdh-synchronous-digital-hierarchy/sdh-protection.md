@@ -17,7 +17,8 @@
 
 #### 误码率
 
-误码秒: 误码率 > $$1 \times 10^{-6}$$
+误码秒比(BBER, Background Block Error Ratio): 误码率 > $$1 \times 10^{-6}$$
 
-严重误码秒: 误码率 > $$1 \times 10^{-3}$$
+严重误码秒比(SESR, severely errored second ratio): 误码率 > $$1 \times 10^{-3}$$
 
+> SESR最严格，BBER最松
