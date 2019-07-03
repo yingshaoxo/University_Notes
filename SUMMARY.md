@@ -157,6 +157,7 @@
     * [SDH Equipments](sdh-synchronous-digital-hierarchy/hardware-of-sdh-system.md)
     * [Clock System](sdh-synchronous-digital-hierarchy/clock-system.md)
     * [ZXONM E300 Practice](sdh-synchronous-digital-hierarchy/zxonm-e300-practice.md)
+    * [SDH protection](sdh-synchronous-digital-hierarchy/sdh-protection.md)
 * [Communication Tech English](communication-tech-english.md)
   * [Fundamentals of Electricity](communication-tech-english/fundamentals-of-electricity.md)
   * [Digital Communications](communication-tech-english/digital-communications.md)
