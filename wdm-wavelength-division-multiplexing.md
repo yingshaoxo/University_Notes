@@ -43,7 +43,7 @@ OTN：两者皆有
 
 ![](/assets/DWDM System.png)
 
-* OUT: Optical Transform Unit, 光转发器/接收器
+* OTU: Optical Transform Unit, 光转发器/接收器
 * OMU: Optical Multiplexer Unit
 * OSC: Optical Supervisory Channel, 光监控信道(1510nm); 这个波不会经过放大器
 * ODU: Optical Demultiplexer Unit, 光分波器
@@ -51,16 +51,40 @@ OTN：两者皆有
 * OLA: Optical in Line Amplifier; 光放大器 在 线路上
 * OPA: Optical Pre Amplifier; 光放大器 在 接收端
 
+光发送机: OTU, OMU, OBA
+
+光接收机: OPA, ODU, OTU, 色散补偿模块(DCM, dispersion compensation module, 一般加在OPA上)
 
 1. `信道1~n 进光` 为1310nm，经过OTU转化为不同波长, 然后40个波长被OMU合成一个信号，送到单根光纤。
 2. 经过OSC后加上一波变为41波
 
-> 如果用了OBA/OPA，`线路须中继距离`从60公里变为100公里。
+> 如果用了OBA/OPA，`线路须中继距离`从60公里变为100公里。(公里=km)
+> OLA可以换OBA，因为LA的增益是可调的
+> OPA > OLA >= OBA, OPA可以换OLA、OBA
+> OSC速率2Mbit/s
+
 
 ### DWDM 的波长
 ![](/assets/G692 wavelength and frequency table.png)
 
-40波的频率间隔为0.1THz
+> 4个STM-4 或 STM-16 在WDM系统都一样，需要4个不同的波长
+> 双向线，来回最好用同样的波长, 方便
+> 合波后再作通道保护(双路径)
+
+#### 40波(40 channels)    
+频率间隔0.1 THz, 波长间隔约等于0.8
+
+40波制下第25波频率 = 192+0.1*25
+
+#### 80波(80 channels)
+频率间隔0.05 THz
+
+80波制下第25波频率 = 192+0.05*25
+
+#### ~~160波(160 channels)~~
+~~频率间隔0.05~~
+
+~~160波制下第25波频率 = 192+0.05*25~~
 
 ### An important question
 
