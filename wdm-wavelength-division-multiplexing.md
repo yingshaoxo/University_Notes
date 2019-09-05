@@ -61,3 +61,17 @@ OTN：两者皆有
 ![](/assets/G692 wavelength and frequency table.png)
 
 40波的频率间隔为0.1THz
+
+### An important question
+
+![](/assets/WDM Frequency table design.png)
+
+* `站M1`与`站M2`之间有`4个STM-64业务`，双路径
+* `站M1`与`站M3`之间有`4个STM-64业务`，双路径
+* `站M1`与`站M4`之间有`4个STM-64业务`，双路径
+* `站M2`与`站M4`之间有`4个STM-64业务`，双路径
+* `站M3`与`站M4`之间有`4个STM-64业务`，双路径
+* `站M6`与`站M6`之间有`4个STM-16业务`
+
+We ask you to design a frequency table for DWM system.
+
