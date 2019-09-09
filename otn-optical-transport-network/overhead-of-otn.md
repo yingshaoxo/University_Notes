@@ -25,3 +25,38 @@ The `frame alignment OH`, which is part of the `OTU OH`, is situated in row 1, c
 
 ![](/assets/Section monitoring OH.png)
 
+The `section monitoring (SM) OH` consists of the subfields as described for the `path monitoring OH`, with the exception of the `incoming alignment error (IAE)` bit. This bit allows the ingress point to inform the egress point that an alignment error in the incoming signal has been detected. IAE is set to “1” when an error occurs, otherwise it is set to “0”.
+
+* TTI: Trail trace identifier
+> The TTI is similar to the J0 byte in SONET/SDH, which is used to identify the signal from the source to the destination within the network. The TTI contains the `access point identifiers (API)`, which are used to specify the `source (SAPI)` and `destination access point identifiers (DAPI)`. The APIs contain information regarding the country of origin, network operator, and administrative details.
+
+* BIP-8: Bit interleaved parity
+> This byte, used for error detection, provides a BIP-8 code, computed over the whole OPU and inserted into the BIP-8 SM two frames later.
+
+* BEI and BIAE: Backward Error Indication and Backward Incoming Alignment Error
+> The BEI and BIAE signals carry information upstream on interleaved bit blocks detected in error and are also used to convey incoming alignment errors (IAE) upstream.
+
+* BDI: Backward defect indication
+> The single bit BDI conveys information upstream regarding signal failure.
+
+* IAE: Incoming (Frame) Alignment Error
+* RES: Reserved
+
+![](/assets/Section monitoring 开销.png)
+
+* 路径踪迹标识码: TTI
+* 奇偶校验: BIP-8
+* 后向输入帧定位错误: BEI/BIAE、BDI
+
+#### GCC (General communication channel)
+
+GCC is used as a communication channel between OTU termination points.
+
+> 网管通道
+
+#### RES (Reserved)
+
+It has no definition yet. It's reserved.
+
+> 保留字节
+
