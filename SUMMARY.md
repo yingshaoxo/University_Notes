@@ -159,6 +159,7 @@
     * [ZXONM E300 Practice](sdh-synchronous-digital-hierarchy/zxonm-e300-practice.md)
     * [SDH protection](sdh-synchronous-digital-hierarchy/sdh-protection.md)
   * [WDM \(Wavelength-Division Multiplexing\)](wdm-wavelength-division-multiplexing.md)
+  * [OTN \(Optical Transport Network\)](otn-optical-transport-network.md)
 * [Communication Tech English](communication-tech-english.md)
   * [Fundamentals of Electricity](communication-tech-english/fundamentals-of-electricity.md)
   * [Digital Communications](communication-tech-english/digital-communications.md)
