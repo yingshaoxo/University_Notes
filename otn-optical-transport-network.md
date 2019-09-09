@@ -25,3 +25,12 @@ ITU-T G.709 is a standard for OTNs
 1. `超大容量`光传送系统
 2. 全业务传送。传送分组数据。
 3. 智能化
+
+### OTN transport structure
+
+![](/assets/Basic OTN transport structure.png)
+
+### OCh(Optical Channel) structure
+
+![](/assets/Optical Channel Structure.png)
+
