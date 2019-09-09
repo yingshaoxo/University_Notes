@@ -17,7 +17,11 @@ OTU OH = Optical Transport Unit OverHead
 
 ![](/assets/OTU OH structure.png)
 
-**FAS = frame alignment signal**
+#### FAS (frame alignment signal, 帧定位)
 
 The `frame alignment OH`, which is part of the `OTU OH`, is situated in row 1, columns 1 to 6 of the OTU in which a FAS is defined, as Figure 7 shows. As the OTU and ODU frames could span multiple OTU frames, a multiframed, structured overhead signal is defined. The `multiframe alignment signal (MFAS)` is defined in row 1, column 7 of the OTU/ODU overhead. The value of the `MFAS byte` increments with each OTU/ODU frame.
+
+#### SM (Section Monitoring, 段监控)
+
+![](/assets/Section monitoring OH.png)
 
