@@ -73,3 +73,11 @@ It has no definition yet. It's reserved.
 #### PM (Path Monitoring, 用户通道监控)
 
 ![](/assets/TCM and PM Overhead structures.png)
+
+#### APS/PCC (Automatic protection switching and protection communication channel)
+
+![](/assets/APS 字段格式.png)
+
+![](/assets/APS 信道字段值与含义1.png)
+
+![](/assets/APS 信道字段值与含义2.png)
