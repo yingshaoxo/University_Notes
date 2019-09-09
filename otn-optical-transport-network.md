@@ -34,3 +34,16 @@ ITU-T G.709 is a standard for OTNs
 
 ![](/assets/Optical Channel Structure.png)
 
+![](/assets/OTN frame structure.png)
+
+* OPUk = OPUk OH(开销) + OPUk净负荷(4*3808)
+* ODUk = ODUk开销 + OPUk
+* OTUk = OTUk开销 + ODUk + FEC
+
+> OPUk < ODUk < OTUk
+
+* OCh = OCh + OTUk ; 1波
+* OMSn = OMSn OH + OCh ; n波
+* OTSn = OTS OH + OMSn ; n波
+
+
