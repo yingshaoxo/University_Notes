@@ -17,4 +17,7 @@ ITU-T G.709 is a standard for OTNs
 * 引入`串行连接监控(TCM)`; 电的形式
 * 标准化大容量光通道
 
-### 
+### OTN与SDH的区别
+
+![](/assets/The difference between OTN and SDH.png)
+
