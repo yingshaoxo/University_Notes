@@ -21,3 +21,7 @@ ITU-T G.709 is a standard for OTNs
 
 ![](/assets/The difference between OTN and SDH.png)
 
+### OTN 的亮点
+1. `超大容量`光传送系统
+2. 全业务传送。传送分组数据。
+3. 智能化
