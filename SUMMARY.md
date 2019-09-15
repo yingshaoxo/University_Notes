@@ -194,4 +194,5 @@
 * [Broadband Access Technology](broadband-access-technology.md)
   * [Using Copper Line](broadband-access-technology/using-copper-line.md)
   * [Using Optical Fiber](broadband-access-technology/using-optical-fiber.md)
+* [CIR](cir.md)
 
