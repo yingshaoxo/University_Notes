@@ -192,4 +192,5 @@
 * [Network Configuration Training](network-configuration-training.md)
   * [Words I have learned](network-configuration-training/words-i-have-learned.md)
 * [Broadband Access Technology](broadband-access-technology.md)
+  * [Using Copper Line](broadband-access-technology/using-copper-line.md)
 
