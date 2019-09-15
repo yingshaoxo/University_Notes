@@ -195,4 +195,5 @@
   * [Using Copper Line](broadband-access-technology/using-copper-line.md)
   * [Using Optical Fiber](broadband-access-technology/using-optical-fiber.md)
 * [CIR](cir.md)
+  * [Basci Knowledge](cir/basci-knowledge.md)
 
