@@ -35,7 +35,7 @@
 * 全网IP化
 * 用户面与控制面的分离
 
-**S1 为 EPC和eUTRAN之间的接口**
+**S1 为 EPC 和 eUTRAN(eNodeB) 之间的接口**
 
 #### MME
 MME: Mobility Management Entity
@@ -44,10 +44,12 @@ MME: Mobility Management Entity
 
 **S1-MME 与MME相连，是控制面接口**
 
-主要功能: 寻呼、切换、漫游、鉴权、对NAS(Non-Access Stratum)信令的加密和完整性保护，对AS(Access Stratum)的安全性控制
+主要功能: 寻呼、切换、漫游、鉴权、对NAS(Non-Access Stratum)信令的加密和完整性保护，对AS(Access Stratum)的安全性控制，空闲状态移动性控制
 
 #### SGW and PGW
 SGW: Serving Gate Way, 边界网关
+
+主要功能： 分组数据的路由、转发、监听、计费
 
 PGW: PDN Gate Way, 和运营商外部或者内部的分组网络连接
 
