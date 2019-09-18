@@ -4,4 +4,4 @@ But that's not the end, the interesting part is, even they call that device `CIR
 
 At the day I was writing this, I can not get the answer from Baidu.com
 
-But I guess, CIR means `Car Integrated Radio`.
+But I guess, CIR means `Car Integrated Radio` or `Cab Integrated Radio communication equipment`.

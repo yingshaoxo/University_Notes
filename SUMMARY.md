@@ -198,5 +198,6 @@
 * [CIR](cir.md)
   * [Basci Knowledge](cir/basci-knowledge.md)
   * [Testing Equipment](cir/testing-equipment.md)
+  * [The Structure of CIR](cir/the-structure-of-cir.md)
 * [LTE](lte.md)
 
