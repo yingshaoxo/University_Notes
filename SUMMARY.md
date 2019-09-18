@@ -197,5 +197,6 @@
   * [Using Optical Fiber](broadband-access-technology/using-optical-fiber.md)
 * [CIR](cir.md)
   * [Basci Knowledge](cir/basci-knowledge.md)
+  * [Testing Equipment](cir/testing-equipment.md)
 * [LTE](lte.md)
 
