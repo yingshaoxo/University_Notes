@@ -195,6 +195,7 @@
 * [Broadband Access Technology](broadband-access-technology.md)
   * [Using Copper Line](broadband-access-technology/using-copper-line.md)
   * [Using Optical Fiber](broadband-access-technology/using-optical-fiber.md)
+  * [Wireless](broadband-access-technology/wireless.md)
 * [CIR](cir.md)
   * [Basci Knowledge](cir/basci-knowledge.md)
   * [Testing Equipment](cir/testing-equipment.md)
