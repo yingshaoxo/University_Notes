@@ -107,3 +107,235 @@ System Architecture Evolution
 * MME: Mobility Management Entity
 * PGW: PDN Gate Way
 * SGW: Serving Gate Way
+
+____
+
+# LTE系统网络接口
+
+## LTE 系统结构
+
+### eNodeB
+主要功能:
+* 无线资源管理
+* 用户数据流的IP报头压缩和加密
+* UE附着状态时MME的选择
+* 实现SGW用户面数据的路由选择
+* 执行由MME发起的寻呼信息和广播信息的调度和传输
+* 完成有关移动性配置和调度的测量和测量报告
+
+### MME(Mobility Management Entity)
+* NAS(Non-Access Stratum)非接入层信令的加密和完整性保护; 核心网不做处理，直接传输
+* AS(Access Stratum)接入层安全性控制，空闲状态移动性控制
+* EPS(Evolved Packet System)承载控制
+* 支持 寻呼、切换、漫游、鉴权
+
+### SGW
+分组数据路由、转发、监听、计费
+
+### PGW
+属于用户平面，负责用户包数据的过滤、路由和转发
+
+
+# 接口
+23，图3-1
+
+## Uu空中接口协议(UE 与 eNodeB)
+### 控制平面协议
+NAS: Non-Access Stratum
+RRC: Radio Resource Control
+PDCP: Packet Data Convergence Protocol
+RLC: Radio Link Control
+MAC: Media Access Control
+
+> RLC(Radio Link Control)的三种传输模式: 1. TM(Transparent Mode) 2. UM(Un-acknowledgement Mode) 3. AM(Acknowledgement Mode)
+### 用户平面协议
+MAC、RLC、PDCP
+
+## S1接口协议(S1-MME连接eNodeB与MME; S1-U连接eNodeB与SGW)
+* EPS承载服务管理
+* UE上下文管理
+* 移动性管理
+* 寻呼管理
+* 信令传输功能
+* S1接口管理
+* 网络共享
+
+### 接口用户平面
+**S1-U连接eNodeB与SGW**
+GTP-U: GPRS Tunneling Protocol for User Plane
+### 接口控制平面
+**S1-MME连接eNodeB与MME**
+SCTP: Stream Control Transmission Protocol
+
+## X2接口协议
+连接eNodeB
+
+### 接口用户平面
+### 接口控制平面
+
+_______________
+
+# LTE 的关键技术
+
+## OFDM(Orthogonal Frequency Division Multiplexing)
+
+* 上行: OFDMA, Orthogonal Frequency-Division Multiple Access
+* 下行: SC-FDMA, Single-Carrier Frequency-Division Multiple Access
+
+> FFT = Fast Fourier Transformation
+
+OFDMA的优势: 
+1. 通过循环前缀，有效克服无线环境的多径干扰
+2. 实现用户间完全正交的频率复用，保证频谱效率
+3. OFDM容易和MIMO技术结合
+4. 支持频率纬度的链路自适应和多用户调度
+
+## SC-FDMA(Single-Carrier Frequency-Division Multiple Access)
+
+SC-FDMA的优势:
+1. 相对于OFDMA，具有更低的PAPR，便于UE功放的设计
+2. 实现用户间完全正交的频率复用，保证频谱效率
+3. 用户复用可以通过DFT变换、正交子载波映射等过程轻松实现
+4. 支持频率纬度的链路自适应和多用户调度
+
+## MIMO(Multiple Input Multiple Output)
+
+利用多发射、多接收天线进行空间分集的技术
+
+### 分集
+多路信道传输相同的信息
+
+### 复用
+多路信道传输不同的信息
+
+### 波束赋形
+原理: 利用`空间信道的强相关性及波的干涉原理`产生强方向性的辐射方向图，使辐射方向图的主瓣自适应指向用户`来波方向`，从而提高信噪比，获得明显的阵列增益。
+
+## AMC(Adaptive Modulation and Coding)
+原理: 在发送功率恒定的情况下，动态地选择适当的调制和编码方式，确保链路的传输质量。
+
+> LTE的调制方法: QPSK、16QAM、64QAM
+
+## HARQ(Hybrid Automatic Repeat Request)
+
+## LTE“三高、两低、一平”
+三高:
+* 高峰值速率
+* 高频谱效率
+* 高移动性
+
+两低:
+* 低时延
+* 低成本
+
+一平:
+* 扁平化架构
+
+_____
+
+# LTE 信道
+
+FDD: 上下行收发在相同时间的不同频点上； 全双工
+
+TDD: 上下行收发在相同频点的不同时间段上； 半双工
+
+> FDD 和 TDD 的帧时长都是 10ms, 一个帧分为10个子帧
+
+> `Speicial subframe` in LTE 被用来提示`下行`切换到`上行`
+
+## 信道分类
+
+逻辑信道、传输信道、物理信道
+
+### 逻辑信道
+
+分为: 控制信道、业务信道
+
+控制信道:
+* BCCH: Broadcast Control Channel; 广播控制信道
+* PCCH: Paging Control Channel; 寻呼控制信道
+* CCCH: Common Control Channel; 公共控制信道
+* DCCH: Dedicated Control Channel; 专用控制信道
+* MCCH: MultiCast Control Channel; 多播控制信道
+
+业务信道:
+* DTCH: Dedicated Traffic Channel; 专用业务信道
+* MTCH: MultiCast Traffic Channel; 多播业务信道
+
+### 传输信道
+
+分为: 下行信道、上行信道
+
+下行信道:
+* BCH: Broadcast Channel
+* PCH: Paging Channel 
+* DL-SCH: Downlink Share Channel
+* MCH: MultiCast Channel
+
+上行信道:
+* RACH: Random Access Channel 
+* UL-SCH: Uplink Shared Channel
+
+### 物理信道
+
+下行信道:
+* PBCH: Physical Broadcast Channel
+* PDSCH: Physical Downlink Shared Channel
+* PDCCH: Physical Downlink Control Channel
+* PCFICH: Physical Control Format Indicator Channel
+* PHICH: Physical Hybrid ARQ Indicator Channel
+* PMCH: Physical Multicast Channel
+
+上行信道: 
+* PRACH: Physical Random Access Channel
+* PUSCH: Physical Uplink Shared Channel
+* PUCCH: Physical Uplink Control Channel
+
+_____
+
+# LTE 系统物理层
+
+PSS: Primary Synchronous Signal
+
+SSS: Secondary Synchronous Signal
+
+频率偏移:
+* 整数倍偏移 (概念有误，应是`>1倍的频率偏移`)
+* 小数倍偏移 (概念有误，应是`<1倍的频率偏移`)
+
+随机接入:
+* 竞争性随机接入
+* 非竞争性随机接入
+_____
+
+# LTE 的编号
+
+## UE
+
+* C-RNTI: C-Radio Network Temporary Identifier
+* IMEI: International Mobile Equipment Identity
+* IMSI: International Mobile Subscriber Identity
+* S-TMSI: Serving Temporary Mobile Subscriber Identity
+* UEID: 
+* GUTI: 
+
+## Base Station
+* TAI: 
+
+## SAE
+
+* PLMN
+* MSIN: Mobile Subscriber Identification Number
+* MMEGI: 
+* MMEI
+* eNB S1AP UE ID
+* MME S1AP UE ID
+* IMEI/SV
+* TAC
+* TAI List
+* PDN ID
+* EPS Bearer ID
+* E-RAB ID
+* DRB ID
+* LBI
+* TEID
