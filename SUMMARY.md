@@ -200,5 +200,6 @@
   * [Basci Knowledge](cir/basci-knowledge.md)
   * [Testing Equipment](cir/testing-equipment.md)
   * [The Structure of CIR](cir/the-structure-of-cir.md)
+  * [All for the exam](cir/all-for-the-exam.md)
 * [LTE](lte.md)
 
