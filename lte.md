@@ -173,6 +173,14 @@ SCTP: Stream Control Transmission Protocol
 ### 接口用户平面
 ### 接口控制平面
 
+## Question and Answer
+
+#### SAE的全称是?
+#### 第四代移动通信技术少了哪一层？
+#### LTE扁平化网络结构有什么好处？
+#### eNodeB的主要功能有哪些？
+#### LTE和EPC主要由哪些网元构成？
+
 _______________
 
 # LTE 的关键技术
@@ -230,6 +238,11 @@ SC-FDMA的优势:
 
 一平:
 * 扁平化架构
+
+## Question and Answer
+
+#### 请写出MIMO的两种工作模式和区别
+#### 请写出OFDM的优缺点
 
 _____
 
@@ -306,6 +319,11 @@ SSS: Secondary Synchronous Signal
 随机接入:
 * 竞争性随机接入
 * 非竞争性随机接入
+
+## Question and Answer
+
+#### 哪些情况会发生随机接入? 什么类型的？
+
 _____
 
 # LTE 的编号
@@ -339,3 +357,12 @@ _____
 * DRB ID
 * LBI
 * TEID
+
+____
+
+# LTE系统无线资源管理
+
+## Question and Answer
+
+#### 资源分配的方式有哪些？
+#### 负载均衡的意义是什么？
