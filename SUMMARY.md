@@ -203,4 +203,5 @@
   * [The Structure of CIR](cir/the-structure-of-cir.md)
   * [All for the exam](cir/all-for-the-exam.md)
 * [LTE](lte.md)
+* [Script for ChaoXing](script-for-chaoxing.md)
 
