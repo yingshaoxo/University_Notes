@@ -1,7 +1,10 @@
-#### Method
+# A model for getting limitation
+
+## Method
+
 If anything goes well, it indeed has a general model for you guys getting limitation from a limit equation.
 
-```
+```text
 if an equation is a fraction:
     if fraction + or - a fraction:
         reduce fractions into one fraction by setting a common denominator
@@ -13,7 +16,8 @@ if the equation is not a fraction: # combined with simple +-x/
     put giving_x in equation directly
 ```
 
-#### Example
+## Example
+
 $$
 \begin{align*}
 & \lim_{x \to 1}{\frac{x^2 + 2x - 3}{x - 1}}
@@ -27,7 +31,6 @@ $$
 = & 4
 \end{align*}
 $$
-___
 
 $$
 \begin{align*}
@@ -54,3 +57,4 @@ $$
 = & -\frac{1}{2}
 \end{align*}
 $$
+

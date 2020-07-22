@@ -1,18 +1,18 @@
+# Security Management
+
 ### 1. 用户身份加密
 
 用 TMSI 代替 IMSI 识别不同用户，并在空中传输信息。
 
 > TMSI: Temporary Mobile Subscriber Identity
-
+>
 > IMSI: International Mobile Subscriber Identity
 
-___
+### 2. 用户身份鉴权\(authentication\)
 
-### 2. 用户身份鉴权(authentication)
+![](../.gitbook/assets/GSM用户鉴权.png)
 
-![](/assets/GSM用户鉴权.png)
-
-> A3, A5, A8 指的各种算法。Algorithm -> Ａ.
+> A3, A5, A8 指的各种算法。Algorithm -&gt; Ａ.
 
 * A3 用于鉴权，产生`Sres`
 * A5 用于加密，产生`114 bit的加密序列`. It's probably binary numbers
@@ -25,9 +25,9 @@ ___
 `AuC`通过`A3(RAND, Ki)`得到`SRES`
 
 > SRES = Series
-
+>
 > RAND = Random Numbers
-
+>
 > Ki = individual subscriber authentication key
 
 #### step 2
@@ -38,15 +38,13 @@ ___
 
 `MS`将生成的`SRES`回传给`MSC`。
 
-`MSC`对比之前它自己生成的`SRES`，如果相同，那么匹配成功(鉴定完毕是那个用户)
+`MSC`对比之前它自己生成的`SRES`，如果相同，那么匹配成功\(鉴定完毕是那个用户\)
 
 > `SIM`, `Auc` 有共同的 `Ki`。`Ki`与`IMSI`在注册`SIM卡`时就产生了。
 
-___
+### 3. 用户\(语音\)数据加密
 
-### 3. 用户(语音)数据加密
-
-![](/assets/GSM数据加密.png)
+![](../.gitbook/assets/GSM数据加密.png)
 
 `AuC`通过`A8(RAND, Ki)`得到`Kc`
 
@@ -60,20 +58,16 @@ ___
 
 > 异或: Binary XOR
 
-```
+```text
 a = 60            # 60 = 0011 1100 
 b = 13            # 13 = 0000 1101
- 
+
 c = a ^ b;        # 49 = 0011 0001
 ```
 
-___
-
 ## Question and Answers
 
-___
-
-##### 三参数组如何产生的？
+**三参数组如何产生的？**
 
 `AuC`生成`RAND`。
 
@@ -83,9 +77,7 @@ ___
 
 于是有了`三参数组(RAND, SRES, Kc)`
 
-___
-
-##### GSM-R 如何鉴权？
+**GSM-R 如何鉴权？**
 
 `MSC`发送`RAND`给`MS`。
 
@@ -93,11 +85,9 @@ ___
 
 `MS`将生成的`SRES`回传给`MSC`。
 
-`MSC`对比之前它自己生成的`SRES`，如果相同，那么匹配成功(鉴定完毕是那个用户)
+`MSC`对比之前它自己生成的`SRES`，如果相同，那么匹配成功\(鉴定完毕是那个用户\)
 
-___
-
-##### GSM-R 如何对用户信息进行加密？
+**GSM-R 如何对用户信息进行加密？**
 
 `AuC`通过`A8(RAND, Ki)`得到`Kc`
 
@@ -107,8 +97,7 @@ ___
 
 `MS`自己也像`MSC`那样产生`114 bit的序列`，将`接收到的数据`与`114 bit的序列`做`异或运算`，最终得到`原始数据`
 
-___
-
 References:
 
-http://www.jiamisoft.com/blog/22123-gsma.html
+[http://www.jiamisoft.com/blog/22123-gsma.html](http://www.jiamisoft.com/blog/22123-gsma.html)
+

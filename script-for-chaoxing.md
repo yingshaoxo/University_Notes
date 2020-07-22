@@ -1,4 +1,7 @@
-### Get questions from website
+# Script for ChaoXing
+
+## Get questions from website
+
 ```python
 from auto_everything.web import Selenium
 from auto_everything.base import IO
@@ -41,7 +44,8 @@ text = json.dumps(problems)
 io.write("4.json", text)
 ```
 
-### Generate txt file
+## Generate txt file
+
 ```python
 from auto_everything.base import IO
 import json
@@ -84,7 +88,8 @@ print(text)
 io.write("final.txt", text)
 ```
 
-### Add them all togather
+## Add them all togather
+
 ```python
 from auto_everything.web import Selenium
 from auto_everything.base import IO
@@ -160,3 +165,4 @@ print(text)
 io = IO()
 io.write("final.txt", text)
 ```
+

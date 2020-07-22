@@ -1,9 +1,10 @@
+# Second fundamental theorem of calculus
+
 $$
 \int_a^b f(x) dx = F(b) - F(a)
 $$
 
 Where `F()` is the anti-derivative of `f()`
-___
 
 $$
 \begin{align*}
@@ -14,3 +15,4 @@ $$
 
 \end{align*}
 $$
+
