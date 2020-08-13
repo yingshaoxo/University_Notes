@@ -9,8 +9,8 @@
 ### 硬件框架
 
 * 传输大机柜
-* ODF - 光纤
-* DDF - 2M线
+* ODF\(Optical Distribution Frame\) - 光纤
+* DDF\(Digital Distribution Frame\) - 2M线
 * VDF - 网线
 
 > 光纤主要用于构成环\(我指站与站之间的连接\)，而同轴线或者网线则用于连接具体的设备。
@@ -64,6 +64,8 @@ SAP辅助板
 
 ## OSN 3500
 
+[https://www.grsey.com/wp-content/uploads/2018/08/01-OSN3500-Technical-Manual-System-Description.pdf](https://www.grsey.com/wp-content/uploads/2018/08/01-OSN3500-Technical-Manual-System-Description.pdf)
+
 ### 光板上的指示灯
 
 #### STAT
@@ -109,6 +111,8 @@ SAP辅助板
 2500特有，指示业务告警切除指示灯
 
 ## 中兴s385
+
+> 这个设备有点老，没找到文档
 
 ### 主要的板子
 
@@ -224,7 +228,7 @@ RX: 收
 
 ### 距离
 
-比测试的实际故障点距离大1.5~2倍。
+比要测试的光纤的距离大1.5~2倍。
 
 ### 脉宽
 
