@@ -46,9 +46,9 @@ $$
 \\ \\
 = & \lim_{x \to +\infty}{\frac{-1}{\frac{\sqrt{x^2 - 1} + x}{x}}}
 \\ \\
-= & \lim_{x \to +\infty}{\frac{-1}{\sqrt{\frac{x^2}{x^2} - \frac{1}{x}} + \frac{x}{x}}}
+= & \lim_{x \to +\infty}{\frac{-1}{\sqrt{\frac{x^2}{x^2} - \frac{1}{x^2}} + \frac{x}{x}}}
 \\ \\
-= & \lim_{x \to +\infty}{\frac{-1}{\sqrt{1 - \frac{1}{x}} + 1}}
+= & \lim_{x \to +\infty}{\frac{-1}{\sqrt{1 - \frac{1}{x^2}} + 1}}
 \\ \\
 = & \frac{-1}{\sqrt{1 - \frac{1}{+\infty}} + 1}
 \\ \\
